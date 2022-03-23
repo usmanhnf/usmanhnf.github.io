@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>usmanhnf</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Test Page</h2>
+  <p>This is a test page for webresources</p>
+
+  <div class="w3-bar w3-border-top w3-border-left w3-border-right w3-border-black w3-cyan">
+    <button class="w3-bar-item w3-button w3-hover-red tablink w3-border-right w3-border-black w3-cyan w3-mobile" onclick="openTab(event,'Home')">Home</button>
+    <button class="w3-bar-item w3-button w3-hover-red tablink w3-border-right w3-border-black w3-mobile" onclick="openTab(event,'About')">About</button>
+    <button class="w3-bar-item w3-button w3-hover-red tablink w3-border-right w3-border-black w3-mobile" onclick="openTab(event,'Research')">Research</button>
+    <button class="w3-bar-item w3-button w3-hover-red tablink w3-border-right w3-border-black w3-mobile" onclick="openTab(event,'Publications')">Publications</button>
+    <div class="w3-dropdown-hover w3-border-right w3-border-black w3-mobile">
+      <button class="w3-button w3-hover-red ">Teaching</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button w3-hover-red w3-mobile tablink" onclick="openTab(event,'Subject_1')">Subject_1</button>
+            <button class="w3-bar-item w3-button w3-hover-red w3-mobile tablink" onclick="openTab(event,'Subject_2')">Subject_2</button>
+          </div>
+    </div>
+
+    <button class="w3-bar-item w3-button w3-hover-red tablink w3-border-right w3-border-black w3-mobile" onclick="openTab(event,'Contact')">Contact</button>
+
+  </div>
+
+  <div id="Home" class="w3-container w3-border w3-border-black city">
+    <h2>Home</h2>
+    <p>HeadingA contains the components of HeadingA.</p>
+  </div>
+
+  <div id="About" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>HeadingB</h2>
+    <p>HeadingB contains the components of HeadingB.</p>
+  </div>
+
+  <div id="Research" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>Research</h2>
+    <p>HeadingC contains the components of HeadingC.</p>
+  </div>
+
+  <div id="Publications" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>Publications</h2>
+    <ul><li>Javanmardi, A., Ghaedi, K., Huang, F., Hanif, M. U., &amp; Tabrizikahou, A. (2021). Application of Structural Control Systems for the Cables of Cable-Stayed Bridges: State-of-the-Art and State-of-the-Practice. <i>Archives of Computational Methods in Engineering</i>, 1–31.</li><li>Tariq, M., Khan, A., Shayanfar, J., Hanif, M. U., &amp; Ullah, A. (2021). A regression model for predicting the shear strength of RC knee joint subjected to opening and closing moment. <i>Journal of Building Engineering</i>, 102727.</li><li>Hanif, M. U., Ibrahim, Z., Jameel, M., Ghaedi, K., &amp; Hashim, H. (2021). Simulation-based non-linear vibration model for damage detection in RC beams. <i>European Journal of Environmental and Civil Engineering</i>, <i>25</i>(8), 1379–1404.</li><li>Javanmardi, A., Ibrahim, Z., Ghaedi, K., Ghadim, H. B., &amp; Hanif, M. U. (2020). State-of-the-art review of metallic dampers: Testing, development and implementation. <i>Archives of Computational Methods in Engineering</i>, <i>27</i>(2), 455–478.</li><li>Hanif, M. U., Ibrahim, Z., Ghaedi, K., Hashim, H., &amp; Javanmardi, A. (2018). Damage assessment of reinforced concrete structures using a model-based nonlinear approach–A comprehensive review. <i>Construction and Building Materials</i>, <i>192</i>, 846–865.</li><li>Hanif, M., Ibrahim, Z., Ghaedi, K., Javanmardi, A., &amp; Rehman, S. (2018). Finite Element Simulation of Damage In RC Beams. <i>Journal of Civil Engineering, Science and Technology</i>, <i>9</i>(1).</li><li>Hanif, M. U., Ibrahim, Z., Lim, H. X., &amp; Hang, Y. X. (2018). Effect of incremental static damage on modal frequencies of reinforced concrete beams. <i>International Journal of Integrated Engineering</i>, <i>10</i>(2).</li><li>Hanif, M. U., Ibrahim, Z., Jameel, M., Ghaedi, K., &amp; Aslam, M. (2016). A new approach to estimate damage in concrete beams using non-linearity. <i>Construction and Building Materials</i>, <i>124</i>, 1081–1089.</li></ul>
+    <h2>Conferences</h2>
+    <ul><li>Almohagry, A. A., Ibrahim, Z., Athar, F. A., Hanif, M. U., &amp; Zaki, A. (2021). Performance of Precast Beam to Column Connection With Billet Connector Using FEM. <i>4th International Conference on Sustainable Innovation 2020–Technology, Engineering and Agriculture (ICoSITEA 2020)</i>, 55–59.</li><li>Athar, F. A., Ibrahim, Z., Almohagry, A. A., Hanif, M. U., &amp; Zaki, A. (2021). Finite Element Modelling of Semi-Rigid Beam to Column Connection With Partly Hidden Corbel. <i>4th International Conference on Sustainable Innovation 2020–Technology, Engineering and Agriculture (ICoSITEA 2020)</i>, 74–79.</li><li>Rehman, S. K. U., Ibrahim, Z., Javed, M. F., &amp; Hanif, M. U. (2017). <i>Piezo-resistive characteristics of graphene-based cement materials</i>.</li><li>Rehman, S. K. U., Ibrahim, Z., Javed, M. F., Hanif, M. U., &amp; Ghaedi, K. (2017). Self-sensing carbon based cement composite material. <i>Proceedings of the 2nd International Conference on Advances in Engineering and Technology (RTET-2017), Penang, Malaysia</i>, 9–10.</li></ul>
+  </div>
+
+  <div id="Contact" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>HeadingC</h2>
+    <p>HeadingC contains the components of HeadingC.</p>
+  </div>
+
+  <div id="Subject_1" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>Subject_1</h2>
+    <p>An accordion is used to show (and hide) HTML content:</p>
+
+      <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-light-gray w3-border-top w3-border-black w3-left-align">Stress Block</button>
+        <div id="Demo1" class="w3-container w3-hide">
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+          <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+            <h4>Stress Block</h4>
+            <p>Mauris mi nibh, tincidunt at tellus nec, molestie pharetra lorem. Maecenas dictum pharetra massa, efficitur pharetra felis pellentesque quis. Sed mollis pellentesque sem ut tempus. Maecenas ipsum quam, tincidunt vel risus non, dapibus egestas diam. Integer at mattis dolor. Curabitur euismod massa nec leo luctus, in porta diam tempor. Nullam vestibulum justo dolor, non accumsan dolor sodales commodo. Pellentesque ultricies neque id leo cursus, at condimentum elit luctus. Pellentesque venenatis augue tristique auctor semper. Donec at mauris quis est porttitor fermentum non at est. Maecenas facilisis enim nisi, a scelerisque enim venenatis nec. Suspendisse tincidunt in nibh sed semper. Pellentesque ac neque ligula.</p>
+            <img src="Stress_block.png" class="w3-round" alt="Norway">
+            <p>Mauris mi nibh, tincidunt at tellus nec, molestie pharetra lorem. Maecenas dictum pharetra massa, efficitur pharetra felis pellentesque quis. Sed mollis pellentesque sem ut tempus. Maecenas ipsum quam, tincidunt vel risus non, dapibus egestas diam. Integer at mattis dolor. Curabitur euismod massa nec leo luctus, in porta diam tempor. Nullam vestibulum justo dolor, non accumsan dolor sodales commodo. Pellentesque ultricies neque id leo cursus, at condimentum elit luctus. Pellentesque venenatis augue tristique auctor semper. Donec at mauris quis est porttitor fermentum non at est. Maecenas facilisis enim nisi, a scelerisque enim venenatis nec. Suspendisse tincidunt in nibh sed semper. Pellentesque ac neque ligula.</p>
+
+            \[\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+
+        </div>
+
+      <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-light-gray w3-border-top w3-border-black  w3-left-align">Topic 2</button>
+        <div id="Demo2" class="w3-container w3-hide">
+          <h4>Topic 2</h4>
+          <p>Some text..</p>
+        </div>
+
+        <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-light-gray w3-border-top w3-border-black  w3-left-align">Topic 3</button>
+          <div id="Demo3" class="w3-container w3-hide">
+            <h4>Topic 3</h4>
+            <p>Some text..</p>
+          </div>
+
+  </div>
+
+  <div id="Subject_2" class="w3-container w3-border w3-border-black city" style="display:none">
+    <h2>Subject 2 Name</h2>
+    <h3>Subject 2 heading 1</h3>
+    <p>HeadingE contains the components of HeadingE.</p>
+  </div>
+
+</div>
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-lime", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-lime";
+}
+</script>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+</body>
+</html>
