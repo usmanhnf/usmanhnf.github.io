@@ -21,9 +21,12 @@
 title: Usman Hanif
 email: usman.hanif@nice.nust.edu.pk
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Usman Hanif is an Assistant Professor in Structural Engineering department at NUST, 
+  where he has been since 2019. From 2009 to 2014, he served as a Professional Structural Engineer 
+  where he developed his interest in Structural Mechanics and pursued his PhD from Universiti Malaya, 
+  Malaysia. Since then he is teaching undergraduate and graduate students the courses related to Mechanics 
+  of Reinforced Concrete. Currently, he is researching continuous health monitoring using 
+  hybrid acoustic emission in South Korea.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://usmanhnf.github.io # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: usmanhnf
