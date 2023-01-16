@@ -5,4 +5,4 @@ permalink: /cv/
 order: 2
 ---
 
-# Details of the CV
+# CV
