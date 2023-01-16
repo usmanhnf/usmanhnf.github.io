@@ -38,7 +38,6 @@ title-logo: /images/title-logo.png
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-scholar
 
 
 # Exclude from processing.
