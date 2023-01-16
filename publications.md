@@ -5,6 +5,13 @@ permalink: /publications/
 order: 4
 ---
 
+### Google Scholar Metrics
+
+* [ScholarProfile](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
+* Citations: {{ site.data.scholar.citations }}
+* h-index: {{ site.data.scholar.h_index }}
+* i10-index: {{ site.data.scholar.i10_index }}
+
 {% assign cards = site.data.references | sort: 'Date published' | 'reverse' %}
 
 --------------
@@ -20,7 +27,7 @@ order: 4
 <li> {{ J_23.Authors }}. <b>({{ J_23.Publication_year }})</b> {{ J_23.Title }}. {{ J_23.Volume}}, {{ J_23.Issue }} <i>{{ J_23.Journal }}</i>. </li>
 </ul>
 {% endfor %}
--------------------------
+
 
 #### 2022
 
@@ -32,7 +39,6 @@ order: 4
 </ul>
 {% endfor %}
 
----------------------------
 
 #### 2021
 {% assign j21 = journals | where: "Publication_year", "2021" | sort: 'Date_published' | 'reverse'  %}
@@ -43,7 +49,7 @@ order: 4
 </ul>
 {% endfor %}
 
------------------
+
 #### 2020
 {% assign j20 = journals | where: "Publication_year", "2020" | sort: 'Date_published' | 'reverse'  %}
 
@@ -52,7 +58,7 @@ order: 4
 <li> {{ J_20.Authors }}. <b>({{ J_20.Publication_year }})</b> {{ J_20.Title }}. {{ J_20.Volume}}, {{ J_20.Issue }} <i>{{ J_20.Journal }}</i>. </li>
 </ul>
 {% endfor %}
------------------
+
 
 
 #### 2018
@@ -63,7 +69,7 @@ order: 4
 <li> {{ J_18.Authors }}. <b>({{ J_18.Publication_year }})</b> {{ J_18.Title }}. {{ J_18.Volume}}, {{ J_18.Issue }} <i>{{ J_18.Journal }}</i>. </li>
 </ul>
 {% endfor %}
------------------
+
 
 #### 2017
 {% assign j17 = journals | where: "Publication_year", "2017" | sort: 'Date_published' | 'reverse'  %}
@@ -74,7 +80,7 @@ order: 4
 </ul>
 {% endfor %}
 
------------------
+
 #### 2016
 {% assign j16 = journals | where: "Publication_year", "2016" | sort: 'Date_published' | 'reverse'  %}
 
