@@ -4,6 +4,8 @@ title:  "Website migrated to Jekyll"
 date:   2023-01-15 23:00:38 +0900
 ---
 
+It has been a painfully steep learning curve in deploying website on GitHub using Jekyll.
+
 #### Adapting to Jekyll
 
 I am under the process of migrating my personal profile on github. I have researched into `HTML` but for a person like me who has no knowledge of hard-core programming, it gets very tricky to manage the site. Jekyll fulfills my needs as, with substantial effort, once I set it up, then things will be easier. Jekyll has very simplistic blog-like writing style and most of the processes are automated. Also, it is supported on github and has a very clean interface.
