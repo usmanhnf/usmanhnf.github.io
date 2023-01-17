@@ -5,4 +5,4 @@ permalink: /research/
 order: 3
 ---
 
-# Details of the CV
+### I am currently compiling my research for this page, and I will update them soon.
