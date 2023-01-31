@@ -62,7 +62,7 @@ concrete bridges (NRPU)</label></li>
     </div>
     <div class="column">
         <h4>Dr. Ahad Javanmardi</h4>
-        <h5>Associate Procfessor Fuzu China</h5>
+        <h5>Associate Professor, Fuzhou University China</h5>
         <h5><i>FE Modeling | Mechanics</i></h5>
     </div>
     <div class="column">
