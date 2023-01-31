@@ -5,11 +5,82 @@ permalink: /research/
 order: 3
 ---
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
 ### Research Interests
 - Damage assessment using acoustic emission
 - flexural retrofitting in RC beams using CFRP material
 - Pattern recognition using numerical methods
 
+### Projects
+<li><label for="pj2">Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
+concrete bridges (NRPU)</label></li>
+<ul> <i>Progress </i> <progress id="pj2" value="5" max="100"></progress></ul>
+
+<li><label for="pj1">Reviewing Revised Version of Community Physical Infrastructure (CPI) Manual</label></li>
+<ul> <i> Progress </i> <progress id="pj1" value="100" max="100"></progress></ul>
+
+
+### Collaborators
+<body>
+<div class="row" style="background-color: #E5E4E2;">
+    <div class="column">
+        <h4>Dr. M Usman Hassan</h4>
+        <h5>Assistant Professor, NUST Pakistan</h5>
+        <h5><i>Signal Processing | Data Analysis</i></h5>
+    </div>
+    <div class="column">
+        <h4>Dr. Athar Ali</h4>
+        <h5>Assistant Professor, NUST Pakistan</h5>
+        <h5><i>FE Modeling | Retrofitting</i></h5>
+    </div>
+    <div class="column">
+        <h4>Dr. Khaled Ghaedi</h4>
+        <h5>CEO, Pasofal Engineering Group Malaysia</h5>
+        <h5><i>FE modeling | constitutive modeling</i></h5>
+    </div>
+    <div class="column">
+        <h4>Dr. Ahad Javanmardi</h4>
+        <h5>Associate Procfessor Fuzu China</h5>
+        <h5><i>FE Modeling | Mechanics</i></h5>
+    </div>
+    <div class="column">
+        <h4>Atif Ahmed</h4>
+        <h5>Tech Lead, INTEL Malaysia</h5>
+        <h5><i>Programming | Data Analysis</i></h5>
+    </div>
+    <div class="column">
+        <h4>Dr. Ahmad Zaki</h4>
+        <h5>Assistant Professor, UMY Indonesia</h5>
+        <h5><i>RC modeling | Materials</i></h5>
+    </div>
+</div>
+</body>
+
+
+<body>
+    </body>
 
 ### Research Dissertations
 
