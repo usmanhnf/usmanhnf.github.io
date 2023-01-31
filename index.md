@@ -32,7 +32,7 @@ layout: page
         <div class="columna">
             <h2><b>Usman</b> Hanif </h2>
                 <p style="font-size:15px;">PhD | PE | Postdoctoral Researcher <a href="https://www.ut.ac.kr/english.do">(KNUT)</a> | Assistant Professor <a href="https://nice.nust.edu.pk/faculty/">(NUST)</a> </p>
-                <img src="assets/images/id.jpg" alt="ID" style="float:right;height:200px;">
+                <!-- <img src="assets/images/id.jpg" alt="ID" style="float:right;height:200px;"> -->
                 <p style="font-size:13px;">I am an Assistant Professor in Structural Engineering at NUST since 2019. I have PhD in Structural Mechanics from University of Malaya, Malaysia. Currently, I am working on a research project as a postdoctoral researcher in Korea National University of Transportation (KNUT).
                     Usman Hanif is an Assistant Professor in Structural Engineering department at NUST, where he has been since 2019. From 2009 to 2014, he served as a Professional Structural Engineer where he developed his interest in Structural Mechanics and pursued his PhD from Universiti Malaya, Malaysia. Since then he is teaching undergraduate and graduate students the courses related to Mechanics of Reinforced Concrete. Currently, he is researching continuous health monitoring using hybrid acoustic emission in South Korea.</p>
                 <h3>Research Interests</h3>
