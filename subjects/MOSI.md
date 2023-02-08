@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /MOS-I/
+published: false
 ---
 
 ## Chapters
