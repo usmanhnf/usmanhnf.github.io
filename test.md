@@ -15,6 +15,6 @@ order: 7
  <body>
  This page is just for testing additional elements on the site. Currently Javascript interactive sketches are being tested
 <div class="row">
-        <iframe src="https://editor.p5js.org/brocktree/full/vjD97ySpG" width="580" height="420"></iframe>
+        <iframe src="https://editor.p5js.org/brocktree/full/vjD97ySpG" width="720%" height="480%" frameBorder="0" scrolling="no" id="testFrame" style="position:absolute;"></iframe>
     </div>
  </body>
