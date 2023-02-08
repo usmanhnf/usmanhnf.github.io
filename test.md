@@ -13,7 +13,8 @@ order: 7
   
  </head>
  <body>
+ This page is just for testing additional elements on the site. Currently Javascript interactive sketches are being tested
 <div class="row">
-        <script src="/assets/del/sketch.js"></script>
+        <iframe src="https://editor.p5js.org/brocktree/full/vjD97ySpG" width="580" height="420"></iframe>
     </div>
  </body>
