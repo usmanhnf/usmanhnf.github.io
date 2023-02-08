@@ -18,7 +18,7 @@ permalink: /MOS-I/
 ## Simple Strain
 ## Shear and Moment in Beams
 ## Stresses in Beams
-## 2.1
+## Some other
 # References
 Philpot, T. A., & Thomas, J. S. (2020). Mechanics of materials: an integrated learning system. John Wiley & Sons.
 
