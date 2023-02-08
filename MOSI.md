@@ -3,7 +3,7 @@ layout: page
 permalink: /MOS-I/
 ---
 
-## 
+## Chapters
 {:.no_toc}
 
 1. Will be replaced with the ToC, excluding the "Contents" header
@@ -16,7 +16,7 @@ permalink: /MOS-I/
 ### Definition
 
 ## Simple Strain
-## Shear and Moment in Beams
+## Shear and Mcd dooment in Beams
 ## Stresses in Beams
 ## Some other
 # References
