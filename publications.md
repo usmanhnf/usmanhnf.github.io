@@ -19,7 +19,9 @@ order: 4
 {% for J_23 in j23 %}
 <ul>
 <li> {{ J_23.Authors }}. <b>({{ J_23.Publication_year }})</b> {{ J_23.Title }}. {{ J_23.Volume}}, {{ J_23.Issue }} <i>{{ J_23.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_23.doi }}"> DOI </a></b></span></p>
 </ul>
+
 {% endfor %}
 
 
@@ -30,7 +32,9 @@ order: 4
 {% for J_22 in j22 %}
 <ul>
 <li> {{ J_22.Authors }}. <b>({{ J_22.Publication_year }})</b> {{ J_22.Title }}. {{ J_22.Volume}}, {{ J_22.Issue }} <i>{{ J_22.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_22.doi }}"> DOI </a></b></span></p>
 </ul>
+
 {% endfor %}
 
 
@@ -39,7 +43,8 @@ order: 4
 
 {% for J_21 in j21 %}
 <ul>
-<li> {{ J_21.Authors }}. <b>({{ J_21.Publication_year }})</b> {{ J_21.Title }}. {{ J_21.Volume}}, {{ J_21.Issue }} <i>{{ J_21.Journal }}</i>. </li>
+<li>  {{ J_21.Authors }}. <b>({{ J_21.Publication_year }})</b> {{ J_21.Title }}. {{ J_21.Volume}}, {{ J_21.Issue }} <i>{{ J_21.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_21.doi }}"> DOI </a></b></span></p>
 </ul>
 {% endfor %}
 
@@ -50,6 +55,7 @@ order: 4
 {% for J_20 in j20 %}
 <ul>
 <li> {{ J_20.Authors }}. <b>({{ J_20.Publication_year }})</b> {{ J_20.Title }}. {{ J_20.Volume}}, {{ J_20.Issue }} <i>{{ J_20.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_20.doi }}"> DOI </a></b></span></p>
 </ul>
 {% endfor %}
 
@@ -61,6 +67,7 @@ order: 4
 {% for J_18 in j18 %}
 <ul>
 <li> {{ J_18.Authors }}. <b>({{ J_18.Publication_year }})</b> {{ J_18.Title }}. {{ J_18.Volume}}, {{ J_18.Issue }} <i>{{ J_18.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_18.doi }}"> DOI </a></b></span></p>
 </ul>
 {% endfor %}
 
@@ -71,6 +78,7 @@ order: 4
 {% for J_17 in j17 %}
 <ul>
 <li> {{ J_17.Authors }}. <b>({{ J_17.Publication_year }})</b> {{ J_17.Title }}. {{ J_17.Volume}}, {{ J_17.Issue }} <i>{{ J_17.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_17.doi }}"> DOI </a></b></span></p>
 </ul>
 {% endfor %}
 
@@ -81,6 +89,7 @@ order: 4
 {% for J_16 in j16 %}
 <ul>
 <li> {{ J_16.Authors }}. <b>({{ J_16.Publication_year }})</b> {{ J_16.Title }}. {{ J_16.Volume}}, {{ J_16.Issue }} <i>{{ J_16.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_16.doi }}"> DOI </a></b></span></p>
 </ul>
 {% endfor %}
 
