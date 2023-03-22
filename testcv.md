@@ -5,11 +5,37 @@ published: true
 ---
 
 
+Break.
 
-<h1 style="text-align: center;"> M. Usman Hanif (CV) </h1>
+* Root level
+  * Second level
+    * Third level
+  * Back to second level
 
-abc |
-def |
+Break again.
+
+1. Root level
+  * Second level
+    * Third level
+  * Back to second level
+
+Final break.
+
+1. Root level
+   * Second level
+     * Third level
+   * Back to second level
+
+End of example.
+
+
+
+| Year | def <br> def|
+
+
+<h2 style="text-align: center;"> M. Usman Hanif (CV) </h2>
+
+
 
 --------
 
@@ -17,12 +43,17 @@ def |
 
 ------
 
-| 2014-2018     | PhD in Structural Engineering, University of Malaya, `Malaysia` |
-|               |  Thesis Title : Nonlinear vibration-based modeling for damage detection of reinforced concrete beams                         |
-| Header      | Title       |
-| Paragraph   | Text        |
+#### **University of Malaya `Malaysia`**
+  **Doctor of Philosophy, Structural Engineering • 2014-2018**
+- 2014-2018: PhD in Structural Engineering, University of Malaya, `Malaysia`:
+\
+    Thesis Title : *Nonlinear vibration-based modeling for damage detection of reinforced concrete beams*
 
+* asdas
 
+<div class="section-title">
+        {{ education.title }}
+    </div>
 
 2014-2018   PhD in Structural Engineering, University of Malaya, `Malaysia`
 
