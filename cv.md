@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Muhammad Usman Hanif
 permalink: /cv/
 order: 2
 ---
