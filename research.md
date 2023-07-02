@@ -36,7 +36,7 @@ order: 3
 ### Projects
 <li><label for="pj2">Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
 concrete bridges (NRPU)</label></li>
-<ul> <i>Progress </i> <progress id="pj2" value="5" max="100"></progress></ul>
+<ul> <i>Progress </i> <progress id="pj2" value="20" max="100"></progress></ul>
 
 <li><label for="pj1">Reviewing Revised Version of Community Physical Infrastructure (CPI) Manual</label></li>
 <ul> <i> Progress </i> <progress id="pj1" value="100" max="100"></progress></ul>
