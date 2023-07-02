@@ -9,7 +9,7 @@ order: 2
 <h3 style="text-align: center;">Curriculum Vitae</h3>
 <p style="text-align: center;">
 <img src="/assets/images/icons/icon_nust.png" alt="ORCID"  style="width:20px;height:20px;">
-<a href="https://nice.nust.edu.pk/faculty/muhammad-usman-hanif/">NUST</a>
+<a href="https://nice.nust.edu.pk/faculty/muhammad-usman-hanif/" target="_blank">NUST</a>
  | 
 <img src="/assets/images/icons/icon_orcid.png" alt="ORCID"  style="width:20px;height:20px;">
 <a  href="https://orcid.org/0000-0002-1490-2350" target="_blank">ORCID</a>
