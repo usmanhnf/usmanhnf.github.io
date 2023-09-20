@@ -34,12 +34,55 @@ order: 3
 - Pattern recognition using numerical methods
 
 ### Projects
-<li><label for="pj2">Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
-concrete bridges (NRPU)</label></li>
-<ul> <i>Progress </i> <progress id="pj2" value="20" max="100"></progress></ul>
+<li><label for="pj2"> <b> Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
+concrete bridges (NRPU)</b></label></li>
+<ul> <i>Project Progress </i> <progress id="pj2" value="25" max="100"></progress></ul>
+<ul> 
+    <ul> 
+        <details>
+            <summary>Project Details <em>(click to expand)</em> </summary>
+            
+                            <h5><b>Project Team:</b> 
+                                <ul>
+                                <li> <b>Dr. Athar Ali</b> (PI)</li>
+                                <li> <b>Dr. M. Usman Hanif </b> (Co-PI)</li>
+                                <li> <b>Dr. M. Usman Hassan </b> (Co-PI)</li>
+                                </ul>
+                                </h5>
+
+                            <h5><b>Graduate Students:</b> 
+                               <ul>
+                                <li> <b>Janita Mahnoor Shahid</b> (MSc Structural Engineering)</li>
+                                <li> <b>Hamza Ahsan Abdullah </b> (MSc Structural Engineering)</li>
+                                </ul>
+                               </h5>
+
+                            <h5><b>Project Summary:</b> 
+                                <ul>
+                                <li> Development of a testbed for Structural Health Monitoring of RC Bridges</li>
+                                <li> Sensor development for health monitoring of RC bridges</li>
+                                <li> Procedure development of real-time monitoring </li>
+                                <li> Finite Element Modeling of Prototype Bridge for Structural  Identification and System Characterization </li>
+                            
+                                </ul>
+                                </h5>
+                            <h5><b>Methodology:</b>
+                            </h5>    
+                            <p style="text-align:left;"><img src="/assets/images/research/NRPU_method.png" alt="NRPU_Methodology" width="400"></p>
+
+                            <h5><b>Test Schematics:</b>
+                            </h5>    
+                            <p style="text-align:left;"><img src="/assets/images/research/NRPU_schematics.png" alt="NRPU_schematics" width="400"></p>
+                            
+                            
+                            <h5>MS Student: <i>Sultani Mulk Khan</i></h5>
+                        
+        </details>
+    </ul>
+</ul>
 
 <li><label for="pj1">Reviewing Revised Version of Community Physical Infrastructure (CPI) Manual</label></li>
-<ul> <i> Progress </i> <progress id="pj1" value="100" max="100"></progress></ul>
+<ul> <i> Progress (completed) </i> <progress id="pj1" value="100" max="100"></progress></ul>
 
 
 ### Collaborators
