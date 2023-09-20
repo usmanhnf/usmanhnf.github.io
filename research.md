@@ -29,13 +29,20 @@ order: 3
 </head>
 
 ### Research Interests
+--------
+
 - Damage assessment using acoustic emission
-- flexural retrofitting in RC beams using CFRP material
+- Flexural/shear retrofitting in RC beams using CFRP material
 - Pattern recognition using numerical methods
 
+
 ### Projects
+-------
+
+<div class="row" style="background-color: #EBF5FB ; border: solid; border-width: thin; padding: 10px;">
 <li><label for="pj2"> <b> Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
 concrete bridges (NRPU)</b></label></li>
+<ul><b>2023-2025 </b> | Funding agency: <i>National Research Program for Universities (NRPU), Higher Education Commission Pakistan </i></ul>
 <ul> <i>Project Progress </i> <progress id="pj2" value="25" max="100"></progress></ul>
 <ul> 
     <ul> 
@@ -73,19 +80,56 @@ concrete bridges (NRPU)</b></label></li>
                             <h5><b>Test Schematics:</b>
                             </h5>    
                             <p style="text-align:left;"><img src="/assets/images/research/NRPU_schematics.png" alt="NRPU_schematics" width="400"></p>
+   
+        </details>
+    </ul>
+</ul>
+</div>
+
+&nbsp;
+<div class="row" style="background-color: #E8F6F3; border: solid; border-width: thin; padding: 10px;">
+<li><label for="pj1"><b>Revising the current version of Community Physical Infrastructure (CPI) Construction Manual</b></label></li>
+<ul> <b>2022</b> | Funding agency: <i>Pakistan Poverty Alleviation Fund (PPAF), Pakistan </i></ul>
+<ul> <i> Progress (completed) </i> <progress id="pj1" value="100" max="100"></progress></ul>
+
+<ul> 
+    <ul> 
+        <details>
+            <summary>Project Details <em>(click to expand)</em> </summary>
+            
+                            <h5><b>Project Team:</b> 
+                                <ul>
+                                <li> <b>Dr. M. Usman Hanif </b> (PI)</li>
+                                <li> <b>Engr. Arsalan Mushtaq </b> (Collaborator)</li>
+                                </ul>
+                                </h5>
+
+                            <h5><b>Students involved:</b> 
+                                <ul>
+                                <li> <b>Farooq Ahmed Athar</b> (Undergraduate student)</li>
+                                </ul>
+                                </h5>
+
+                            <h5><b>Project Summary:</b> 
+                                <ul>
+                                <li> Revising the existing design provisions in accordance with the building codes</li>
+                                <li> Simplify the design and provide design charts easily interpretable by the community </li>
+                                </ul>
+                                </h5>
+                            <h5><b>Finished Manual:</b>
+                            <p style="text-align:left;"><img src="/assets/images/research/CPI_manual.png" alt="CPI_manual" width="400"></p>
+                            </h5>    
                             
-                            
-                            <h5>MS Student: <i>Sultani Mulk Khan</i></h5>
                         
         </details>
     </ul>
 </ul>
+</div>
 
-<li><label for="pj1">Reviewing Revised Version of Community Physical Infrastructure (CPI) Manual</label></li>
-<ul> <i> Progress (completed) </i> <progress id="pj1" value="100" max="100"></progress></ul>
-
-
+&nbsp;
 ### Collaborators
+-------------
+
 <body>
 <div class="row" style="background-color: #E5E4E2;">
     <div class="column">
@@ -125,7 +169,9 @@ concrete bridges (NRPU)</b></label></li>
 <body>
     </body>
 
+&nbsp;
 ### Research Dissertations
+-------------
 
 #### Graduate Research
 <details>
@@ -144,6 +190,7 @@ concrete bridges (NRPU)</b></label></li>
                     <p style="text-align:center;"><img src="/assets/images/research/pg_plasticity.png" alt="CDPM_Dynamic_Analysis" width="500"></p>
                    
 </details>
+&nbsp;
 
 #### Undergraduate Research
 
