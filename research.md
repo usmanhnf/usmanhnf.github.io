@@ -25,6 +25,7 @@ order: 3
   display: table;
   clear: both;
 }
+
 </style>
 </head>
 
@@ -39,7 +40,47 @@ order: 3
 ### Projects
 -------
 
-<div class="row" style="background-color: #EBF5FB ; border: solid; border-width: thin; padding: 10px;">
+&nbsp;
+
+<div class="row" style="background-color: #F9E79F ; border: solid; border-width: thin; padding: 10px;">
+<li><label for="pj2"> <b> Numerical Investigation of horizontal joint failure mechanism in precast large panel structures</b></label></li>
+<ul><b>2023-2025 </b> | Funding agency: <i>Korea National University of Transportation, South Korea </i></ul>
+<ul> <i>Project Progress </i> <progress id="pj2" value="90" max="100"></progress></ul>
+<ul> 
+    <ul> 
+        <details>
+            <summary>Project Details <em>(click to expand)</em> </summary>
+            
+                            <h5><b>Project Summary:</b> 
+                                <ul>
+                                <li> Development of a testbed for Structural Health Monitoring of RC Bridges</li>
+                                <li> Sensor development for health monitoring of RC bridges</li>
+                                <li> Procedure development of real-time monitoring </li>
+                                <li> Finite Element Modeling of Prototype Bridge for Structural  Identification and System Characterization </li>
+                            
+                                </ul>
+                                </h5>
+                            
+                            <h5><b>Simulation:</b>
+                            </h5>    
+                            <p style="text-align:center;">
+                            
+                            <img src="/assets/images/research/pc_wall.gif" alt="NRPU_Methodology" width="325">
+                            <img src="/assets/images/research/pc_wall_crack1.png" alt="NRPU_Methodology" width="300">
+                            
+                            </p>
+
+                               
+        </details>
+    </ul>
+</ul>
+</div>
+
+
+&nbsp;
+
+
+<div class="row" style="background-color: #D7BDE2 ; border: solid; border-width: thin; padding: 10px;">
 <li><label for="pj2"> <b> Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
 concrete bridges (NRPU)</b></label></li>
 <ul><b>2023-2025 </b> | Funding agency: <i>National Research Program for Universities (NRPU), Higher Education Commission Pakistan </i></ul>
@@ -87,7 +128,7 @@ concrete bridges (NRPU)</b></label></li>
 </div>
 
 &nbsp;
-<div class="row" style="background-color: #E8F6F3; border: solid; border-width: thin; padding: 10px;">
+<div class="row" style="background-color: #AED6F1; border: solid; border-width: thin; padding: 10px;">
 <li><label for="pj1"><b>Revising the current version of Community Physical Infrastructure (CPI) Construction Manual</b></label></li>
 <ul> <b>2022</b> | Funding agency: <i>Pakistan Poverty Alleviation Fund (PPAF), Pakistan </i></ul>
 <ul> <i> Progress (completed) </i> <progress id="pj1" value="100" max="100"></progress></ul>
