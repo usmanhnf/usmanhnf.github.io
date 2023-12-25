@@ -13,6 +13,18 @@ order: 4
 {% assign journals = cards | where: "Item_type", "Journal Article" | sort: 'Date_published' | 'reverse'  %}
 
 -----------------
+{% assign j24 = journals | where: "Publication_year", "2024" | sort: 'Date_published' | 'reverse'  %}
+#### 2024
+
+{% for J_24 in j24 %}
+<ul>
+<li> {{ J_24.Authors }}. <b>({{ J_24.Publication_year }})</b> {{ J_24.Title }}. {{ J_24.Volume}}, {{ J_24.Issue }} <i>{{ J_24.Journal }}</i>. </li>
+<p style="text-indent: 50px; color: #243763; font-size: 13px;"><span style="background-color: #CBE4DE; border:thin green solid; padding:1px"><b><a href="{{ J_24.doi }}"> DOI </a></b></span></p>
+</ul>
+
+{% endfor %}
+
+
 {% assign j23 = journals | where: "Publication_year", "2023" | sort: 'Date_published' | 'reverse'  %}
 #### 2023
 

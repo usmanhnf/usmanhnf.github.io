@@ -191,6 +191,8 @@ order: 2
 ------
 #### Journal Publications
 
+1. **Muhammad Usman Hanif**, Soo-Yeon Seo, and Muhammad Fawad. “MNumerical study on the design performance of wedge-type precast horizontal wall-slab joint for vertical load transfer.” Structures (2024): In Production.
+
 1. **Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran, and Khol Senghong. “Monitoring and characterizing the debonding in CFRP retrofitted RC beams using acoustic emission technology.” Developments in the Built Environment 14 (2023): 100141.
 
 2.	Sultani Mulk Khan, **Muhammad Usman Hanif**, Azam Kham, Muhammad Usman Hassan, Ahad Javanmardi, and Atif Ahmad. “Damage assessment of reinforced concrete beams using cost-effective MEMS accelerometers.” Structures 41 (2022): 602-618.
@@ -216,7 +218,11 @@ order: 2
 
 #### Conference and workshop paper presentations 
 
-1.	Hai Van Tran, Khol Senghong, **Muhammad Usman Hanif**, Kang Su Kim, Hyun-Do Yun, and Soo-Yeon Seo. “Sensing performance evaluation of Fiber Bragg Grating sensor attached to fiber-reinforced polymer sheet through shear test of concrete block,” in Architectural Institute of Korea Spring Conference, Busan South Korea 2023. 
+1.	**Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran and Khol Senghong. “Effect of interfacial defects on bond-slip behavior between concrete and CFRP laminate,” in 2023 Autumn Korean Concrete Institute (KCI) Academic Conference South Korea 2023.
+
+1.	**Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran, Khol Senghong and Hyun-Do Yun. “Improved technique to find the damage location in retrofitted concrete specimens using acoustic emissions,” in 8th Structural Engineers World Congress (SEWC 2023), Seoul South Korea 2023.
+
+1.	Hai Van Tran, Khol Senghong, **Muhammad Usman Hanif**, Kang Su Kim, Hyun-Do Yun, and Soo-Yeon Seo. “Sensing performance evaluation of Fiber Bragg Grating sensor attached to fiber-reinforced polymer sheet through shear test of concrete block,” in Architectural Institute of Korea Spring Conference, Busan South Korea 2023.
 
 2.	Hamza Tariq, Mudassir Ahmad, Ghufran Ahmad, Muhammad Waleed Afzal Khan, **Muhammad Usman Hanif**, and Ahmad Zaki. “Modeling and Analysis of a Concrete Bridge using 3D Reconstruction Technique,” in the 2nd International Symposium on Civil, Environmental, and Infrastructure Engineering (ISCEIE). 2022.
 
