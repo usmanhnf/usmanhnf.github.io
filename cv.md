@@ -191,7 +191,9 @@ order: 2
 ------
 #### Journal Publications
 
-1. **Muhammad Usman Hanif**, Soo-Yeon Seo, and Muhammad Fawad. “MNumerical study on the design performance of wedge-type precast horizontal wall-slab joint for vertical load transfer.” Structures (2024): In Production.
+1. Muhammad Fawad, Marek Salamak, **Muhammad Usman Hanif**, Kalman Koris, Muhammad Ahsan, Hadiya Rahman, Michael Gerges and Mostafa M. Salah. “Integration of bridge health monitoring system with augmented reality application developed using 3D game engine – Case Study.” IEEE Access (2024): 75264 - 75278.
+
+1. **Muhammad Usman Hanif**, Soo-Yeon Seo, and Muhammad Fawad. “Numerical study on the design performance of wedge-type precast horizontal wall-slab joint for vertical load transfer.” Structures (2024): 60.
 
 1. **Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran, and Khol Senghong. “Monitoring and characterizing the debonding in CFRP retrofitted RC beams using acoustic emission technology.” Developments in the Built Environment 14 (2023): 100141.
 
@@ -221,6 +223,10 @@ order: 2
 1.	**Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran and Khol Senghong. “Effect of interfacial defects on bond-slip behavior between concrete and CFRP laminate,” in 2023 Autumn Korean Concrete Institute (KCI) Academic Conference South Korea 2023.
 
 1.	**Muhammad Usman Hanif**, Soo-Yeon Seo, Hai Van Tran, Khol Senghong and Hyun-Do Yun. “Improved technique to find the damage location in retrofitted concrete specimens using acoustic emissions,” in 8th Structural Engineers World Congress (SEWC 2023), Seoul South Korea 2023.
+
+1.	Hai Van Tran, Khol Senghong, **Muhammad Usman Hanif**, Kang Su Kim, Hyun-Do Yun, and Soo-Yeon Seo. “Time-dependent behavior of FRP-strengthened RC beams under sustained loading,” in 2023 Autumn Korean Concrete Institute (KCI) Academic Conference South Korea 2023.
+
+1.	Khol Senghong, Hai Van Tran, **Muhammad Usman Hanif** and Soo-Yeon Seo,  . “Shear strengthening of RC beams using partial-length NSM approach,” in 2023 Autumn Korean Concrete Institute (KCI) Academic Conference South Korea 2023.
 
 1.	Hai Van Tran, Khol Senghong, **Muhammad Usman Hanif**, Kang Su Kim, Hyun-Do Yun, and Soo-Yeon Seo. “Sensing performance evaluation of Fiber Bragg Grating sensor attached to fiber-reinforced polymer sheet through shear test of concrete block,” in Architectural Institute of Korea Spring Conference, Busan South Korea 2023.
 
