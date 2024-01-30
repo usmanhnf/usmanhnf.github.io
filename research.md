@@ -44,8 +44,8 @@ order: 3
 
 <div class="row" style="background-color: #F9E79F ; border: solid; border-width: thin; padding: 10px;">
 <li><label for="pj2"> <b> Numerical Investigation of horizontal joint failure mechanism in precast large panel structures</b></label></li>
-<ul><b>2023-2025 </b> | Funding agency: <i>Korea National University of Transportation, South Korea </i></ul>
-<ul> <i>Project Progress </i> <progress id="pj2" value="90" max="100"></progress></ul>
+<ul><b>2022-2023 </b> | Funding agency: <i>Korea National University of Transportation, South Korea </i></ul>
+<ul> <i>Project Progress </i> <progress id="pj2" value="100" max="100"></progress></ul>
 <ul> 
     <ul> 
         <details>
@@ -53,13 +53,20 @@ order: 3
             
                             <h5><b>Project Summary:</b> 
                                 <ul>
-                                <li> Development of a testbed for Structural Health Monitoring of RC Bridges</li>
-                                <li> Sensor development for health monitoring of RC bridges</li>
-                                <li> Procedure development of real-time monitoring </li>
-                                <li> Finite Element Modeling of Prototype Bridge for Structural  Identification and System Characterization </li>
+                                <li> FE modeling of horizontal precast concrete wall-slab join</li>
+                                <li> Parametric study on variables like wall confinement, relative concrete strengths and joint bearing</li>
+                                <li> Current design code evaluation for horizontal wedge-type joints </li>
                             
                                 </ul>
                                 </h5>
+
+                            <h5><b>Publication:</b> 
+                                <ul>
+                                    <b>Muhammad Usman Hanif</b>, Soo-Yeon Seo, and Muhammad Fawad. “Numerical study on the design performance of wedge-type precast horizontal wall-slab joint for vertical load transfer.” Structures (2024): 60.</ul>
+                                <ul>    
+                                    <a href="https://doi.org/10.1016/j.istruc.2023.105799">Link</a>                                             
+                                </ul>
+                            </h5>
                             
                             <h5><b>Simulation:</b>
                             </h5>    
