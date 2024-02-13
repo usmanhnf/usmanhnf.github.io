@@ -37,6 +37,7 @@ layout: page
                 <h3>Research Interests</h3>
                 <p style="font-size:13px;">I am processing acoustic emission (AE) data for continuous monitoring of CFRP retrofitted structural members. My research involves scaled-specimen testing, large data analysis, adapting to IOT-like system for monitoring setup and analytical and computational models. I am also doing computational modeling of RC precast wall-joints. </p>
             </div>
+        
         <div class="columnb" style="overflow-y: scroll; height:400px; scrollbar-width: thin; scrollbar-color: hsl(0 0% 50%);">
             <h4 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h4>
             <ul class="post-list" style="font-size:12px;">
