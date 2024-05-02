@@ -27,7 +27,7 @@ permalink: /test_pubs/
 <div class="publications-container">
   <h1>Journal Publications</h1>
 
-  {% assign publications_by_year = site.data.publications_journal | group_by_exp: 'publication', 'publication.Date | date: "%Y"' | sort: 'name' | reverse %}
+  {% assign publications_by_year = site.data.publications_journals | group_by_exp: 'publication', 'publication.Date | date: "%Y"' | sort: 'name' | reverse %}
 
   {% for year in publications_by_year %}
     <details {% unless forloop.first %} {% endunless %}{% if forloop.index0 == 0 %}open{% endif %}>
