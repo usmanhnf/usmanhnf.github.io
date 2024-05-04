@@ -91,7 +91,7 @@ order: 3
 <li><label for="pj2"> <b> Development of testbed of a prototype bridge for real-time health monitoring of Reinforced
 concrete bridges (NRPU)</b></label></li>
 <ul><b>2023-2025 </b> | Funding agency: <i>National Research Program for Universities (NRPU), Higher Education Commission Pakistan </i></ul>
-<ul> <i>Project Progress </i> <progress id="pj2" value="25" max="100"></progress></ul>
+<ul> <i>Project Progress </i> <progress id="pj2" value="55" max="100"></progress></ul>
 <ul> 
     <ul> 
         <details>
