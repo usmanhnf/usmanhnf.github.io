@@ -1,268 +1,252 @@
 ---
 layout: page
+Title: Testcv
 permalink: /testcv/
 published: true
 ---
 
 
 <style>
-    /* Style for the container */
-    .container {
-        display: flex;
-        justify-content: space-between;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Style for the columns */
-    .column {
-        padding: 20px; /* Add some padding for spacing */
-    }
-
-    /* Style for the left container */
-    .left-container {
-        width: 20%; /* 20% width for the left container */
-        position: sticky;
-        top: 20px; /* Adjust top offset as needed */
-        overflow-y: auto;
-        height: calc(100vh - 40px); /* Subtract top and bottom padding */
-    }
-
-    /* Style for the right container */
-    .right-container {
-        width: 80%; /* 80% width for the right container */
-    }
-    
-
-    /* Style for the sidebar */
-    .sidebar {
-        margin-top: 20px;
-        background-color: #f2f2f2;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 12px;
-    }
-
-    .sidebar ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .sidebar li {
-        margin-bottom: 10px;
-    }
-
-    .sidebar a {
-        text-decoration: none;
-        color: #333;
-    }
-
-    .sidebar a:hover {
-        color: #000;
-    }
-
-    /* Style for the headings */
-    .sidebar h2 {
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    /* Style for CV content */
-    .cv-section {
-        margin-bottom: 20px;
-    }
-
-    .cv-section h2 {
-        font-size: 14px;
-        border-bottom: 2px solid #333;
-        padding-bottom: 5px;
-    }
-
-    .cv-section h3 {
-        font-size: 12px;
-    }
-
-    .cv-section ul {
-        margin-top: 10px;
-        padding-left: 20px;
-        font-size: 12px;
-    }
-
-    .cv-section li {
-        margin-bottom: 5px;
-    }
-
-    .badge {
-    background-color: #007bff; /* Blue color */
-    color: #fff; /* White text color */
-    padding: 5px 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 11px; /* Font size */
+/* CSS styles for projects page */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
+
+.project {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project.full-width {
+  width: calc(100% - 40px); /* Subtracting padding */
+  grid-column: span 3;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* CSS styles for expanded project details */
+.project-details {
+  display: none;
+}
+
+.project.active .project-details {
+  display: block;
+}
+
+/* CSS styles for project summary section */
+.project-summary-container {
+  margin-top: 0px;
+}
+
+.project-summary {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+.project-border {
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.project-summary summary {
+  cursor: pointer;
+  padding: 0px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.project-summary summary:hover {
+  background-color: #e0e0e0;
+}
+
+.project-summary ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-summary li {
+  margin-bottom: 0px;
+  padding-left: 20px; /* Adjust the indent here */  
+}
+
+/* CSS styles for expanded project summary */
+.project-summary[open] details {
+  border-color: #007bff;
+}
+
+.badge {
+    background-color: #28a745; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 2px 2px; /* Padding around the text */
+    border-radius: 2px; /* Rounded corners */
+    font-size: 13px; /* Font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding shadow effect */
+    
+}
+
 </style>
-<h1 align="center"><u>Curriculum Vitae</u></h1>
-<div class="container">
-    <div class="column left-container">
-        <!-- Left Container (Sidebar) -->
-        <div class="sidebar">
-            <ul>
-                <li><a href="#basic-info">Basic Information</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#current-positions">Current Positions</a></li>
-                <li><a href="#previous-positions">Previous Positions</a></li>
-                <li><a href="#funding">Funding</a></li>
-                <li><a href="#teaching-activities">Teaching Activities</a></li>
-                <li><a href="#commissions-of-trust">Commissions of Trust</a></li>
-                <li><a href="#memberships">Memberships</a></li>
-                <li><a href="#publications">Publications</a></li>
 
-            </ul>
-        </div>
+<div class="projects">
+  <div class="project">
+    <img src="/assets/images/project1.jpg" alt="Project 1">
+    <h2>Project 1: Personal Blog</h2>
+    <p>This is my personal blog where I share my thoughts on various topics.</p>
+    <a href="#">View Project</a>
+    <div class="project-details">
+      <p>Additional details about Project 1...</p>
     </div>
-    <div class="column right-container">
-        <!-- Right Container (CV) -->
-        
+  </div>
 
-        <div class="cv-section" id="basic-info">
-            <h2>Basic Information</h2>
-            <ul>
-                <li><strong>Full Name:</strong> Muhammad Usman Hanif</li>
-                <li><strong>Email:</strong> usman.hanif@nice.nust.edu.pk</li>
-                <li><strong>Personal Website:</strong> <a href="https://usmanhnf.github.io/">usmanhnf.github.io/</a></li>
-                <li><strong>Linkedin:</strong> <img src="/assets/images/icons/icon_in.png" alt="Linkedin"  style="width:20px;height:20px;"> <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">Usman Hanif</a></li>
-                <li><strong>Institute Website:</strong> <img src="/assets/images/icons/icon_nust.png" alt="AcademicLink"  style="width:20px;height:20px;"> <a href="https://nice.nust.edu.pk/faculty/muhammad-usman-hanif/" target="_blank">NUST</a></li>
-                <li><strong>Orcid:</strong> <img src="/assets/images/icons/icon_orcid.png" alt="ORCID"  style="width:20px;height:20px;"> <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">0000-0002-1490-2350</a></li>
-                <li><strong>Google Scholar:</strong> <img src="/assets/images/icons/icon_gscholar.jpg" alt="Google Scholar"  style="width:20px;height:20px;"> <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></li>
-                <li><strong>Scopus Link:</strong> <img src="/assets/images/icons/icon_scopus.svg" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">Scopus</a></li>
-                <li><strong>Researchgate:</strong> <img src="/assets/images/icons/icon_rg.png" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">ResearchGate</a></li>
-                <li><strong>Web of Science:</strong> <img src="/assets/images/icons/icon_wos.png" alt="WOS Link"  style="width:20px;height:20px;"> <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">D-9996-2019 </a></li>
-                <li><strong>Github:</strong> <img src="/assets/images/icons/icon_github.png" alt="Github"  style="width:20px;height:20px;"> <a href="https://github.com/usmanhnf" target="_blank">usmanhnf </a></li>
+  <div class="project">
+    <img src="/assets/images/project2.jpg" alt="Project 2">
+    <h2>Project 2: Portfolio Website</h2>
+    <p>A portfolio website showcasing my work, skills, and experiences.</p>
+    <a href="#">View Project</a>
+    <div class="project-details">
+      <p>Additional details about Project 2...</p>
+    </div>
+  </div>
 
-            </ul>
-        </div>
-
-        <div class="cv-section" id="education">
-            <h2>Education</h2>
-            <ul>
-            
-                <li><span class="badge">2014-2018</span> <strong>PhD in Structural Engineering</strong>, University of Malaya, Malaysia</li>
-                <li><span class="badge">2009-2012</span> <strong>MSc in Structural Engineering</strong>, NUST, Pakistan</li>
-                <li><span class="badge">2005-2009</span> <strong>BSc in Civil Engineering</strong>, UET Lahore, Pakistan</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="current-positions">
-            <h2>Current Positions</h2>
-            
-            <ul>
-               <li><span class="badge">2022-2024</span> <strong>Postdoctoral Research Fellow</strong>, Korea National University of Transportation, South Korea</li>
-               <li><span class="badge">2019-2024</span> <strong>Assistant Professor</strong>, National University of Sciences and Technology, Pakistan</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="previous-positions">
-            <h2>Previous Positions</h2>
-             <ul>
-               <li><span class="badge">2009-2011</span> <strong>Construction Manager</strong>, PBRC/WSPA, Pakistan</li>
-               <li><span class="badge">2011-2014</span> <strong>Structural Engineer</strong>, ACES, Pakistan</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="funding">
-            <h2>Funding</h2>
-            <h3>Fellowships</h3>
-            <ul>
-                <li><span class="badge">2018</span> <strong>Recepient - Research Fellowship</strong>,  UMRG Grant on Soil-structure interaction of heritage longhouses in Bario, East Malaysia, University of Malaya, Malaysia</li>   
-                <li><span class="badge">2014-2017</span> <strong>Recepient - Research Fellowship</strong>, Fundamental Research Grant Scheme (FRGS) fellowship PhD in Structural Engineering, University of Malaya, Malaysia</li>
-                <li><span class="badge">2014</span> <strong>Recepient - Postgraduate Research Fund (PPP)</strong>, Damage Detection in Reinforced Concrete Structures, PPP Grants, University of Malaya, Malaysia</li>
-            </ul>
-            <h3>Prizes, Grants and Awards</h3>
-            <ul>
-                <li><span class="badge">2022-2025</span> <strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</li>
-                <li><span class="badge">2021</span> <strong>Recepient - PPAF assignment on revising and improving CPI manual for construction in remote areas</strong>,  Pakistan Poverty Alleviation Fund, Pakistan</li>
-                <li><span class="badge">2021</span> <strong>Recepient - nondestructive evaluation of Steam turbine using eccentric mass vibrator (EMV)</strong>,  ational Engineering Services Pakistan (NESPAK), Pakistan</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="teaching-activities">
-            <h2>Teaching Activities</h2>
-            <h3>Undergraduate Courses</h3>
-            <ul>
-                <li>Engineering Mechanics (ME-107) </li>
-                <li>Mechanics of Solids - I (CE-103)</li>
-                <li>Mechanics of Solids - II (CE-205)</li>
-                <li>Plain and Reinforced Concrete - II (CE-310)</li>
-                <li>Engineering Drawing (KIA 1001)</li>
-            </ul>
-            <h3>Postgraduate Courses</h3>
-            <ul>
-                <li>Advanced Structural Mechanics (CE-807)</li>
-                <li>Advanced Concrete Design (CE-805)</li>
-                <li>Advanced Modeling and Simulation (Fall 2021)</li>
-                <li>Research Methodology (RM-898)</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="commissions-of-trust">
-            <h2>Commissions of Trust</h2>
-            <ul>
-                <li><span class="badge">2024-</span> <strong>Reviewer</strong>:  Measurement, Elsevier</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Steel and Composite Structures, Techno Press</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Advances in Civil Engineering, Hindawi</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Materials, MDPI</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Sustainability, MDPI</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Buildings, MDPI</li>
-                <li><span class="badge">2023-</span> <strong>Reviewer</strong>:  Applied Sciences, MDPI</li>
-                <li><span class="badge">2023-</span> <strong>Member Editorial Board</strong>:  Southern Journal of Engineering & Technology (SJET)</li>
-                <li><span class="badge">2023</span> <strong>Reviewer</strong>:  12th Global Conference on Materials Science and Engineering (CMSE 2023)</li>
-                <li><span class="badge">2022</span> <strong>Reviewer</strong>: 2nd International Symposium on Civil, Environmental, and Infrastructure Engineering (ISCEIE 2022)</li>
-                <li><span class="badge">2022</span> <strong>Reviewer</strong>: 11th Global Conference on Materials Science and Engineering (CMSE 2022)</li>
-                <li><span class="badge">2021</span> <strong>Reviewer</strong>: 10th Global Conference on Materials Science and Engineering (CMSE 2021)</li>
-                <li><span class="badge">2018-</span> <strong>Reviewer</strong>:  Construction and Building Materials, Elsevier</li>
-            </ul>
-        </div>
-
-        <div class="cv-section" id="memberships">
-            <h2>Memberships</h2>
-            <ul>
-                <li><span class="badge">2023-</span> <strong>Full member</strong>, Korea Concrete Institute (KCI), South Korea</li>
-                <li><span class="badge">2023-</span> <strong>Full member</strong>, Architectural Institute of Korea (AIK), South Korea</li>
-                <li><span class="badge">2019-</span> <strong>Professional Engineer (PE)</strong>, Pakistan Engineering Council (Signatory of Washington Accord)</li>
-                <li><span class="badge">2023-</span> <strong>Senior member</strong>, RILEM</li>
-                
-            </ul> 
-        </div>
-
-        <div class="cv-section" id="publications">
-            <h2>Publications</h2>
-            <h3>Journal Publications</h3>
-           <div class="publications-container">
-   <ul>
-    {% assign publications_sorted = site.data.publications_journals | sort: "Date" | reverse %}
-    {% for publication in publications_sorted %}
-      <li>
-        <img src="https://img.shields.io/badge/{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}-lightgreen" alt="Publication Date Badge"> <strong>{{ publication.Title }}</strong><br>
-        Authors: {{ publication.Authors }}<br>
-        Journal: {{ publication.Journal }}<br>
-        <img src="https://img.shields.io/badge/DOI-{{ publication.DOI | uri_escape | replace:'%2D','-' }}-blue" alt="DOI: {{ publication.DOI }}">
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="project">
+    <img src="/assets/images/project3.jpg" alt="Project 3">
+    <h2>Project 3: E-commerce Store</h2>
+    <p>An online store selling various products with payment integration.</p>
+    <a href="#">View Project</a>
+    <div class="project-details">
+      <p>Additional details about Project 3...</p>
+    </div>
+  </div>
 </div>
 
-            <h3>Conference Proceedings</h3>
-            <div class="publications-container">
-   <ul>
-    {% assign publications_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
-    {% for publication in publications_sorted %}
-      <li>
-        <img src="https://img.shields.io/badge/{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}-red" alt="Publication Date Badge"> <strong>{{ publication.Title }}</strong><br>
-        Authors: {{ publication.Authors }}<br>
-        Conference: {{ publication.Conference }}<br>
-        <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow" alt="Location: {{ publication.Location }}">
-      </li>
-    {% endfor %}
-  </ul>
+<ul></ul>
+
+### Research Dissertatins
+
+#### Graduate Research
+
+<div class="project-summary-container">
+  <div class="project-summary">
+  <details class="project-border">
+    <summary><span class="badge">2021</span> Development of Rapid Runway Repair Strategies Using Gene Expression Programming</summary>
+    <ul>
+                    <h5>Authors: <i>Muhammad Mubeen, Hamza Naveed, Qudees Tariq Kayani</i></h5>
+                    <h5><b>Abstract:</b> The Airport infrastructure including approach runways, taxiways, and aprons is the most important and extremely sensitive target to be attacked by the enemy during warfare. Damage to airfield pavements from sophisticated enemy munitions threatens sustained aircraft sorties until the airfield is repaired. Bombing infuses large craters into the airfield infrastructures approaching 20 feet in width. Timely repair to immediately resume the flight operations is the topmost concern of the scenario. Numerous research in terms of materials, equipment, and techniques are globally practiced in the backfill of craters followed by the placement of crown as prefabricated modular elements or in-situ repair with rapid setting and rapid hardening grout. However, there are multiple associated parameters with local conditions that enforce an optimized solution for a particular site. The project aims to analyze all the available alternatives to extract an optimal solution for the restoration of airfields back on operational status following an enemy attack. In this study, Gene Expression Programming (GEP) was used to derive a predictive model of One-Day Compressive Strength of Rapid Hardening Concrete (RHC) mixes. The first objective of developing a database was achieved by doing an extensive literature review of the internationally published research studies. The database contains 115 different data points of 13 numerical variables. Randomly shuffled, 74% of the data was used for the training of the GEP model while the remaining 26% of data was utilized for the validation of the model. GeneXproTools 5.0 were used in our analysis. GEP Regression Analysis was used with function finding analysis in GeneXPro tools. Various quantitative and qualitative were observed during the analysis i.e., R-Squared Value, Mean Absolute Error (MAE), regression plot, residual plot, variable importance, etc. GEP was observed to be an excellent tool in evaluating and constructing statistical models for the compressive strength of RHC. The derived models can be used in the practical pre-planning phase and pre-design phase in terms of a wide range of cementitious materials, admixtures, and additives.  </h5>
+                    <p style="text-align:center;"><img src="/assets/images/research/rapid.png" alt="Gene expression programming" width="500"></p>
+    </ul>
+    </details>
+  </div>
+
+  <div class="project-summary">
+  <details class="project-border">
+    <summary><span class="badge">2021</span> Damage assessment of reinforced concrete beams based on plasticity approach</summary>
+    <ul>
+                    <h5>Author: <i>Farooq Ahmed Athar</i></h5>
+                    <h5><b>Abstract:</b> Utilizing a large numbers of specimens in full-scaled experimental testing to study the behaviour of precast concrete connections can be expensive. An alternative is to cast and carry out a minimal number of experimental tests and then model the connection/structure in a finite element software. The FE model can be validated using the few experimental tests carried out, and FEA can be used to analyze and study the behaviour of the structure. Once validated, further parametric study can be carried out on the FE model. However, the modelling of precast concrete column-to-beam connection has not been explored widely by researchers. One of the main challenges is that modelling precast concrete connection involves complex surface to surface interaction and there is a lack of efficient ways on the modelling of the precast and in-situ concrete surface to surface interaction in finite element software. Hence, the main objective of this research is to model a hidden corbel precast beam-to-column connection in a finite element software, ABAQUS, which is then validated using the proposed precast connection and experimental works by Mokhtar (2017). Initially, the FE model was develop based on the technical drawings of the components and assembly of the precast connection. The FE model is validated when it can simulate similar structural behavior as the experimental tests. The behavior that were used for comparison with the experimental work is the moment–rotation, load–displacement, and the failure cracks patterns’ behavior. In general, the FE model results show similar behaviour with the experimental results, particularly on the load-displacement curve and failure cracks patterns. In addition, using the fixity factor, the connections were also classified as semirigid joint.</h5>
+                    <p style="text-align:center;"><img src="/assets/images/research/Corbel.png" alt="Corbel computational model picture" width="600"></p>
+    </ul>
+    </details>
+  </div>  
 </div>
-        </div>
+
+<ul></ul>
+
+#### Undergraduate Research
+
+<div class="project-summary-container">
+  <div class="project-summary">
+  <details class="project-border">
+    <summary><span class="badge">2021</span> Development of Rapid Runway Repair Strategies Using Gene Expression Programming</summary>
+    <ul>
+                    <h5>Authors: <i>Muhammad Mubeen, Hamza Naveed, Qudees Tariq Kayani</i></h5>
+                    <h5><b>Abstract:</b> The Airport infrastructure including approach runways, taxiways, and aprons is the most important and extremely sensitive target to be attacked by the enemy during warfare. Damage to airfield pavements from sophisticated enemy munitions threatens sustained aircraft sorties until the airfield is repaired. Bombing infuses large craters into the airfield infrastructures approaching 20 feet in width. Timely repair to immediately resume the flight operations is the topmost concern of the scenario. Numerous research in terms of materials, equipment, and techniques are globally practiced in the backfill of craters followed by the placement of crown as prefabricated modular elements or in-situ repair with rapid setting and rapid hardening grout. However, there are multiple associated parameters with local conditions that enforce an optimized solution for a particular site. The project aims to analyze all the available alternatives to extract an optimal solution for the restoration of airfields back on operational status following an enemy attack. In this study, Gene Expression Programming (GEP) was used to derive a predictive model of One-Day Compressive Strength of Rapid Hardening Concrete (RHC) mixes. The first objective of developing a database was achieved by doing an extensive literature review of the internationally published research studies. The database contains 115 different data points of 13 numerical variables. Randomly shuffled, 74% of the data was used for the training of the GEP model while the remaining 26% of data was utilized for the validation of the model. GeneXproTools 5.0 were used in our analysis. GEP Regression Analysis was used with function finding analysis in GeneXPro tools. Various quantitative and qualitative were observed during the analysis i.e., R-Squared Value, Mean Absolute Error (MAE), regression plot, residual plot, variable importance, etc. GEP was observed to be an excellent tool in evaluating and constructing statistical models for the compressive strength of RHC. The derived models can be used in the practical pre-planning phase and pre-design phase in terms of a wide range of cementitious materials, admixtures, and additives.  </h5>
+                    <p style="text-align:center;"><img src="/assets/images/research/rapid.png" alt="Gene expression programming" width="500"></p>
+    </ul>
+    </details>
+  </div>
+
+  <div class="project-summary">
+  <details class="project-border">
+    <summary><span class="badge">2021</span> Damage assessment of reinforced concrete beams based on plasticity approach</summary>
+    <ul>
+                    <h5>Author: <i>Farooq Ahmed Athar</i></h5>
+                    <h5><b>Abstract:</b> Utilizing a large numbers of specimens in full-scaled experimental testing to study the behaviour of precast concrete connections can be expensive. An alternative is to cast and carry out a minimal number of experimental tests and then model the connection/structure in a finite element software. The FE model can be validated using the few experimental tests carried out, and FEA can be used to analyze and study the behaviour of the structure. Once validated, further parametric study can be carried out on the FE model. However, the modelling of precast concrete column-to-beam connection has not been explored widely by researchers. One of the main challenges is that modelling precast concrete connection involves complex surface to surface interaction and there is a lack of efficient ways on the modelling of the precast and in-situ concrete surface to surface interaction in finite element software. Hence, the main objective of this research is to model a hidden corbel precast beam-to-column connection in a finite element software, ABAQUS, which is then validated using the proposed precast connection and experimental works by Mokhtar (2017). Initially, the FE model was develop based on the technical drawings of the components and assembly of the precast connection. The FE model is validated when it can simulate similar structural behavior as the experimental tests. The behavior that were used for comparison with the experimental work is the moment–rotation, load–displacement, and the failure cracks patterns’ behavior. In general, the FE model results show similar behaviour with the experimental results, particularly on the load-displacement curve and failure cracks patterns. In addition, using the fixity factor, the connections were also classified as semirigid joint.</h5>
+                    <p style="text-align:center;"><img src="/assets/images/research/Corbel.png" alt="Corbel computational model picture" width="600"></p>
+    </ul>
+    </details>
+  </div>  
+</div>
+
+
+<script>
+// JavaScript to toggle active class for project details and full width
+document.querySelectorAll('.project').forEach(item => {
+  item.addEventListener('click', event => {
+    // If the clicked project is already active, remove the active and full-width classes
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+      item.classList.remove('full-width');
+    } else {
+      // Remove active class from all projects
+      document.querySelectorAll('.project').forEach(project => {
+        project.classList.remove('active');
+        project.classList.remove('full-width');
+      });
+      
+      // Add active class to clicked project
+      item.classList.add('active');
+      item.classList.add('full-width');
+    }
+  });
+});
+
+// JavaScript to toggle active class for project summary
+document.querySelectorAll('.project-summary').forEach(item => {
+  item.addEventListener('click', event => {
+    // Close all other summaries
+    document.querySelectorAll('.project-summary').forEach(summary => {
+      if (summary !== item) {
+        summary.removeAttribute('open');
+      }
+    });
+  });
+}); 
+</script>
+
 

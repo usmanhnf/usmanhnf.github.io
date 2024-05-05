@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: CV
 permalink: /cv/
 order: 2
@@ -14,6 +14,9 @@ order: 2
         justify-content: space-between;
         font-family: Arial, sans-serif;
     }
+    h1 {
+  text-shadow: 0 0 2px #140000;
+}
 
     /* Style for the columns */
     .column {
@@ -99,12 +102,12 @@ order: 2
     .badge {
     background-color: #007bff; /* Blue color */
     color: #fff; /* White text color */
-    padding: 5px 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
+    padding: 4px 4px; /* Padding around the text */
+    border-radius: 3px; /* Rounded corners */
     font-size: 11px; /* Font size */
 }
 </style>
-<h1 align="center"><u>Curriculum Vitae</u></h1>
+<h1 align="center">Curriculum Vitae</h1>
 <div class="container">
     <div class="column left-container">
         <!-- Left Container (Sidebar) -->
