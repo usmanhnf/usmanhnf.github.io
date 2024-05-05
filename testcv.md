@@ -15,7 +15,8 @@ published: true
 }
 
 .project {
-  border: none;
+  border-style: ridge;
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,6 +36,7 @@ published: true
 
 .project h2 {
   margin-top: 0;
+  font-size: 18px;
 }
 
 .project p {
@@ -112,12 +114,13 @@ published: true
 }
 
 .badge {
-    background-color: #28a745; /* Blue color */
-    color: #fff; /* White text color */
+    background-color: #DAB00E; /* Blue color */
+    color: #333333; /* White text color */
     padding: 2px 2px; /* Padding around the text */
     border-radius: 2px; /* Rounded corners */
-    font-size: 13px; /* Font size */
+    font-size: 12px; /* Font size */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect to the text */
     
 }
 
@@ -125,20 +128,19 @@ published: true
 
 <div class="projects">
   <div class="project">
-    <img src="/assets/images/project1.jpg" alt="Project 1">
-    <h2>Project 1: Personal Blog</h2>
+    <img src="/assets/images/Projects/p1.jpg" alt="Project 1">
+    <h2>Numerical Modeling of Horizontal Joints</h2>
     <p>This is my personal blog where I share my thoughts on various topics.</p>
-    <a href="#">View Project</a>
     <div class="project-details">
-      <p>Additional details about Project 1...</p>
+    <h2>Further details of the project</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
     </div>
   </div>
 
   <div class="project">
     <img src="/assets/images/project2.jpg" alt="Project 2">
-    <h2>Project 2: Portfolio Website</h2>
+    <h2>Prototype Bridge - A testbed for SHM system development</h2>
     <p>A portfolio website showcasing my work, skills, and experiences.</p>
-    <a href="#">View Project</a>
     <div class="project-details">
       <p>Additional details about Project 2...</p>
     </div>
@@ -148,7 +150,6 @@ published: true
     <img src="/assets/images/project3.jpg" alt="Project 3">
     <h2>Project 3: E-commerce Store</h2>
     <p>An online store selling various products with payment integration.</p>
-    <a href="#">View Project</a>
     <div class="project-details">
       <p>Additional details about Project 3...</p>
     </div>
