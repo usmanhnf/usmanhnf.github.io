@@ -25,8 +25,10 @@ order: 4
   }
 
   li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
   }
+  
 </style>
 
 <div class="publications-container">
