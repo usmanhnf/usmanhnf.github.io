@@ -5,7 +5,6 @@ permalink: /testcv/
 published: true
 ---
 
-
 <style>
 /* CSS styles for projects page */
 .projects {
