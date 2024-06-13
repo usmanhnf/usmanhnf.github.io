@@ -97,6 +97,12 @@ order: 2
         font-size: 12px;
     }
 
+        .cv-section ol {
+        margin-top: 10px;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
     .cv-section li {
         margin-bottom: 5px;
     }
@@ -279,7 +285,7 @@ order: 2
             <h2>Publications</h2>
             <h3>Journal Publications</h3>
            <div class="publications-container">
-   <ul>
+   <ol>
     {% assign publications_sorted = site.data.publications_journals | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
@@ -291,12 +297,12 @@ order: 2
         </a>
       </li>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
 
             <h3>Conference Proceedings</h3>
             <div class="publications-container">
-   <ul>
+   <ol>
     {% assign publications_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
@@ -306,7 +312,7 @@ order: 2
         <div class="badge-container"><span class="content doi">Location</span><span class="content badgepub badge-primary">{{ publication.Location }}</span></div>
       </li>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
         </div>
 
