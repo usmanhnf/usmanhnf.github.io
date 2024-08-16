@@ -178,7 +178,7 @@ order: 2
                 <li><strong>Email:</strong> usman.hanif@nice.nust.edu.pk</li>
                 <li><strong>Personal Website:</strong> <a href="https://usmanhnf.github.io/">usmanhnf.github.io/</a></li>
                 <li><strong>Linkedin:</strong> <img src="/assets/images/icons/icon_in.png" alt="Linkedin"  style="width:20px;height:20px;"> <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">Usman Hanif</a></li>
-                <li><strong>Institute Website:</strong> <img src="/assets/images/icons/icon_nust.png" alt="AcademicLink"  style="width:20px;height:20px;"> <a href="https://nice.nust.edu.pk/faculty/muhammad-usman-hanif/" target="_blank">NUST</a></li>
+                <li><strong>Institute Website:</strong> <img src="/assets/images/icons/SDU_Bk.jpg" alt="AcademicLink"  style="height:20px;"> <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">SDU</a></li>
                 <li><strong>Orcid:</strong> <img src="/assets/images/icons/icon_orcid.png" alt="ORCID"  style="width:20px;height:20px;"> <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">0000-0002-1490-2350</a></li>
                 <li><strong>Google Scholar:</strong> <img src="/assets/images/icons/icon_gscholar.jpg" alt="Google Scholar"  style="width:20px;height:20px;"> <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></li>
                 <li><strong>Scopus Link:</strong> <img src="/assets/images/icons/icon_scopus.svg" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">Scopus</a></li>
@@ -199,20 +199,21 @@ order: 2
             </ul>
         </div>
 
-        <div class="cv-section" id="current-positions">
+        <div class="cv-section" id="current-position">
             <h2>Current Positions</h2>
             
             <ul>
-               <li><span class="badge">2022-2024</span> <strong>Postdoctoral Research Fellow</strong>, Korea National University of Transportation, South Korea</li>
-               <li><span class="badge">2019-2024</span> <strong>Assistant Professor</strong>, National University of Sciences and Technology, Pakistan</li>
+               <li><span class="badge">2024-</span> <strong>Assistant Professor</strong>, Institute of Technology and Innovation (ITI), University of Southern Denmark, Denmark</li>
             </ul>
         </div>
 
         <div class="cv-section" id="previous-positions">
             <h2>Previous Positions</h2>
              <ul>
-               <li><span class="badge">2009-2011</span> <strong>Construction Manager</strong>, PBRC/WSPA, Pakistan</li>
+               <li><span class="badge">2022-2024</span> <strong>Postdoctoral Research Fellow</strong>, Korea National University of Transportation, South Korea</li>
+               <li><span class="badge">2019-2024</span> <strong>Assistant Professor</strong>, National University of Sciences and Technology, Pakistan</li>
                <li><span class="badge">2011-2014</span> <strong>Structural Engineer</strong>, ACES, Pakistan</li>
+               <li><span class="badge">2009-2011</span> <strong>Construction Manager</strong>, PBRC/WSPA, Pakistan</li>
             </ul>
         </div>
 
