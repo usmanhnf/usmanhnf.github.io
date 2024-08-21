@@ -57,8 +57,8 @@ h1 {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
-    text-rendering: "geometricPrecision";
-}
+    }
+
 .content {
     display: inline-block;
     padding: 1px 5px;
@@ -66,18 +66,15 @@ h1 {
 }
 .doi {
     background-color: #4f4f4f;
-    text-rendering: "geometricPrecision";
     color: #fff;
     font-family: "Verdana,Geneva,DejaVu Sans,sans-serif";
 }
 .badge {
     background-color: #0375b6;
-    text-rendering: "geometricPrecision";
     color: #f2f0ec;
 }
 .yearbadge {
     font-family: "DejaVu Sans", Times, serif; /* Change font to Times New Roman */
-    text-rendering: "geometricPrecision";
     font-size: 12px;
     background-color: #3c8448;
     color: #fff;
