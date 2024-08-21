@@ -1,88 +1,141 @@
 ---
-layout: page
+layout: default
 permalink: /test_pubs/
 ---
 
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
 <style>
   .publications-container {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
   }
-  summary {
-    cursor: pointer;
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  
+  .entry-container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: inline-table;
+    vertical-align: top
+    }
+
+  .eighty {
+    width: 88%;
+    
   }
-  .publication-item {
-    margin-bottom: 10px; /* Adjust the margin as needed */
+  .twenty {
+    width: 10%;
+    
   }
+
+
+h1 {
+  text-shadow: 0 0 2px #140000;
+}
+  .publications-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .badge-container {
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 4px; /* Adjust border-radius as needed for roundness */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
+    text-rendering: "geometricPrecision";
+}
+.content {
+    display: inline-block;
+    padding: 1px 5px;
+    margin-right: 0; /* Remove margin between elements */
+}
+.doi {
+    background-color: #4f4f4f;
+    text-rendering: "geometricPrecision";
+    color: #fff;
+    font-family: "Verdana,Geneva,DejaVu Sans,sans-serif";
+}
+.badge {
+    background-color: #0375b6;
+    text-rendering: "geometricPrecision";
+    color: #f2f0ec;
+}
+.yearbadge {
+    font-family: "DejaVu Sans", Times, serif; /* Change font to Times New Roman */
+    text-rendering: "geometricPrecision";
+    font-size: 12px;
+    background-color: #3c8448;
+    color: #fff;
+    display: inline-block;
+    padding: 1px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect to the text */
+    border-radius: 4px; /* Adjust border-radius as needed for roundness */
+}
 </style>
 
+<h1 align="center">Publications</h1>
+
 <div class="publications-container">
-  <h1>Journal Publications</h1>
+  <h1 class="publications-title">Journal Publications</h1>
 
-  {% assign publications_by_year = site.data.publications_journals | group_by_exp: 'publication', 'publication.Date | date: "%Y"' | sort: 'name' | reverse %}
+  <ul>
+    {% assign publications_sorted = site.data.publs | sort: "Date" | reverse %}
+    {% for publication in publications_sorted %}
+      <li>
+       <div class="entry-container">
+          <div class="entry-container eighty">
+            <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> <strong>{{ publication.Title }}</strong><br>
+            Authors: {{ publication.Authors }}<br>
+            Journal: {{ publication.Journal }}<br>
+          <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
+          <div class="badge-container"><span class="content doi">DOI</span><span class="content badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
+          </a>
+        </div>
+        <div class="entry-container twenty">
+        {{ publication.plumx }}
+        </div>
+            
+        </div>
+        
 
-  {% for year in publications_by_year %}
-    <details {% unless forloop.first %} {% endunless %}{% if forloop.index0 == 0 %}open{% endif %}>
-      <summary>{{ year.name }}</summary>
-      <ul>
-        {% assign sorted_publications = year.items | sort: 'Date' | reverse %}
-        {% for publication in sorted_publications %}
-          <li class="publication-item"> <!-- Add the class here -->
-            <strong>{{ publication.Title }}</strong>
-            <br>
-            Authors: {% assign authors = publication.Authors | remove: "[" | remove: "]" | split: ", " %}
-            {% for author in authors %}
-              {{ author }}{% unless forloop.last %}, {% endunless %}
-            {% endfor %}<br>
-            Date: {{ publication.Date | date: "%Y-%m-%d" }}<br>
-            {% if publication.Journal %}
-              Journal: {{ publication.Journal }}<br>
-            {% endif %}
-            {% if publication.DOI %}
-              <a href="https://doi.org/{{ publication.DOI }}"><img src="https://img.shields.io/badge/DOI-{{ publication.DOI }}-blue" alt="DOI"></a><br>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </details>
-  {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
+
 <div class="publications-container">
-  <h1>Conference Proceedings</h1>
+  <h1 class="publications-title">Conference Proceedings</h1>
 
-  {% assign conference_publications_by_year = site.data.publications_conferences | group_by_exp: 'publication', 'publication.Date | date: "%Y"' | sort: 'name' | reverse %}
-
-  {% for year in conference_publications_by_year %}
-    <details {% unless forloop.first %} {% endunless %}{% if forloop.index0 == 0 %}open{% endif %}>
-      <summary>{{ year.name }}</summary>
-      <ul>
-        {% assign sorted_conference_publications = year.items | sort: 'Date' | reverse %}
-        {% for publication in sorted_conference_publications %}
-          <li class="publication-item"> <!-- Add the class here -->
-            <strong>{{ publication.Title }}</strong>
-            <br>
-            Authors: {% assign authors = publication.Authors | remove: "[" | remove: "]" | split: ", " %}
-            {% for author in authors %}
-              {{ author }}{% unless forloop.last %}, {% endunless %}
-            {% endfor %}<br>
-            Dates: {{ publication.Date | date: "%Y-%m-%d" }}<br>
-            Conference: {{ publication.Conference }}<br>
-            Location: {{ publication.Location }}<br>
-            {% if publication.DOI %}
-              <a href="https://doi.org/{{ publication.DOI }}"><img src="https://img.shields.io/badge/DOI-{{ publication.DOI }}-blue" alt="DOI"></a><br>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </details>
-  {% endfor %}
+  <ul>
+    {% assign publications_sorted = site.data.confs | sort: "Date" | reverse %}
+    {% for publication in publications_sorted %}
+      <li>
+        <div class="entry-container">
+          <div class="entry-container eighty">
+        <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
+        Authors: {{ publication.Authors }}<br>
+        Conference: {{ publication.Conference }}<br>
+        <div class="badge-container"><span class="content doi">Location</span><span class="content badge badge-primary">{{ publication.Location }}</span></div>
+        </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

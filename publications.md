@@ -5,6 +5,8 @@ permalink: /publications/
 order: 4
 ---
 
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
 <style>
   .publications-container {
     background-color: #f9f9f9;
@@ -14,7 +16,25 @@ order: 4
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
   }
-      h1 {
+  
+  .entry-container {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: inline-table;
+    vertical-align: top
+    }
+
+  .eighty {
+    width: 88%;
+    
+  }
+  .twenty {
+    width: 10%;
+    
+  }
+
+
+h1 {
   text-shadow: 0 0 2px #140000;
 }
   .publications-title {
@@ -38,7 +58,8 @@ order: 4
     border-radius: 4px; /* Adjust border-radius as needed for roundness */
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect to the text */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
+    text-rendering: "geometricPrecision";
 }
 .content {
     display: inline-block;
@@ -46,18 +67,22 @@ order: 4
     margin-right: 0; /* Remove margin between elements */
 }
 .doi {
-    background-color: #5C5C5C;
+    background-color: #4f4f4f;
+    text-rendering: "geometricPrecision";
     color: #fff;
+    font-family: "Verdana,Geneva,DejaVu Sans,sans-serif";
 }
 .badge {
-    background-color: #0F81C1;
-    color: #fff;
+    background-color: #0375b6;
+    text-rendering: "geometricPrecision";
+    color: #f2f0ec;
 }
 .yearbadge {
-    font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
+    font-family: "DejaVu Sans", Times, serif; /* Change font to Times New Roman */
+    text-rendering: "geometricPrecision";
     font-size: 12px;
-    background-color: #93E893;
-    color: #333333;
+    background-color: #3c8448;
+    color: #fff;
     display: inline-block;
     padding: 1px 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -72,15 +97,25 @@ order: 4
   <h1 class="publications-title">Journal Publications</h1>
 
   <ul>
-    {% assign publications_sorted = site.data.publications_journals | sort: "Date" | reverse %}
+    {% assign publications_sorted = site.data.publs | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
-       <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> <strong>{{ publication.Title }}</strong><br>
-        Authors: {{ publication.Authors }}<br>
-        Journal: {{ publication.Journal }}<br>
-        <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
-        <div class="badge-container"><span class="content doi">DOI</span><span class="content badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
-        </a>
+       <div class="entry-container">
+          <div class="entry-container eighty">
+            <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> <strong>{{ publication.Title }}</strong><br>
+            Authors: {{ publication.Authors }}<br>
+            Journal: {{ publication.Journal }}<br>
+          <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
+          <div class="badge-container"><span class="content doi">DOI</span><span class="content badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
+          </a>
+        </div>
+        <div class="entry-container twenty">
+        {{ publication.plumx }}
+        </div>
+            
+        </div>
+        
+
       </li>
     {% endfor %}
   </ul>
@@ -91,13 +126,17 @@ order: 4
   <h1 class="publications-title">Conference Proceedings</h1>
 
   <ul>
-    {% assign publications_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
+    {% assign publications_sorted = site.data.confs | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
+        <div class="entry-container">
+          <div class="entry-container eighty">
         <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
         Authors: {{ publication.Authors }}<br>
         Conference: {{ publication.Conference }}<br>
         <div class="badge-container"><span class="content doi">Location</span><span class="content badge badge-primary">{{ publication.Location }}</span></div>
+        </div>
+        </div>
       </li>
     {% endfor %}
   </ul>
