@@ -3,8 +3,6 @@ layout: default
 permalink: /test_pubs/
 ---
 
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-
 <style>
   .publications-container {
     background-color: #f9f9f9;
