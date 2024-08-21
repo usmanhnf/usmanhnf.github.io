@@ -13,5 +13,6 @@ permalink: /test_pubs/
             Authors: {{ publication.Authors }}<br>
             Journal: {{ publication.Journal }}<br>
 
+{{ publication.plumx }}
 
     {% endfor %}
