@@ -31,11 +31,11 @@ layout: page
     <div class="row">
         <div class="columna">
             <h2><b>Usman</b> Hanif </h2>
-                <p style="font-size:15px;">PhD | PE | Postdoctoral Researcher <a href="https://www.ut.ac.kr/english.do">(KNUT)</a> | Assistant Professor <a href="https://nice.nust.edu.pk/faculty/">(NUST)</a> </p>
+                <p style="font-size:15px;">PhD | PE | Assistant Professor <a href="https://portal.findresearcher.sdu.dk/da/persons/muha">(SDU DenmarkT)</a> </p>
                 <!-- <img src="assets/images/id.jpg" alt="ID" style="float:right;height:200px;"> -->
-                <p style="font-size:13px;">I am an Assistant Professor in Structural Engineering at NUST since 2019. I have PhD in Structural Mechanics from University of Malaya, Malaysia. Before the pursuit of my PhD, I worked full-time as a structural engineer. Currently, as a postdoctoral researcher, I am working on multiple research projects in Korea National University of Transportation (KNUT). My research interests focus on understanding the fracture mechanism of RC structures, and, developing technology in monitoring the progression of damage. Due to my involvement in developind these methods, I have gained experience in sensor development, deploying complex sensing mechanisms. </p>
+                <p style="font-size:13px;">I have joined assistant professor at University of Southern Denmark where I will be teaching as well as conducting research. I will keep my academic activities updated here.  </p>
                 <h3>Research Interests</h3>
-                <p style="font-size:13px;">I am processing acoustic emission (AE) data for continuous monitoring of CFRP retrofitted structural members. My research involves scaled-specimen testing, large data analysis, adapting to IOT-like system for monitoring setup and analytical and computational models. I am also doing computational modeling of RC precast wall-joints. </p>
+                <p style="font-size:13px;">Damage assessment in concrete structures, reusability of structural elements, circularity in construction, NDT for RC members, SHM of existing structures. </p>
             </div>
         
         <div class="columnb" style="overflow-y: scroll; height:400px; scrollbar-width: thin; scrollbar-color: hsl(0 0% 50%);">

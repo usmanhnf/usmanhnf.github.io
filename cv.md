@@ -175,7 +175,7 @@ order: 2
             <h2>Basic Information</h2>
             <ul>
                 <li><strong>Full Name:</strong> Muhammad Usman Hanif</li>
-                <li><strong>Email:</strong> usman.hanif@nice.nust.edu.pk</li>
+                <li><strong>Email:</strong> muha@iti.sdu.dk</li>
                 <li><strong>Personal Website:</strong> <a href="https://usmanhnf.github.io/">usmanhnf.github.io/</a></li>
                 <li><strong>Linkedin:</strong> <img src="/assets/images/icons/icon_in.png" alt="Linkedin"  style="width:20px;height:20px;"> <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">Usman Hanif</a></li>
                 <li><strong>Institute Website:</strong> <img src="/assets/images/icons/SDU_Bk.jpg" alt="AcademicLink"  style="height:20px;"> <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">SDU</a></li>
