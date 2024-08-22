@@ -119,7 +119,7 @@ h1 {
 <div class="publications-container">
   <h1 class="publications-title">Conference Proceedings</h1>
   <ul>
-    {% assign publications_sorted = site.data.conference | sort: "Date" | reverse %}
+    {% assign publications_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
         <div class="entry-container">
