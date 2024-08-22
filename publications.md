@@ -118,18 +118,17 @@ h1 {
 </div>
 <div class="publications-container">
   <h1 class="publications-title">Conference Proceedings</h1>
-
   <ul>
     {% assign publications_sorted = site.data.confs | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
         <div class="entry-container">
           <div class="entry-container eighty">
-        <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
-        Authors: {{ publication.Authors }}<br>
-        Conference: {{ publication.Conference }}<br>
-        <div class="badge-container"><span class="content doi">Location</span><span class="content badge badge-primary">{{ publication.Location }}</span></div>
-        </div>
+            <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
+            Authors: {{ publication.Authors }}<br>
+            Conference: {{ publication.Conference }}<br>
+            <div class="badge-container"><span class="content doi">Location</span><span class="content badge badge-primary">{{ publication.Location }}</span></div>
+          </div>
         </div>
       </li>
     {% endfor %}
