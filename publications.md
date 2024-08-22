@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 order: 4
 ---
+[//]: # "Currently, the publications are picked from the 'publs.yaml' file and the conferences are picked from the 'csv' file. When deployed using the yaml file, the deployment causes error. Still cannot be figured out yet."
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
