@@ -1,0 +1,59 @@
+- title: "Damage assessment of RC structures using cost-effective MEMS accelerometers"
+  year: 2022
+  authors: "Sultani Mulk Khan"
+  abstract: "Acquisition of vibration data using off-the-shelf equipment is a costly procedure, thus constraining the research and development in developing countries. In this research, micro-electromechanical systems (MEMS) accelerometers combined with an Arduino-based data acquisition system, were used to acquire vibration data of a reinforced concrete beam at various damage levels. The recorded data, having lower and varying sampling frequency, were processed to find the fundamental frequency of the beam. The results showed good agreement with the commercially available accelerometers. To integrate the experimental and computational work, a finite element model was developed which showed good agreement with the experiment. It was found that MEMS accelerometers are cost-effective and can be effectively employed for continuous health monitoring of existing civil infrastructure."
+  image_file: "2022sultani.png"
+  level: "pg"
+  degree: "MSc"
+  supervision: "Usman Hanif (S), Azam Khan (Co-S)"
+  institute: "NUST, Pakistan"
+  
+- title: "Damage assessment of reinforced concrete beams based on plasticity approach"
+  year: 2020
+  authors: "Abdul Rehman Shafiq Mughal"
+  abstract: "All structures, as well as crucial civil infrastructure facilities like bridges and highways, deteriorate with time because of varied reasons as well as fatigue failure caused by repetitive traffic masses, effects of environmental conditions, associated extreme events like an earthquake. This needs not simply routine or critical-event based mostly inspections (such as associate earth-quake), however a means of continuous monitoring of a structure to provide an assessment of changes as a function of time and an early warning of an unsafe condition using real-time data. Thus, the health watching of structures has been a hot analysis topic of structural engineering in recent years. Therefore, there is a need to develop a damage detection method which can identify most of the damages in RC structures. The main objective of this research is to model and simulate damage in RC beam with the aid of finite element software, ABAQUS. In order to achieve this goal, material modelling was carried out. Concrete Damaged Plasticity (CDP) model was used to simulate failure of concrete beams.  Static and dynamic analysis were simulated with the aid of ABAQUS. The validation of the numerical model was made through literature data, including static and dynamic testing of RC beams. The relationships between load and deflection, damage level and natural frequency were discussed. The comparison between the results of the numerical model from ABAQUS and literature data showed a similar trend in deflection and damage levels. Furthermore, an insight on non-linearities as damage indicators has been simulated. These damage indicators have been simulated and experimentally proved and have promising prospects in damage detection of structures without the need of baseline data. The research requires to be extended to identifying more non-linear characteristics."
+  image_file: "2022rehman.png"
+  level: "pg"
+  degree: "MSc"
+  supervision: "Usman Hanif (S), Rao Arslan Khushnood (Co-S)"
+  institute: "NUST, Pakistan"
+  
+- title: "Investigating damage in reinforced concrete members using a vibrating wire strain gauge"
+  year: 2022
+  authors: "Hussain Ahmad Sheikh, Sadam Hussain, Asad Nadeem, Muhammad Usman"
+  abstract: "Recently the use of vibrating wire strain gauges has increased to find out the damage in a reinforced concrete structure. The assembly and functioning of this acoustic strain gauge are presented. This gauge provides numerous benefits including its sensitivity to measure strain (up to 1micron) and its property of being easily attached on any concrete surface. The gauge apparatus can be made in a lab due to its low cost which gives it an edge over the conventional systems. The gauge was calibrated after considering the variations in temperature. The purpose of the experimentation was to record the changes in nonlinear vibrations with respect to the damage caused in the reinforced concrete member. These changes were later studied using the vibration tests on the reinforced concrete beam. Nonlinearities were observed by the changes in the fundamental frequency. Discrete Fourier transforms moving window was utilized to analyze the vibration signals specifically the change in frequency with respect to time. The results are presented and reviewed."
+  image_file: "2022hussain.png"
+  level: "ug"
+  degree: "BSc"
+  supervision: "Usman Hanif (S)"
+  institute: "NUST, Pakistan"
+
+- title: "Analysis of a concrete bridge using BIM and 3D reconstruction Technique"
+  year: 2021
+  authors: "Author 3, Author 4"
+  abstract: "Hamza Tariq, Mudassir Ahmad, Ghufran Ahmad, Waleed Afzal Khan"
+  image_file: "image2.png"
+  level: "ug"
+  degree: "BSc"
+  supervision: "Usman Hanif (S)"
+  institute: "NUST, Pakistan"
+
+- title: "Project Title 5"
+  year: 2023
+  authors: "Author 3, Author 4"
+  abstract: "This is the abstract for Project Title 2."
+  image_file: "image2.png"
+  level: "pg"
+  degree: "MSc"
+  supervision: "Usman Hanif (S), Azam Khan (Co-S)"
+  institute: "NUST, Pakistan"
+
+- title: "Project Title 5"
+  year: 2023
+  authors: "Author 3, Author 4"
+  abstract: ""
+  image_file: "image2.png"
+  level: "pg"
+  degree: "MSc"
+  supervision: "Usman Hanif (S), Azam Khan (Co-S)"
+  institute: "NUST, Pakistan"

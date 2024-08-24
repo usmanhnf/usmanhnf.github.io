@@ -20,6 +20,11 @@
   min-height: 100vh;
   flex-direction: column;
 }
+
+::selection {
+  color: #3e3831;
+  background: #d1dba2;
+}
  
  /* Links
  */
@@ -152,7 +157,7 @@ a:hover {
  /* Style for right containers */
  .mainbar {
   padding-left: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   border-left: 2px solid rgb(235, 231, 224);
   border: 2px solid rgb(235, 231, 224);
   font-size: 13px;
@@ -246,4 +251,64 @@ a:hover {
 .twenty {
   width: 10%;
   
+}
+
+/* Styles for Research Page: boxes and carousells */
+
+/* Styles Dissertations */
+
+.collapsible-list {
+  margin: 20px 0;
+  padding: 0px;
+  border: none;
+  list-style-type: none; /* Remove default list styles */
+}
+
+/* Style for each collapsible item container */
+.collapsible-item {
+  margin: 0px; /* Space between each item */
+  overflow: hidden; /* Prevent content overflow */
+  }
+
+.collapsible-title {
+  color: #3e3831;
+  background-color: #eae8e3;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+
+.collapsible-title:after {
+  content: '\002B'; /* Unicode character for "plus" sign */
+  color: #3e3831;
+  font-weight: bold;
+  float: right;
+}
+
+.collapsible-title.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign */
+}
+
+.collapsible-content {
+  padding: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  border-radius: 10px;
+}
+
+.collapsible-content p {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+
+.collapsible-content img {
+  margin-top: 10px;
+  border-radius: 5px;
 }
