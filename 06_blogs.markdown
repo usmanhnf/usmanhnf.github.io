@@ -5,9 +5,9 @@ permalink: /blogs/
 order: 2
 ---
 
-# Blogs posted here
+## Blogs posted here
 
-<h1 class="col-header dark-orange">All posts</h1>
+<h2 class="col-header dark-orange">All posts</h2>
 {% for post in site.posts %}
 <div class="post-preview">
   <img class="post-preview__left" src="{{ post.image }}" alt="{{ page.image_alt }}">
