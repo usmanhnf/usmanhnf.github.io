@@ -8,11 +8,11 @@ order: 4
 
 <div class="publications-container">
     <h1 class="publications-title">Journal Publications</h1>
-    <ul>
+    <ol>
     {% assign publications_sorted = site.data.publs | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
       <li>
-       <div class="entry-container">
+       <div class="mainbar">
             <div class="entry-container eighty">
                 <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> <strong>{{ publication.Title }}</strong><br>
                 Authors: {{ publication.Authors }}<br>
@@ -27,15 +27,15 @@ order: 4
         </div>
     </li>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
 <div class="publications-container">
   <h1 class="publications-title">Conference Proceedings</h1>
-  <ul>
+  <ol>
     {% assign conferences_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
     {% for publication in conferences_sorted %}
       <li>
-        <div class="entry-container">
+        <div class="mainbar">
           <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
@@ -43,5 +43,5 @@ order: 4
         </div>
       </li>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
