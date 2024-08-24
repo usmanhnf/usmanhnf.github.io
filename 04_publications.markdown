@@ -32,8 +32,8 @@ order: 4
 <div class="publications-container">
   <h1 class="publications-title">Conference Proceedings</h1>
   <ul>
-    {% assign publications_sorted = site.data.publsconf | sort: "Date" | reverse %}
-    {% for publication in publications_sorted %}
+    {% assign conferences_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
+    {% for publication in conferences_sorted %}
       <li>
         <div class="entry-container">
           <span class="yearbadge">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
