@@ -1,9 +1,13 @@
 ---
 layout: page
-permalink: /dissertations/
+permalink: /projects/
 ---
-
-<style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <style>
     /* Styles for the grid layout */
     .grid-container {
       display: grid;
@@ -81,7 +85,8 @@ permalink: /dissertations/
       display: block;
     }
   </style>
-
+</head>
+<body>
   <h1>{{ page.title }}</h1>
   <div class="grid-container">
     {% for project in site.data.projects %}
@@ -98,69 +103,8 @@ permalink: /dissertations/
     {% endfor %}
   </div>
 
-<h3><strong>Postgraduate Projects</strong></h3>
-<div class="collapsible-list">
-  {% assign sorted_postgraduate = site.data.dissertations | where: "level", "pg" | sort: "year" | reverse %}
-  {% for project in sorted_postgraduate %}
-  <div class="mainbar">
-  <div class="collapsible-item">
-    <button class="collapsible-title"><span class="yearbadge">{{ project.year }}</span>  {{ project.title }}</button>
-    <div class="collapsible-content">
-      <p><em><strong>Degree:</strong> {{ project.degree }}, 
-      <strong>Authors:</strong> {{ project.authors }},
-      <strong>Supervision:</strong> {{ project.supervision }},
-      <strong>Awarding Institute:</strong> {{ project.institute }}</em></p>
-      <p><strong>Abstract:</strong> {{ project.abstract }}</p>
-      {% if project.image_file %}
-      <img src="{{ '/assets/images/dissertations/' | append: project.image_file }}" alt="{{ project.title }}" style="max-width: 100%;" class="center">
-      {% endif %}
-    </div>
-  </div>
-  </div>
-  {% endfor %}
-</div>
-
-<h3><strong>Undergraduate Projects</strong></h3>
-<div class="collapsible-list">
-  {% assign sorted_undergraduate = site.data.dissertations | where: "level", "ug" | sort: "year" | reverse %}
-  {% for project in sorted_undergraduate %}
-  <div class="mainbar">
-  <div class="collapsible-item">
-    <button class="collapsible-title"><span class="yearbadge">{{ project.year }}</span>  {{ project.title }}</button>
-    <div class="collapsible-content">
-      <p><em><strong>Degree:</strong> {{ project.degree }}, 
-      <strong>Authors:</strong> {{ project.authors }},
-      <strong>Supervision:</strong> {{ project.supervision }},
-      <strong>Awarding Institute:</strong> {{ project.institute }}</em></p>
-      <p><strong>Abstract:</strong> {{ project.abstract }}</p>
-      {% if project.image_file %}
-      <img src="{{ /assets/images/dissertations/' | append: project.image_file }}" alt="{{ project.title }}" style="max-width: 100%;" class="center">
-      {% endif %}
-    </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var coll = document.getElementsByClassName("collapsible-title");
-  for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-});
-
-function toggleProjectDetails(element) {
+  <script>
+    function toggleProjectDetails(element) {
       const isExpanded = element.classList.contains('expanded');
       document.querySelectorAll('.project-box').forEach(box => {
         box.classList.remove('expanded');
@@ -170,4 +114,6 @@ function toggleProjectDetails(element) {
         element.classList.add('expanded');
       }
     }
-</script>
+  </script>
+</body>
+</html>
