@@ -354,7 +354,7 @@ a:hover {
     .project-image {
       width: 100%;
       height: auto;
-      max-height: 125px; /* Controlled height in collapsed state */
+      max-height: 100px; /* Controlled height in collapsed state */
       object-fit: cover; /* Maintain aspect ratio */
       filter: grayscale(100%); /* Apply black-and-white effect */
       transition: all 0.3s ease;
@@ -398,15 +398,16 @@ a:hover {
   }
     progress {
       width: 200px;
-      height: 20px;
+      height: 15px;
       color: #489ea2;
       border-radius: 5px;
       border: 2px solid #100d09;
       overflow: hidden;
-      
       box-shadow: 10px 10px 10px #eae8e3;
       appearance: none;
   }
+
+  
 
 progress::-webkit-progress-value { color: #000;  background: #489ea2; }
 

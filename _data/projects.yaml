@@ -1,31 +1,26 @@
-- title: "Project One"
-  start_date: "2024-01-01"
-  duration: "6 years"
-  progress: 35
-  introduction: "Introduction to Project One."
-  objectives: "Objectives of Project One."
-  image: "abc.png"
-
-- title: "Project Two"
-  start_date: "2024-02-01"
-  duration: "3 months"
-  progress: 50
-  introduction: "Introduction to Project Two."
-  objectives: "Objectives of Project Two."
-  image: "def.png"
-
-- title: "Project Three"
-  start_date: "2024-03-01"
-  duration: "4 months"
+- title: "Revising the current version of Community Physical Infrastructure (CPI) Construction Manual"
+  team: "Usman Hanif (PI), Arsalan Mushtaq (Co-PI), Farooq Ahmed Athar (RA)"
+  date: 2021
+  duration: "6 Months"
   progress: 100
-  introduction: "Introduction to Project Three."
-  objectives: "Objectives of Project Three."
-  image: "ghi.png"
+  introduction: "It was a short project of updating the existing construction manual. The existing manual was aimed at supporting the local communities to manage their infrastructure on their own with very basic engineering knowledge. The task was to transform complex design calculations into design charts which could be used safely by them for the construction of simple structures like houses, water tanks, retaining walls, roads, irrigation systems and bridges"
+  objectives: "Revising the existing design provisions in accordance with the building codes, Simplify the design and provide design charts easily interpretable by the community"
+  image: "2021_cpi.png"
 
-- title: "Project Three"
-  start_date: "2024-03-01"
-  duration: "4 months"
-  progress: 20
-  introduction: "Introduction to Project Three."
-  objectives: "Objectives of Project Three."
-  image: "jkl.png"
+- title: "Development of testbed of a prototype bridge for real-time health monitoring of RC bridges"
+  team: "Athar Ali (PI), Usman Hanif (Co-PI), Muhammad Usman Hassan (Co-PI),  Hamza Ahsan Abdullah (RA MSc student), Janita Mahnoor Shahid (RA MSc student) "
+  date: 2022
+  duration: "3 Years"
+  progress: 70
+  introduction: "Considering the lack of automation and technology in bridge health monitoring systems in pakistan to evaluate the performance of inventory bridges, challenges exist in familiarizing civil engineering industry locally with the SHM techniques. One of these challenges is the lack of monitoring equipment which costs a significant amount thus making the application of these procedures expensive. We have proposed a prototype bridge which acts as a testbed to monitor damage characteristics and the environmental influence on them. This testbed will also be helpful in developing and calibrating sensor and data acquisition technologies for application on the bridges."
+  objectives: "Construction of the prototype bridge, acquiring the baseline data for undamaged stage (vibration characteristics), evaluate the influence of environmental effects in the long term on sensors/structural health, and lastly, developing an automated monitoring system which helps in monitoring the strutcure in real-time"
+  image: "2022_nrpu.png"
+
+- title: "Numerical Investigation of horizontal joint failure mechanism in precast large panel structures"
+  date: 2022
+  team: "Prof Soo-Yeon Seo (PI), Usman Hanif (Postdoc), Muhammad Fawad (PhD student)"
+  duration: "1 Year"
+  progress: 100
+  introduction: "Use of large panel structural systems is an old construction system and has not been much adopted. However, due to the durability of these systems in Europe, the countries with minor to none seismic activities are adopting this construction system because of the possibility of the resuability for sustainability and circularity as well as low-cost of labor. The existing design codes are developed based on local practices in US and Europe. Due to limited resources, the empirical data were obtained from the tests based on which design formulations were developed. This study uses the computational power of the advanced computers and finite element formulations to calibrate the model on existing test data. Then the parametric studies are performed to evaluate the efficacy of the existing design codes."
+  objectives: "Collection of the test data and review of the design procedures for large panel structures. Development of FE model and match with the test data. Conduct parametric studies. Compare design codes based on these parametric studies. Conclude which code is the most reliable for forthcoming designs."
+  image: "2022lps.gif"

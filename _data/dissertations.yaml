@@ -107,3 +107,13 @@
   degree: "MSc"
   supervision: "Prof Soo-Yeon Seo (S), Usman Hanif (Co-S)"
   institute: "Korea National University of Transportation, South Korea"
+
+- title: "Improved damage assessment of RC bridges using advanced signal processing techniques of CEEMDAN-EWT and Kernal PCA"
+  year: 2024
+  authors: "Hamza Ahsan Abdullah"
+  abstract: "Bridges are subjected to a variety of loads throughout their service life, including service loads, seismic events, and environmental forces, which may compromise their structural integrity. As these structures are significant and expensive assets, there is a growing emphasis on using advanced structural health monitoring (SHM) techniques to ensure their safety and longevity. This research introduces a refined approach for the precise detection of damage in bridges using state-of-the-art signal processing methods. In the initial phase, ambient vibration data are captured via accelerometers strategically installed on the bridge to record its response in healthy state for baseline data. Vibrations data are then processed using Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN) to extract intrinsic mode functions (IMFs). These IMFs are used for signal reconstruction followed by further analysis thorough Empirical Wavelet Transform (EWT). This combination efficiently segregates the bridge vibrations into distinct modes, thereby enhancing the identification of potential damages by mitigating noise interference and closely spaced frequencies. The spectral centroids (SC) of these modes are computed using Short-Time Fourier Transform (STFT) to serve as critical damage-sensitive features. Subsequently, an artificial intelligence model utilizing Kernel Principal Component Analysis (KPCA) is employed. This model is trained on baseline data to establish control limits and then used to detect deviations in new datasets by analyzing changes in the Squared Prediction Error (SPE) and Hotelling’s T2 statistic, it enables effective damage detection. The efficacy of this methodology is empirically validated using real-world data collected from the Z-24 bridge, demonstrating its practical applicability and reliability. Additionally, an RC-bridge health condition was also monitored to detect any potential damage. The innovative integration of CEEMDAN, EWT, and KPCA in this research offers a robust framework for early damage detection, promising significant improvements in the maintenance and monitoring of bridge structures, the efficiency of which was validated through performance metrics."
+  image_file: "2024hamza.png"
+  level: "pg"
+  degree: "MSc"
+  supervision: "Athar Ali (S), Usman Hanif (Co-S), Muhammad Usman Hassan (Co-S)"
+  institute: "NUST, Pakistan"
