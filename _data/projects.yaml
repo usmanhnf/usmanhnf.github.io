@@ -1,6 +1,7 @@
 - title: "Project One"
   start_date: "2024-01-01"
-  duration: "6 months"
+  duration: "6 years"
+  progress: 35
   introduction: "Introduction to Project One."
   objectives: "Objectives of Project One."
   image: "abc.png"
@@ -8,6 +9,7 @@
 - title: "Project Two"
   start_date: "2024-02-01"
   duration: "3 months"
+  progress: 50
   introduction: "Introduction to Project Two."
   objectives: "Objectives of Project Two."
   image: "def.png"
@@ -15,6 +17,7 @@
 - title: "Project Three"
   start_date: "2024-03-01"
   duration: "4 months"
+  progress: 100
   introduction: "Introduction to Project Three."
   objectives: "Objectives of Project Three."
   image: "ghi.png"
@@ -22,6 +25,7 @@
 - title: "Project Three"
   start_date: "2024-03-01"
   duration: "4 months"
+  progress: 20
   introduction: "Introduction to Project Three."
   objectives: "Objectives of Project Three."
   image: "jkl.png"
