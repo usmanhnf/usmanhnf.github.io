@@ -473,3 +473,40 @@ progress::-webkit-progress-value { color: #000;  background: #489ea2; }
   margin-bottom: 15px;
   border-radius: 5px;
 }
+
+/* CSSfor collaborators */
+
+#collaborators {
+  padding: 0px;
+}
+
+.colbadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colbadge {
+  background: #ebe7e0;
+  border-radius: 8px;
+  padding: 2.5px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.colbadge:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.colbadge h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.colbadge p {
+  margin: 5px 0;
+  font-size: 0.8em;
+}

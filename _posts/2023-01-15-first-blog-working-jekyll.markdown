@@ -2,10 +2,8 @@
 layout: post
 title:  "Website migrated to Jekyll"
 date:   2023-01-15 23:00:38 +0900
-image: /assets/images/blogs/untitled.png
-tags:
-  - tag1
-  - tag2
+image: /assets/images/blogs/blank.png
+categories: Jekyll
 ---
 
 It has been a painfully steep learning curve in deploying website on GitHub using Jekyll.

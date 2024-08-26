@@ -1,0 +1,34 @@
+- name: Prof Soo-Yeon Seo
+  designation: Professor
+  organization: KNUT, South Korea
+  expertise: Reinforced concrete, composites
+
+- name: Dr. Khaled Ghaedi
+  designation: CEO
+  organization: Pasofal Malaysia
+  expertise: FE Modeling
+
+- name: Dr. Ahad Javanmardi
+  designation: Associate Professor
+  organization: Fuzhou University China
+  expertise: Bridges, FEM
+
+- name: Atif Ahmed
+  designation: Tech Lead
+  organization: INTEL Malaysia
+  expertise: Programming, Data Analysis
+
+- name: Dr. M. Usman Hassan
+  designation: Associate Professor
+  organization: NUST, Pakistan
+  expertise: Digital Twins
+
+- name: Dr. Ahmad Zaki
+  designation: Assistant Professor
+  organization: UMY Indonesia
+  expertise: SHM, RC Structures
+
+- name: Dr. Athar Ali
+  designation: Lecturer
+  organization: NUST, Pakistan
+  expertise: FE Modeling
