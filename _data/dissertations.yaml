@@ -98,10 +98,10 @@
   supervision: "Assoc. Prof Zainah Ibrahim (S), Usman Hanif (Co-S)"
   institute: "University of Malaya, Malaysia"
 
-- title: "Insert Title here"
+- title: "Shear Strengthening and Monitoring of RC T-Beams Using PLNSM CFRP Strips and AE Technique"
   year: 2024
   authors: "Senghong Khol"
-  abstract: ""
+  abstract: "Shear strengthening of reinforced concrete beams using near-surfac mounting (NSM) method with CFRP strips is more effective compared to Externally Bonded Reinforcement (EBR) method because of improved bond strength, better fire resistance and high maintainability. However, during groove work for NSM reinforcement, it may not be easy for the rotating blade of the processing equipment to access the beam-slab edge. Consequently, the application of NSM method becomes more difficult to apply. Therefore, in this study, the effect of reducing in NSM length on the shear strength has been investigated by reinforcing only a part of the height, not the entire web of beam, referred to as the partial-length NSM method (PLNSM). Five RC T-beams were made and tested under symmetrical four-point static loading system. All except one was strengthened in shear in which the effect of reduced NSM length was balanced by inclining the partial-length NSM strips (IPLNSM) or by combining the NSM method with EBR method. Additionally, due to the brittle failure of shear strengthening with CFRP, Non-destructive Acoustic Emission (AE) techniques were carried out to monitor damage progress of three strengthened specimens. The results showed that there was no significant negative effect of reduced NSM length on the strength of the strengthened specimens, and by providing inclined NSM strips, significant improvement in the strength was observed. Furthermore, the hybrid approach combining inclined partial-length NSM (IPLNSM) and the EBR method showed improved strength and deflection capacity. Lastly, when compared with the currently available design procedures, it was found that the Nanni et al. (2004) formulation can predict the design strength of PLNSM and IPLNSM reinforcement, thus making them a viable option for retrofitting reinforced concrete beams. Moreover, AE source location can be used to monitor the initiation of cracks, crack propagation, and damage localization. The damage occurrence can be monitored using energy, while debonding of CFRP sheet can be characterized by using cumulative hit and peak frequency range of 200-300 kHz."
   image_file: "2024khol.png"
   level: "pg"
   degree: "MSc"

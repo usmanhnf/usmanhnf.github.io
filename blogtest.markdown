@@ -2,109 +2,191 @@
 layout: page
 permalink: /blogtest/
 ---
-<style>
-/* General Page Styles */
-.page-title {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  color: #222;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jekyll Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-.page-intro {
-  font-size: 1em;
-  color: #666;
-  text-align: center;
-  margin-bottom: 2em;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-/* Post List Styles */
-.post-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
+        .post-preview {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
 
-/* Post Preview Styles */
-.post-preview {
-  display: flex;
-  align-items: center;
-  height: 50px; /* Reduced height */
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
+        .post-thumbnail {
+            width: auto;
+            height: 2rem; /* Matches the height of the title font size */
+            margin-right: 15px;
+            flex-shrink: 0;
+            border-radius: 3px;
+            object-fit: cover;
+            background-color: #e0e0e0; /* Placeholder background color */
+        }
 
-.post-preview:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px); /* Slightly lifts the post on hover */
-}
+        .post-title {
+            font-size: 2rem;
+            margin: 0;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.post-link {
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-  width: 100%;
-}
+        .post-title:hover {
+            color: #0056b3;
+        }
 
-.post-image {
-  width: 200px; /* Increased image width */
-  height: 50px; /* Height adjusted to match reduced height */
-  object-fit: cover; /* Ensures the image covers the area */
-}
+        .post-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
 
-.post-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin-left: 10px; /* Space between image and content */
-  flex: 1; /* Allows content to take up the remaining space */
-}
+        .post-meta {
+            font-size: 0.9rem;
+            color: #999;
+        }
 
-.post-title {
-  font-size: 2em;
-  margin: 0;
-  color: #333;
-}
+        .sidebar {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.post-tags {
-  margin-top: 0.5em;
-}
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.tag {
-  background: #e0e0e0;
-  color: #333;
-  padding: 0.3em 0.6em;
-  border-radius: 4px;
-  font-size: 0.8em;
-  margin-right: 0.5em;
-  display: inline-block;
-}
+        .pagination a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-  </style>
-<h1 class="page-title">Blogs</h1>
-<p class="page-intro">Explore our latest posts below.</p>
+        .pagination a:hover {
+            background-color: #0056b3;
+        }
 
-<div class="post-list">
-  {% for post in site.posts %}
-    <div class="post-preview">
-      <a class="post-link" href="{{ post.url }}">
-        {% if post.image %}
-          <img class="post-image" src="{{ post.image }}" alt="{{ post.title }}">
-        {% endif %}
-        <div class="post-content">
-          <h2 class="post-title">{{ post.title }}</h2>
-          <div class="post-tags">
-            {% for tag in post.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
+        .search-box {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .search-box input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .categories {
+            list-style: none;
+            padding: 0;
+        }
+
+        .categories li {
+            margin: 10px 0;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .categories a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search posts..." onkeyup="searchPosts()">
         </div>
-      </a>
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Loop through posts -->
+                {% for post in site.posts %}
+                <div class="post-preview" data-title="{{ post.title }}">
+                    {% if post.image %}
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-thumbnail">
+                    {% else %}
+                    <div class="post-thumbnail"></div> <!-- Placeholder for consistency -->
+                    {% endif %}
+                    <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <h3>Categories</h3>
+                    <ul class="categories">
+                        {% for category in site.categories %}
+                        <li>
+                            <a href="{{ category | first | relative_url }}">
+                                {{ category | first }} ({{ category | last | size }})
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+            {% endif %}
+
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+            {% endif %}
+        </div>
     </div>
-  {% endfor %}
-</div>
+
+    <script>
+        function searchPosts() {
+            var input = document.getElementById('search');
+            var filter = input.value.toLowerCase();
+            var posts = document.querySelectorAll('.post-preview');
+
+            posts.forEach(function(post) {
+                var title = post.getAttribute('data-title').toLowerCase();
+                if (title.includes(filter)) {
+                    post.style.display = '';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
