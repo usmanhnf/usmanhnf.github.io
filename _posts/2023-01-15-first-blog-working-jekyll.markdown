@@ -2,7 +2,7 @@
 layout: post
 title:  "Website migrated to Jekyll"
 date:   2023-01-15 23:00:38 +0900
-image: /assets/images/blogs/blank.png
+image: _site/assets/images/blogs/blank.png
 categories: Jekyll
 ---
 
