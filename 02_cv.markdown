@@ -36,6 +36,7 @@ order: 2
                 <li><strong>Scopus Link:</strong> <img src="/assets/icons/icon_scopus.svg" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">Scopus</a></li>
                 <li><strong>Researchgate:</strong> <img src="/assets/icons/icon_rg.png" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">ResearchGate</a></li>
                 <li><strong>Web of Science:</strong> <img src="/assets/icons/icon_wos.png" alt="WOS Link"  style="width:20px;height:20px;"> <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">D-9996-2019 </a></li>
+                <li><strong>SciProfiles:</strong> <img src="/assets/icons/icon_sci.png" alt="SciProfiles Link"  style="width:20px;height:20px;"> <a href="https://sciprofiles.com/profile/444581" target="_blank">44581 </a></li>
                 <li><strong>Github:</strong> <img src="/assets/icons/icon_github.png" alt="Github"  style="width:20px;height:20px;"> <a href="https://github.com/usmanhnf" target="_blank">usmanhnf </a></li>
             </ul>
         </div>
