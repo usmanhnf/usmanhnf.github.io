@@ -3,56 +3,54 @@ layout: page
 permalink: /blogtest/
 ---
 
+<div class="container">
+        <div class="box left-box">
+            <p>Left Container</p>
+        </div>
+        <div class="box right-box">
+            <p>Right Container</p>
+        </div>
+    </div>
+
 <style>
-#collaborators {
-  padding: 10px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
 }
 
-.colbadges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2%; /* Space between containers */
 }
 
-.colbadge {
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 2.5px;
-  text-align: center;
-  width: 220px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.box {
+    flex: 1; /* Equal flex size to start with */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.colbadge:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+.left-box {
+    background-color: #e0f7fa; /* Customize left container color */
 }
 
-.colbadge h3 {
-  margin: 0;
-  font-size: 1em;
+.right-box {
+    background-color: #ffecb3; /* Customize right container color */
 }
 
-.colbadge p {
-  margin: 5px 0;
-  font-size: 0.8em;
+.box:hover {
+    transform: scale(1.001);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-    </style>
-
-
-<section id="collaborators">
-  <h2>Our Collaborators</h2>
-  <div class="colbadges">
-    {% assign collaborators = site.data.collaborators %}
-    {% for collaborator in collaborators %}
-      <div class="colbadge">
-        <p><b>{{ collaborator.name }}</b></p>
-        <p><i>{{ collaborator.designation }}</i></p>
-        <p>{{ collaborator.organization }}</p>
-        <p>{{ collaborator.expertise }}</p>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+</style>
