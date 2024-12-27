@@ -32,7 +32,7 @@ order: 4
 <div class="publications-container">
   <h1 class="publications-title">Conference Proceedings</h1>
   <ol>
-    {% assign conferences_sorted = site.data.publications_conferences | sort: "Date" | reverse %}
+    {% assign conferences_sorted = site.data.publsconf | sort: "Date" | reverse %}
     {% for publication in conferences_sorted %}
       <li>
         <div class="mainbar">

@@ -2,13 +2,21 @@
 ---
 
  @import "minima";
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+ .wrapper {
+  max-width: 1200px; /* Default width */
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 /**
  * Basic styling
  */
  body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto,  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #3e3831;
+  font-family: 'Lora', sans-serif;
+  color: #1e2128;
   background-color: #f0efed;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -22,7 +30,6 @@
 }
 
 ::selection {
-  color: #3e3831;
   background: #d1dba2;
 }
 
@@ -69,11 +76,11 @@ a {
 
 
 a:visited {
-  color: #16949b;
+  color: #302f2f;
 }
 a:hover {
     text-decoration: none;
-    color: #3e3831;
+    color: #1e2128;
     background-color: #c9ddde; /* Example color: Gold */
     border-radius: 3px; /* Adjust to make the corners rounded */
     display: inline-block; /* Makes the background fit the text */
@@ -89,7 +96,7 @@ a:hover {
  * Site header
  */
  .site-header {
-    border-top: 5px solid #3e3831;
+    border-top: 8px solid #0a1838;
     border-bottom: 1px solid #d3cfc9;
     min-height: 55.95px;
     position: relative;
@@ -102,12 +109,10 @@ a:hover {
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-     
   }
   
   .site-title, .site-title:visited, .site-title:hover {
-    color: #3e3831;
+    color: #1e2128;
     background-color: none;
   }
 
@@ -122,10 +127,8 @@ a:hover {
   }
 
   .post-title {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 0px;
+    /*font-weight: bold;*/
     line-height: 1;
     text-align: center;
   }
@@ -198,16 +201,16 @@ a:hover {
 
 .sidebar a {
     text-decoration: none;
-    color: #3e3831;
+    color: #1e2128;
     display: block;
     border: 2px solid #f0efed  ;
 }
 
 .sidebar a:hover {
-    color: #3e3831;
+    color: #1e2128;
     display: block;
     background-color: #d1cdc7;
-    border: 2px solid #3e3831  ;
+    border: 2px solid #1e2128  ;
 }
 
 
@@ -246,7 +249,7 @@ a:hover {
   margin-bottom: 2px;
   font-size: 12px;
   background-color: #efd391;
-  color: #333333;
+  color: #1e2128;
   display: inline-block;
   padding: 0px 5px;
   box-shadow: 0 2px 4px #ab986a; /* Shadow effect */
