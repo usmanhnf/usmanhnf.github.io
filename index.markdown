@@ -73,7 +73,7 @@ layout: post
         line-height: 1.5;
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Lora', sans-serif;
     }
     
     .container {
@@ -114,7 +114,7 @@ layout: post
   margin-bottom: 10px;
   border-left: 0px solid rgb(235, 231, 224);
   border: 0px solid rgb(235, 231, 224);
-  font-size: 10px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -127,15 +127,15 @@ layout: post
 .yearbadge {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 10px;
+  font-size: 12px;
   background-color: #800020;
   color: #E5E6FA;
   display: inline-block;
   padding: 0px 5px;
-  box-shadow: 0 2px 4px #ab986a; /* Shadow effect */
-  text-shadow: 2px 2px 4px #ab986a; /* Add shadow effect to the text */
+  box-shadow: 0 2px 4pxrgb(171, 106, 133); /* Shadow effect */
+  text-shadow: 2px 2px 4pxrgb(171, 106, 155); /* Add shadow effect to the text */
   border-radius: 4px; /* Adjust border-radius as needed for roundness */
-  border-right: 2px solid #ab986a  ;
+  border-right: 2px solidrgb(171, 106, 162)  ;
 }
 
 .box:hover {
@@ -162,7 +162,7 @@ layout: post
     }
     .post-titles {
         text-align: center;
-        font-size: 0.7rem; /* Reduced font size */
+        font-size: 1rem; /* Reduced font size */
         margin: 0;
         color: #3e3831;
         text-decoration: none;
@@ -172,7 +172,7 @@ layout: post
         color: #007bff;
     }
     .post-meta {
-        font-size: 0.6rem; /* Smaller font size for compactness */
+        font-size: 0.7rem; /* Smaller font size for compactness */
         color: #999;
         margin-top: 1px; /* Reduced margin to bring the meta closer to the title */
         font-style: italic;
