@@ -4,10 +4,13 @@ title: Research
 permalink: /research/
 order: 3
 ---
-
+<div class="box only-box">
 From August 2024, I am venturing into my core field with emphasis on `sustainability` and `circularity` while maintaining focus on the core field of structural health monitoring of reinforced concrete structures. It is a work-in-progress, I will be updating my research activities here regularly. 
 
 Coming back to the previous research, my main purpose of building this site was to keep track of my research activity in a single place. Considering this aim, I am including my past research on this page. This includes current or previous research projects, active research collaborations and the outcomes of the students whom I have supervised and cosupervised.
+
+
+<br>
 
 <h2>Research Projects</h2>
 
@@ -49,9 +52,9 @@ Coming back to the previous research, my main purpose of building this site was 
 <div class="collapsible-list">
   {% assign sorted_postgraduate = site.data.dissertations | where: "level", "pg" | sort: "year" | reverse %}
   {% for project in sorted_postgraduate %}
-  <div class="mainbar">
+  <div class="accordian-outline">
   <div class="collapsible-item">
-    <button class="collapsible-title"><span class="yearbadge">{{ project.year }}</span>  {{ project.title }}</button>
+    <button class="collapsible-title"><span class="yearbadge yearbadge-red">{{ project.year }}</span>  {{ project.title }}</button>
     <div class="collapsible-content">
       <p><em><strong>Degree:</strong> {{ project.degree }}, 
       <strong>Authors:</strong> {{ project.authors }},
@@ -71,9 +74,9 @@ Coming back to the previous research, my main purpose of building this site was 
 <div class="collapsible-list">
   {% assign sorted_undergraduate = site.data.dissertations | where: "level", "ug" | sort: "year" | reverse %}
   {% for project in sorted_undergraduate %}
-  <div class="mainbar">
+  <div class="accordian-outline">
   <div class="collapsible-item">
-    <button class="collapsible-title"><span class="yearbadge">{{ project.year }}</span>  {{ project.title }}</button>
+    <button class="collapsible-title"><span class="yearbadge yearbadge-blue">{{ project.year }}</span>  {{ project.title }}</button>
     <div class="collapsible-content">
       <p><em><strong>Degree:</strong> {{ project.degree }}, 
       <strong>Authors:</strong> {{ project.authors }},
@@ -89,7 +92,7 @@ Coming back to the previous research, my main purpose of building this site was 
   {% endfor %}
 </div>
 
-
+</div>
 
 <script>
     function toggleProjectDetails(element) {

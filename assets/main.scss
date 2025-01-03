@@ -136,11 +136,11 @@ a:hover {
   /*box-shadow: $box-shadow;*/
   margin-bottom: 5px;
   /* background-color: #fff;*/
-  border: 2px solid lighten($grey, 40%);
+  border: 2px solid lighten($grey, 42%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding-left: 30px; /* Add space for the numbers */
   position: relative; /* Ensure the numbers do not overlap with content */
-  border-left: 2px solid lighten($grey, 40%); /* Optional styling */
+  
 
   &:hover {
     transform: scale(1);
