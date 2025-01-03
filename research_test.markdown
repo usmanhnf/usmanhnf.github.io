@@ -325,12 +325,13 @@ a:hover {
 
   .eighty {
     width: 78%;
-    border:black;
+    border: black;
   }
 
   .ten {
     width: 10%;
-    border:black;
+    border: black;
   }
 }
+
 </style>
