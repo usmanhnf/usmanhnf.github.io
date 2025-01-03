@@ -15,7 +15,7 @@ order: 2
                 {% else %}
                 <div class="post-thumbnail"></div> <!-- Placeholder for consistency -->
                 {% endif %}
-                <a href="{{ post.url | relative_url }}" class="post-titles">{{ post.title }}</a>
+                <a href="{{ post.url | relative_url }}" class="post-titles">{{ post.title }}</a> &nbsp; &nbsp;  
                 <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
             </div>
             {% endfor %}

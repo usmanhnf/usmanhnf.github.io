@@ -48,7 +48,7 @@ Coming back to the previous research, my main purpose of building this site was 
   </div>
 
 <h2>Student Dissertations</h2>
-<h3><strong>Postgraduate</strong></h3>
+<h3>Postgraduate</h3>
 <div class="collapsible-list">
   {% assign sorted_postgraduate = site.data.dissertations | where: "level", "pg" | sort: "year" | reverse %}
   {% for project in sorted_postgraduate %}
@@ -70,13 +70,13 @@ Coming back to the previous research, my main purpose of building this site was 
   {% endfor %}
 </div>
 
-<h3><strong>Undergraduate</strong></h3>
+<h3>Undergraduate</h3>
 <div class="collapsible-list">
   {% assign sorted_undergraduate = site.data.dissertations | where: "level", "ug" | sort: "year" | reverse %}
   {% for project in sorted_undergraduate %}
   <div class="accordian-outline">
   <div class="collapsible-item">
-    <button class="collapsible-title"><span class="yearbadge yearbadge-blue">{{ project.year }}</span>  {{ project.title }}</button>
+    <button class="collapsible-title"><span class="yearbadge yearbadge-orange">{{ project.year }}</span>  {{ project.title }}</button>
     <div class="collapsible-content">
       <p><em><strong>Degree:</strong> {{ project.degree }}, 
       <strong>Authors:</strong> {{ project.authors }},

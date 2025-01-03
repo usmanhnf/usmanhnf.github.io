@@ -48,7 +48,7 @@ order: 4
       <div class="mainbar">
         <li>
           <div class="entry-container eighty">
-            <span class="yearbadge yearbadge-orange">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
+            <span class="yearbadge yearbadge-green">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
             <div class="doi-container"><span class="doi-text doi-badge">Location</span><span class="doi-text badge badge-primary">{{ publication.Location }}</span></div>

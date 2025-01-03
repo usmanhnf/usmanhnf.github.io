@@ -44,39 +44,39 @@ order: 2
         <div class="mainbar" id="education">
             <h3>Education</h3>
             <ul>
-            <li><span class="yearbadge yearbadge-grey">2014-2018</span> <strong>PhD in Structural Engineering</strong>, University of Malaya, Malaysia</li>
-                <li><span class="yearbadge yearbadge-grey">2009-2012</span> <strong>MSc in Structural Engineering</strong>, NUST, Pakistan</li>
-                <li><span class="yearbadge yearbadge-grey">2005-2009</span> <strong>BSc in Civil Engineering</strong>, UET Lahore, Pakistan</li>
+            <li><span class="yearbadge yearbadge-red">2014-2018</span> <strong>PhD in Structural Engineering</strong>, University of Malaya, Malaysia</li>
+                <li><span class="yearbadge yearbadge-red">2009-2012</span> <strong>MSc in Structural Engineering</strong>, NUST, Pakistan</li>
+                <li><span class="yearbadge yearbadge-red">2005-2009</span> <strong>BSc in Civil Engineering</strong>, UET Lahore, Pakistan</li>
             </ul>
         </div>
         <div class="mainbar" id="current-position">
             <h3>Current Position</h3>
             <ul>
-               <li><span class="yearbadge yearbadge-grey">2024-</span> <strong>Assistant Professor</strong>, Institute of Technology and Innovation (ITI), University of Southern Denmark, Denmark</li>
+               <li><span class="yearbadge yearbadge-red">2024-</span> <strong>Assistant Professor</strong>, Institute of Technology and Innovation (ITI), University of Southern Denmark, Denmark</li>
             </ul>
         </div>
         <div class="mainbar" id="previous-positions">
             <h3>Previous Positions</h3>
              <ul>
-               <li><span class="yearbadge yearbadge-grey">2022-2024</span> <strong>Postdoctoral Research Fellow</strong>, Korea National University of Transportation, South Korea</li>
-               <li><span class="yearbadge yearbadge-grey">2019-2024</span> <strong>Assistant Professor</strong>, National University of Sciences and Technology, Pakistan</li>
-               <li><span class="yearbadge yearbadge-grey">2011-2014</span> <strong>Structural Engineer</strong>, ACES, Pakistan</li>
-               <li><span class="yearbadge yearbadge-grey">2009-2011</span> <strong>Construction Manager</strong>, PBRC/WSPA, Pakistan</li>
+               <li><span class="yearbadge yearbadge-red">2022-2024</span> <strong>Postdoctoral Research Fellow</strong>, Korea National University of Transportation, South Korea</li>
+               <li><span class="yearbadge yearbadge-red">2019-2024</span> <strong>Assistant Professor</strong>, National University of Sciences and Technology, Pakistan</li>
+               <li><span class="yearbadge yearbadge-red">2011-2014</span> <strong>Structural Engineer</strong>, ACES, Pakistan</li>
+               <li><span class="yearbadge yearbadge-red">2009-2011</span> <strong>Construction Manager</strong>, PBRC/WSPA, Pakistan</li>
             </ul>
         </div>
         <div class="mainbar" id="funding">
             <h3>Funding</h3>
             <h4>Fellowships</h4>
             <ul>
-                <li><span class="yearbadge yearbadge-grey">2018</span> <strong>Recepient - Research Fellowship</strong>,  UMRG Grant on Soil-structure interaction of heritage longhouses in Bario, East Malaysia, University of Malaya, Malaysia</li>   
-                <li><span class="yearbadge yearbadge-grey">2014-2017</span> <strong>Recepient - Research Fellowship</strong>, Fundamental Research Grant Scheme (FRGS) fellowship PhD in Structural Engineering, University of Malaya, Malaysia</li>
-                <li><span class="yearbadge yearbadge-grey">2014</span> <strong>Recepient - Postgraduate Research Fund (PPP)</strong>, Damage Detection in Reinforced Concrete Structures, PPP Grants, University of Malaya, Malaysia</li>
+                <li><span class="yearbadge yearbadge-red">2018</span> <strong>Recepient - Research Fellowship</strong>,  UMRG Grant on Soil-structure interaction of heritage longhouses in Bario, East Malaysia, University of Malaya, Malaysia</li>   
+                <li><span class="yearbadge yearbadge-red">2014-2017</span> <strong>Recepient - Research Fellowship</strong>, Fundamental Research Grant Scheme (FRGS) fellowship PhD in Structural Engineering, University of Malaya, Malaysia</li>
+                <li><span class="yearbadge yearbadge-red">2014</span> <strong>Recepient - Postgraduate Research Fund (PPP)</strong>, Damage Detection in Reinforced Concrete Structures, PPP Grants, University of Malaya, Malaysia</li>
             </ul>
             <h4>Prizes, Grants and Awards</h4>
             <ul>
-                <li><span class="yearbadge yearbadge-grey">2022-2025</span> <strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</li>
-                <li><span class="yearbadge yearbadge-grey">2021</span> <strong>Recepient - PPAF assignment on revising and improving CPI manual for construction in remote areas</strong>,  Pakistan Poverty Alleviation Fund, Pakistan</li>
-                <li><span class="yearbadge yearbadge-grey">2021</span> <strong>Recepient - nondestructive evaluation of Steam turbine using eccentric mass vibrator (EMV)</strong>,  ational Engineering Services Pakistan (NESPAK), Pakistan</li>
+                <li><span class="yearbadge yearbadge-red">2022-2025</span> <strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</li>
+                <li><span class="yearbadge yearbadge-red">2021</span> <strong>Recepient - PPAF assignment on revising and improving CPI manual for construction in remote areas</strong>,  Pakistan Poverty Alleviation Fund, Pakistan</li>
+                <li><span class="yearbadge yearbadge-red">2021</span> <strong>Recepient - nondestructive evaluation of Steam turbine using eccentric mass vibrator (EMV)</strong>,  ational Engineering Services Pakistan (NESPAK), Pakistan</li>
             </ul>
         </div>
         <div class="mainbar" id="teaching-activities">
@@ -100,28 +100,28 @@ order: 2
         <div class="mainbar" id="commissions-of-trust">
             <h3>Commissions of Trust</h3>
             <ul>
-                <li><span class="yearbadge yearbadge-grey">2024-</span> <strong>Reviewer</strong>:  Measurement, Elsevier</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Steel and Composite Structures, Techno Press</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Advances in Civil Engineering, Hindawi</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Materials, MDPI</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Sustainability, MDPI</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Buildings, MDPI</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Reviewer</strong>:  Applied Sciences, MDPI</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Member Editorial Board</strong>:  Southern Journal of Engineering & Technology (SJET)</li>
-                <li><span class="yearbadge yearbadge-grey">2023</span> <strong>Reviewer</strong>:  12th Global Conference on Materials Science and Engineering (CMSE 2023)</li>
-                <li><span class="yearbadge yearbadge-grey">2022</span> <strong>Reviewer</strong>: 2nd International Symposium on Civil, Environmental, and Infrastructure Engineering (ISCEIE 2022)</li>
-                <li><span class="yearbadge yearbadge-grey">2022</span> <strong>Reviewer</strong>: 11th Global Conference on Materials Science and Engineering (CMSE 2022)</li>
-                <li><span class="yearbadge yearbadge-grey">2021</span> <strong>Reviewer</strong>: 10th Global Conference on Materials Science and Engineering (CMSE 2021)</li>
-                <li><span class="yearbadge yearbadge-grey">2018-</span> <strong>Reviewer</strong>:  Construction and Building Materials, Elsevier</li>
+                <li><span class="yearbadge yearbadge-red">2024-</span> <strong>Reviewer</strong>:  Measurement, Elsevier</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Steel and Composite Structures, Techno Press</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Advances in Civil Engineering, Hindawi</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Materials, MDPI</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Sustainability, MDPI</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Buildings, MDPI</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Reviewer</strong>:  Applied Sciences, MDPI</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Member Editorial Board</strong>:  Southern Journal of Engineering & Technology (SJET)</li>
+                <li><span class="yearbadge yearbadge-red">2023</span> <strong>Reviewer</strong>:  12th Global Conference on Materials Science and Engineering (CMSE 2023)</li>
+                <li><span class="yearbadge yearbadge-red">2022</span> <strong>Reviewer</strong>: 2nd International Symposium on Civil, Environmental, and Infrastructure Engineering (ISCEIE 2022)</li>
+                <li><span class="yearbadge yearbadge-red">2022</span> <strong>Reviewer</strong>: 11th Global Conference on Materials Science and Engineering (CMSE 2022)</li>
+                <li><span class="yearbadge yearbadge-red">2021</span> <strong>Reviewer</strong>: 10th Global Conference on Materials Science and Engineering (CMSE 2021)</li>
+                <li><span class="yearbadge yearbadge-red">2018-</span> <strong>Reviewer</strong>:  Construction and Building Materials, Elsevier</li>
             </ul>
         </div>
         <div class="mainbar" id="memberships">
             <h3>Memberships</h3>
             <ul>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Full member</strong>, Korea Concrete Institute (KCI), South Korea</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Full member</strong>, Architectural Institute of Korea (AIK), South Korea</li>
-                <li><span class="yearbadge yearbadge-grey">2019-</span> <strong>Professional Engineer (PE)</strong>, Pakistan Engineering Council (Signatory of Washington Accord)</li>
-                <li><span class="yearbadge yearbadge-grey">2023-</span> <strong>Senior member</strong>, RILEM</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Full member</strong>, Korea Concrete Institute (KCI), South Korea</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Full member</strong>, Architectural Institute of Korea (AIK), South Korea</li>
+                <li><span class="yearbadge yearbadge-red">2019-</span> <strong>Professional Engineer (PE)</strong>, Pakistan Engineering Council (Signatory of Washington Accord)</li>
+                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Senior member</strong>, RILEM</li>
             </ul> 
         </div>
         <div class="mainbar" id="publications">

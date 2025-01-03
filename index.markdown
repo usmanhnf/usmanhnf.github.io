@@ -26,6 +26,11 @@ layout: post
      </div>
 </div>
 
+<div class="container">
+    <div class="box only-box">    
+    </div>
+</div>
+
 
 
  <div class="container">

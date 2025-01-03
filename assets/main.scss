@@ -1,6 +1,7 @@
 ---
 ---
 
+
 @import "minima";
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
@@ -12,16 +13,10 @@
   padding: 0 15px;
 }
 
-// Variables
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-$box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
-$border-color: #D1D0CE;
-$background-gray: #E0DFDE;
-$hover-color: #007bff;
-$badgecolor: #002e36; // Default badge color
+
 
 // Custom Color Variables with descriptive names
-$amber: #e67e22; // Amber
+/*$amber: #e67e22; // Amber
 $purple: #6c3483; // Purple
 $blue: #2980b9; // Blue
 $green: #27ae60; // Green
@@ -29,6 +24,24 @@ $red: #c0392b; // Red
 $turquoise: #16a085; // Turquoise
 $orange: #e67e22; // Orange
 $grey: #808080; // Orange
+*/
+$amber: #ffbb00; // Amber
+$purple: #6c3483; // Purple
+$blue: #00a1f1; // Blue
+$green: #7cbb00; // Green
+$red: #8b0000; // Red
+$turquoise: #16a085; // Turquoise
+$orange: #f65314; // Orange
+$grey: #737373; // Orange
+
+// Variables
+$box-shadow: 0 4px 8px lighten($grey, 30%);
+$box-shadow-hover: 0 8px 16px lighten($grey, 20%);
+$border-color: #D1D0CE;
+$background-gray: #E0DFDE;
+$hover-color: #007bff;
+$badgecolor: #002e36; // Default badge color
+
 
 // Base styles
 body {
@@ -36,18 +49,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lora', sans-serif;
-  color: darken($blue, 40%);
+  color: darken($blue, 20%);
+  background-color: lighten($blue, 50%);
+
   
 }
 ::selection {
-  background: #d1dba2;
+  background: lighten($amber, 25%);
 }
 
 
 // Site header
 .site-header {
   border-top: 8px solid darken($blue, 20%);
-  border-bottom: 1px solid #d3cfc9;
+  border-bottom: 1px solid lighten($blue, 40%);
   min-height: 55.95px;
   position: relative;
 }
@@ -62,7 +77,7 @@ body {
 }
 
 .site-title, .site-title:visited, .site-title:hover {
-  color: #1e2128;
+  color: darken($blue, 20%);
   background-color: none;
 }
 
@@ -76,20 +91,21 @@ body {
 
 // Link styles
 a {
-  color: #16949b;
+  color: lighten($blue, 10%);
   text-decoration: none;
 }
 
 a:visited {
-  color: #302f2f;
+  color: darken($blue, 40%);
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #1e2128;
   background-color: lighten($blue, 30%); /* Example color: Gold */
-  border-radius: 3px; /* Adjust to make the corners rounded */
+  border-radius: 5px; /* Adjust to make the corners rounded */
   display: inline-block; /* Makes the background fit the text */
+  margin: 0%;
 }
 
 
@@ -110,8 +126,7 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 5px;
   box-shadow: $box-shadow;
-  background-color: #fff;
-  border: 1px solid lighten($grey, 30%);
+  border: 1px solid lighten($blue, 40%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -124,7 +139,7 @@ a:hover {
 .only-box,
 .left-box,
 .right-box {
-  background-color: lighten($grey, 45%);
+  background-color: lighten($blue, 48%);
 }
 
 /* Style for right containers */
@@ -136,18 +151,16 @@ a:hover {
   /*box-shadow: $box-shadow;*/
   margin-bottom: 5px;
   /* background-color: #fff;*/
-  border: 2px solid lighten($grey, 42%);
+  border: 2px solid lighten($blue, 45%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding-left: 30px; /* Add space for the numbers */
   position: relative; /* Ensure the numbers do not overlap with content */
   
-
   &:hover {
     transform: scale(1);
     box-shadow: $box-shadow-hover;
-    border: 2px solid lighten($grey, 30%);
+    border: 2px solid lighten($blue, 40%);
   }
-
 }
 
 
@@ -214,7 +227,7 @@ a:hover {
     flex-shrink: 0;
     border-radius: 3px;
     object-fit: cover;
-    background-color: #e0e0e0;
+    background-color:lighten($blue, 20%);
   }
 
   .post-titles {
@@ -345,16 +358,17 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 5px;
   box-shadow: $box-shadow;
-  background-color: lighten($grey, 45%);
-  border: 1px solid lighten($grey, 30%);
+  background-color: lighten($blue, 50%);
+  border: 1px solid lighten($blue, 30%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: space-between;
 
   &:hover {
     transform: scale(1);
     box-shadow: $box-shadow-hover;
   }
- display: flex;
- justify-content: space-between;
+
 }
 
 
@@ -388,15 +402,14 @@ width: 80%; /* 80% width for the right container */
   text-decoration: none;
   color: darken($blue, 40%);
   display: block;
-  border: 1px solid #f0efed  ;
+  border: 1px solid  lighten($blue, 50%)  ;
 }
 
 .sidebar a:hover {
   display: block;
-  background-color: lighten($grey, 45%);
+  background-color: lighten($blue, 45%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
-}
+  }
 
 
 /* Style for the Research */
@@ -416,7 +429,7 @@ width: 80%; /* 80% width for the right container */
 
 .project-box {
   padding: 20px;
-  border: 2px solid rgb(235, 231, 224);
+  border: 2px solid lighten($blue, 45%);
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -430,8 +443,8 @@ width: 80%; /* 80% width for the right container */
 
 .project-box:hover {
   transform: scale(1.01);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid #dfdad3;
+  box-shadow: 0px 4px 10px lighten($blue, 40%);
+  border: 2px solid lighten($blue, 40%);
 }
 
 .project-box.expanded {
@@ -482,22 +495,22 @@ width: 80%; /* 80% width for the right container */
   width: 80%;
   max-width: 400px;
   margin-bottom: 20px;
-  background-color: #eae8e3;
+  background-color: lighten($blue, 30%);
 }
 progress {
   width: 200px;
   height: 15px;
-  color: #489ea2;
+  color: $green;
   border-radius: 5px;
   border: 2px solid #100d09;
   overflow: hidden;
-  box-shadow: 10px 10px 10px #eae8e3;
+  box-shadow: 10px 10px 10px lighten($blue, 45%);
   appearance: none;
 }
 
 
 
-progress::-webkit-progress-value { color: #000;  background: #489ea2; }
+progress::-webkit-progress-value { color: #000;  background: $green; }
 
 
 
@@ -510,9 +523,9 @@ progress::-webkit-progress-value { color: #000;  background: #489ea2; }
   border-radius: 5px;
   margin-bottom: 5px;
   box-shadow: $box-shadow;
-  border: 1px solid lighten($grey, 30%);
+  border: 1px solid lighten($blue, 30%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: lighten($grey, 35%);
+  background-color: lighten($blue, 45%);
 
   &:hover {
     transform: scale(1);
@@ -544,7 +557,7 @@ outline: none;
 margin-bottom: 0px;
 font-weight: bold;
 font-family: 'Lora', sans-serif;
-background-color: lighten($grey, 35%);
+background-color: lighten($blue, 45%);
 font-size: 0.9m;
 }
 
@@ -567,7 +580,7 @@ max-height: 0;
 overflow: hidden;
 transition: max-height 0.5s ease-out;
 border-radius:  5px;
-background-color: lighten($grey, 45%);
+background-color: lighten($amber, 30%);
 }
 
 .collapsible-content p {
