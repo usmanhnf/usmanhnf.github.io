@@ -26,10 +26,7 @@ layout: post
      </div>
 </div>
 
-<div class="container">
-    <div class="box only-box">    
-    </div>
-</div>
+
 
 
 
@@ -69,5 +66,55 @@ layout: post
         </div>
     </div>
 
-
+<div class="container">
+    <div class="box only-box">  
+        <div class="social-thumbnails">
+            <div class="social-thumbnail">
+                <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">
+                    <img src="/assets/icons/icon_sdu.png" alt="SDU" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">
+                    <img src="/assets/icons/icon_linkedin.svg" alt="linkedin" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">
+                    <img src="/assets/icons/icon_orcid.svg" alt="orcid" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">
+                    <img src="/assets/icons/icon_gscholar.svg" alt="gcsholar" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">
+                    <img src="/assets/icons/icon_scopus.svg" alt="scopus" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">
+                    <img src="/assets/icons/icon_researchgate.svg" alt="researchgate" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">
+                    <img src="/assets/icons/icon_wos.svg" alt="wos" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://sciprofiles.com/profile/444581" target="_blank">
+                    <img src="/assets/icons/icon_sci.png" alt="sci" />
+                </a>
+            </div>
+            <div class="social-thumbnail">
+                <a href="https://github.com/usmanhnf" target="_blank">
+                    <img src="/assets/icons/icon_github.png" alt="github" />
+                </a>
+            </div>
+        </div> 
+    </div>
+</div>
 

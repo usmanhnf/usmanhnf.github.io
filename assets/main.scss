@@ -51,13 +51,48 @@ body {
   font-family: 'Lora', sans-serif;
   color: darken($blue, 20%);
   background-color: lighten($blue, 50%);
-
-  
-}
+  font-size: 14px;
+  }
 ::selection {
   background: lighten($amber, 25%);
 }
 
+
+/* h1 styles */
+h1 {
+  font-size: 26px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* h2 styles */
+h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* h3 styles */
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+ }
+
+/* h4 styles */
+h4 {
+  font-size: 18x;  
+  margin-bottom: 14px;
+}
+
+/* h5 styles */
+h5 {
+  font-size: 18px;
+  font-weight: light;
+  color: #777777;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #CCCCCC; /* Dashed underline */
+  padding-bottom: 3px;
+}
 
 // Site header
 .site-header {
@@ -91,17 +126,17 @@ body {
 
 // Link styles
 a {
-  color: lighten($blue, 10%);
+  color: darken($blue, 5%);
   text-decoration: none;
 }
 
 a:visited {
-  color: darken($blue, 40%);
+  color: darken($blue, 20%);
 }
 
 a:hover {
   text-decoration: underline;
-  color: #1e2128;
+  color: darken($blue, 30%);
   background-color: lighten($blue, 30%); /* Example color: Gold */
   border-radius: 5px; /* Adjust to make the corners rounded */
   display: inline-block; /* Makes the background fit the text */
@@ -212,7 +247,7 @@ a:hover {
 
 // Post preview styles
 .post-preview {
-  background: lighten($grey, 60%);
+  background: lighten($blue, 50%);
   padding: 8px 12px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -323,7 +358,7 @@ a:hover {
 // Publications container
 
 .publications-container {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .entry-container {
@@ -334,17 +369,17 @@ a:hover {
   border: black;
 
   .eighty {
-    width: 78%;
+    width: 80%;
     border: black;
   }
 
   .ten {
-    width: 10%;
+    width: 9%;
     border: black;
   }
 
   .five {
-    width: 5%;
+    width: 4%;
     border: black;
   }
 }
@@ -600,4 +635,65 @@ border-radius: 5px;
   text-decoration: none;
   display: inline-block;
   font-family: 'Lora', sans-serif;
-  }
+}
+
+
+.social-thumbnails {
+    display: flex;
+    gap: 20px; /* Space between thumbnails */
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+}
+
+.social-thumbnail {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-thumbnail a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-thumbnail img {
+    height: 30px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-thumbnail .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+.social-thumbnail:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
