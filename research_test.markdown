@@ -1,8 +1,6 @@
 ---
 layout: page
-title: Publications
-permalink: /publications/
-order: 4
+permalink: /research_test/
 ---
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
