@@ -1,14 +1,14 @@
 ---
 layout: page
-permalink: /research_test/
+title: Publications
+permalink: /publications/
+order: 4
 ---
-
-
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
 <div class="publications-container">
     <h1>Journal Publications</h1>
-    <div class="box">
+    <div class="row">
     <ol>
     {% assign publications_sorted = site.data.publs | sort: "Date" | reverse %}
     {% for publication in publications_sorted %}
@@ -22,7 +22,10 @@ permalink: /research_test/
                   <div class="doi-container"><span class="doi-text doi-badge">DOI</span><span class="doi-text badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
                 </a>
             </div>
-            <div class="entry-container twenty">
+            <div class="entry-container ten">
+                {{ publication.plumx }}
+            </div>
+            <div class="entry-container ten">
                 {{ publication.plumx }}
             </div>
         </div>
@@ -49,6 +52,7 @@ permalink: /research_test/
     {% endfor %}
   </ol>
 </div>
+
 
 <style>
 // Main layout
@@ -172,20 +176,21 @@ a:hover {
   background-color: lighten($grey, 45%);
 }
 
-// Mainbar styles
+/* Style for right containers */
 .mainbar {
-  padding-left: 0;
-  margin-bottom: 10px;
-  border: 1 solid rgb(235, 231, 224);
+  padding-left: 5px;
+  margin-bottom: 5px;
+  border-left: 2px solid rgb(235, 231, 224);
+  border: 2px solid rgb(235, 231, 224);
   font-size: 14px;
   text-align: left;
-
-  &:hover {
-    border-left: 0 solid #dfdad3;
-    border: 0 solid #dfdad3;
-    color: #000;
-  }
 }
+
+.mainbar:hover {
+  border-left: 2px solid #dfdad3  ;
+  border: 2px solid #dfdad3;
+  color: #000000;
+} 
 
 // Mixin for Year Badge
 @mixin yearbadge($bg-color) {
@@ -325,9 +330,9 @@ a:hover {
     border:black;
   }
 
-  .twenty {
+  .ten {
     width: 10%;
     border:black;
   }
-}    
+}
 </style>
