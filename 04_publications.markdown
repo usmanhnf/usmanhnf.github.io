@@ -17,7 +17,7 @@ order: 4
             <div class="mainbar">
               <li>
                 <div class="entry-container eighty">
-                  <span class="yearbadge yearbadge-red"> {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> <strong>{{ publication.Title }}</strong><br>
+                  <span class="yearbadge yearbadge-red"> {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> &nbsp; <strong>{{ publication.Title }}</strong><br>
                     Authors: {{ publication.Authors }}<br>
                     Journal: {{ publication.Journal }}<br>
                     <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
@@ -48,7 +48,7 @@ order: 4
       <div class="mainbar">
         <li>
           <div class="entry-container eighty">
-            <span class="yearbadge yearbadge-purple">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
+            <span class="yearbadge yearbadge-purple">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span> &nbsp; <strong>{{ publication.Title }}</strong><br>
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
             <div class="conf-container"><span class="conf-text conf-badge">Location</span><span class="conf-text badge badge-primary">{{ publication.Location }}</span></div>
