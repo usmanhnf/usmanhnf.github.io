@@ -7,7 +7,7 @@ order: 4
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-<div class="box only-box">
+<div class="container">
   <h1>Journal Publications</h1>
     <div class="entry-container">
       <ol>

@@ -4,22 +4,22 @@ title: Teaching
 permalink: /teaching/
 order: 5
 ---
-
-
-`update` In fall semeser of 2024, I will be teaching the course of *Advanced Finite Element Analysis*.
-
-In the past, I regularly taught courses related to Mechanics, Finite Element Procedures and Reinforced Concrete Design. These are the courses which I have been teaching during my teaching career. I will be migrating the compiled course material for the courses here as soon as I find time from my research.
-
-#### Undergraduate Courses
-
-* Engineering Mechanics (ME-107)
-* Mechanics of Solid - I (CE-103)
-* Mechanics of Solid - II (CE-205)
-* Plain and Reinforced Concrete - II (CE-310)
-
-
-#### Graduate Courses
-* Advanced Structural Mechanics (CE-800)
-* Advanced Concrete Design (CE-805)
-* Research Methodology (RM-898)
-
+<div class="container">
+    <div class="box only-box">    
+      <p><code>update</code> In fall semeser of 2024, I will be teaching the course of <em>Advanced Finite Element Analysis</em>.</p>
+      <p>In the past, I regularly taught courses related to Mechanics, Finite Element Procedures and Reinforced Concrete Design. These are the courses which I have been teaching during my teaching career. I will be migrating the compiled course material for the courses here as soon as I find time from my research.</p>
+        <h3>Undergraduate Courses</h3>
+            <ul style="list-style-type: square;">
+                <li>Engineering Mechanics (ME-107)</li>
+                <li>Mechanics of Solid - I (CE-103)</li>
+                <li>Mechanics of Solid - II (CE-205)</li>
+                <li>Plain and Reinforced Concrete - II (CE-310)</li>
+            </ul>
+        <h3>Graduate Courses</h3>
+            <ul style="list-style-type: square;">
+                <li>Advanced Structural Mechanics (CE-800)</li>
+                <li>Advanced Concrete Design (CE-805)</li>
+                <li>Research Methodology (RM-898)</li>
+            </ul>
+    </div>
+</div>

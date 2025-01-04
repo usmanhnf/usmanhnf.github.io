@@ -4,15 +4,17 @@ title: Research
 permalink: /research/
 order: 3
 ---
-<div class="box only-box">
-From August 2024, I am venturing into my core field with emphasis on `sustainability` and `circularity` while maintaining focus on the core field of structural health monitoring of reinforced concrete structures. It is a work-in-progress, I will be updating my research activities here regularly. 
 
-Coming back to the previous research, my main purpose of building this site was to keep track of my research activity in a single place. Considering this aim, I am including my past research on this page. This includes current or previous research projects, active research collaborations and the outcomes of the students whom I have supervised and cosupervised.
+<div class="container">
+    <div class="box only-box">    
+      <p> From August 2024, I am venturing into my core field with emphasis on `sustainability` and `circularity` while maintaining focus on the core field of structural health monitoring of reinforced concrete structures. It is a work-in-progress, I will be updating my research activities here regularly. </p>
+      <p>Coming back to the previous research, my main purpose of building this site was to keep track of my research activity in a single place. Considering this aim, I am including my past research on this page. This includes current or previous research projects, active research collaborations and the outcomes of the students whom I have supervised and cosupervised.</p>
+    </div>
+</div>
 
-
-<br>
-
-<h2>Research Projects</h2>
+<div class="container">
+    <div class="box only-box">    
+      <h3>Research Projects</h3>
 
 <div class="grid-container">
 {% assign projects_sorted = site.data.projects | sort: "date" | reverse %}
@@ -30,25 +32,31 @@ Coming back to the previous research, my main purpose of building this site was 
       </div>
     {% endfor %}
   </div>
+    </div>
+</div>
 
-<br>
+<div class="container">
+    <div class="box only-box">    
+      <h3>Collaborators</h3>
+          {% assign collaborators = site.data.collaborators %}
+          <ul style="list-style-type: square;">
+            {% for collaborator in collaborators %}
+              <li>
+                <h5><b>{{ collaborator.name }}</b></h5>
+                  <p style="font-size: 12px; line-height: 0.5;"><i>{{ collaborator.designation }}</i></p>
+                  <p style="font-size: 12px; line-height: 0.5;">{{ collaborator.organization }}</p>
+                  <code style="font-size: 12px; line-height: 0.5;">{{ collaborator.expertise }}</code>
+              </li>
+              <br>
+          {% endfor %}
+          </ul>
+    </div>
+</div>
 
-<h2>Research Collaborations</h2>
-
-<div class="colbadges">
-    {% assign collaborators = site.data.collaborators %}
-    {% for collaborator in collaborators %}
-      <div class="colbadge">
-        <p style="background-color:#3e3831; color: #f0efed;"><b>{{ collaborator.name }}</b></p>
-        <p style="color: #3e3831; line-height: 1;"><i>{{ collaborator.designation }}</i></p>
-        <p style="color: #3e3831; line-height: 1;">{{ collaborator.organization }}</p>
-        <code style="font-size: 12px; line-height: 0.7;">{{ collaborator.expertise }}</code>
-      </div>
-    {% endfor %}
-  </div>
-
-<h2>Student Dissertations</h2>
-<h3>Postgraduate</h3>
+<div class="container">
+    <div class="box only-box">    
+      <h3>Student Dissertations</h3>
+<h4>Postgraduate</h4>
 <div class="collapsible-list">
   {% assign sorted_postgraduate = site.data.dissertations | where: "level", "pg" | sort: "year" | reverse %}
   {% for project in sorted_postgraduate %}
@@ -70,7 +78,7 @@ Coming back to the previous research, my main purpose of building this site was 
   {% endfor %}
 </div>
 
-<h3>Undergraduate</h3>
+<h4>Undergraduate</h4>
 <div class="collapsible-list">
   {% assign sorted_undergraduate = site.data.dissertations | where: "level", "ug" | sort: "year" | reverse %}
   {% for project in sorted_undergraduate %}
@@ -92,7 +100,9 @@ Coming back to the previous research, my main purpose of building this site was 
   {% endfor %}
 </div>
 
+    </div>
 </div>
+
 
 <script>
     function toggleProjectDetails(element) {
@@ -106,7 +116,6 @@ Coming back to the previous research, my main purpose of building this site was 
       }
     }
 </script>
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -124,4 +133,3 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
-

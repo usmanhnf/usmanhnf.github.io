@@ -86,13 +86,11 @@ h4 {
 
 /* h5 styles */
 h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: light;
-  color: #777777;
   margin-bottom: 12px;
-  border-bottom: 1px dashed #CCCCCC; /* Dashed underline */
-  padding-bottom: 3px;
-}
+  border-bottom: 1px dashed $blue; /* Dashed underline */
+  }
 
 // Site header
 .site-header {
@@ -147,6 +145,7 @@ a:hover {
 // Container styles
 .container {
   display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
   width: 95%;
   max-width: 1200px;
   gap: 2%; // Space between containers
@@ -158,6 +157,7 @@ a:hover {
 .box {
   flex: 1; // Equal flex size to start with
   padding: 20px;
+  
   border-radius: 5px;
   margin-bottom: 5px;
   box-shadow: $box-shadow;
@@ -175,6 +175,19 @@ a:hover {
 .left-box,
 .right-box {
   background-color: lighten($blue, 48%);
+  width: 95%;
+}
+
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the boxes if needed */
+    gap: 1em; /* Adjust gap for vertical layout */
+  }
+
+  .box {
+    width: 95%; /* Ensure each box takes full width in the vertical stack */
+  }
 }
 
 /* Style for right containers */
@@ -393,7 +406,7 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 5px;
   box-shadow: $box-shadow;
-  background-color: lighten($blue, 50%);
+  background-color: lighten($blue, 48%);
   border: 1px solid lighten($blue, 30%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -410,6 +423,7 @@ a:hover {
 /* Style for the CV */
 .column {
 padding: 5px; /* Add some padding for spacing */
+
 }
 
 /* Style for the left container */
@@ -419,6 +433,7 @@ position: sticky;
 top: 20px; /* Adjust top offset as needed */
 overflow-y: auto;
 height: calc(100% - 40px);
+
 }
 
 /* Style for the right container */
@@ -446,7 +461,16 @@ width: 80%; /* 80% width for the right container */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
   }
 
-
+/* Responsive Design: Hide sidebar on small screens */
+@media (max-width: 720px) {
+  .left-container {
+    display: none; /* Hide the sidebar */
+  }
+  
+  .right-container {
+    width: 100%; /* Take full width */
+  }
+}
 /* Style for the Research */
 
 .grid-container {

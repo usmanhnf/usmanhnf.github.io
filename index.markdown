@@ -8,21 +8,17 @@ layout: post
 <div class="container">
     <div class="box only-box">    
      <h4>M. Usman Hanif</h4>
-     <div style="font-size: 14px; line-height: 0.75">
      <p>Assistant Professor, SDU Structures, University of Southern Denmark, Odense, Denmark</p>
      <p>Research Interests: <em> Reinforced Concrete | Non Destructive Testing | SHM | FE Modeling</em></p>
-     </div>
      </div>
 </div>
 
 <div class="container">
     <div class="box only-box">    
      <h4>Currently</h4>
-     <div style="font-size: 14px; line-height: 0.75">
      <p>I am involved in teaching and research at SDU Structures</p>
      <p>I am teaching masters course Advanded Finite element Method</p>
      <p>I am finishing my research analysis on acoustic emission application on reinforced concrete beams.</p>
-     </div>
      </div>
 </div>
 
@@ -65,6 +61,8 @@ layout: post
 
         </div>
     </div>
+
+
 
 <div class="container">
     <div class="box only-box">  
@@ -117,4 +115,3 @@ layout: post
         </div> 
     </div>
 </div>
-
