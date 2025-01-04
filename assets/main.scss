@@ -260,13 +260,14 @@ a:hover {
 
 // Post preview styles
 .post-preview {
-  background: lighten($blue, 50%);
+  background: lighten($blue, 45%);
   padding: 8px 12px;
   margin-bottom: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  border: 2px solid lighten($blue, 40%);
 
   .post-thumbnail {
     width: 2rem;
