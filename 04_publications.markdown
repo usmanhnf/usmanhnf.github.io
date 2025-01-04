@@ -7,9 +7,9 @@ order: 4
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-<div class="container">
+<div class="box only-box">
   <h1>Journal Publications</h1>
-    <div class="entry-container">
+
       <ol>
         {% assign publications_sorted = site.data.journals | sort: "Date" | reverse %}
         {% for publication in publications_sorted %}
@@ -35,7 +35,7 @@ order: 4
           </div>
           {% endfor %}
       </ol>
-  </div>
+
 </div>
 
 <br>
