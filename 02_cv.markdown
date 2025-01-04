@@ -76,7 +76,6 @@ order: 2
             <ul>
                 <li><span class="yearbadge yearbadge-red">2022-2025</span> <strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</li>
                 <li><span class="yearbadge yearbadge-red">2021</span> <strong>Recepient - PPAF assignment on revising and improving CPI manual for construction in remote areas</strong>,  Pakistan Poverty Alleviation Fund, Pakistan</li>
-                <li><span class="yearbadge yearbadge-red">2021</span> <strong>Recepient - nondestructive evaluation of Steam turbine using eccentric mass vibrator (EMV)</strong>,  ational Engineering Services Pakistan (NESPAK), Pakistan</li>
             </ul>
         </div>
         <div class="mainbar" id="teaching-activities">
@@ -118,10 +117,10 @@ order: 2
         <div class="mainbar" id="memberships">
             <h3>Memberships</h3>
             <ul>
-                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Full member</strong>, Korea Concrete Institute (KCI), South Korea</li>
-                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Full member</strong>, Architectural Institute of Korea (AIK), South Korea</li>
+                <li><span class="yearbadge yearbadge-red">2023-2024</span> <strong>Full member</strong>, Korea Concrete Institute (KCI), South Korea</li>
+                <li><span class="yearbadge yearbadge-red">2023-2024</span> <strong>Full member</strong>, Architectural Institute of Korea (AIK), South Korea</li>
                 <li><span class="yearbadge yearbadge-red">2019-</span> <strong>Professional Engineer (PE)</strong>, Pakistan Engineering Council (Signatory of Washington Accord)</li>
-                <li><span class="yearbadge yearbadge-red">2023-</span> <strong>Senior member</strong>, RILEM</li>
+                <li><span class="yearbadge yearbadge-red">2023-2024</span> <strong>Senior member</strong>, RILEM</li>
             </ul> 
         </div>
         <div class="mainbar" id="publications">
