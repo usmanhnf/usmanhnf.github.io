@@ -23,6 +23,8 @@ order: 4
                     <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
                       <div class="doi-container"><span class="doi-text doi-badge">DOI</span><span class="doi-text badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
                     </a>
+                    <br>
+                    {{ publication.gcitation }}<br>
                 </div>
                 <div class="entry-container ten">
                   {{ publication.plumx }}
