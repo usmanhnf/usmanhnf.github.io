@@ -21,7 +21,7 @@ order: 4
                     Journal: {{ publication.Journal }}<br>
                     {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
-                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue" alt="DOI: {{ publication.shortDOI }}">
+                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic" alt="DOI: {{ publication.shortDOI }}">
                     </a>
                     {% endif %}
                     {{ publication.gcitation }}<br>
@@ -54,7 +54,7 @@ order: 4
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
             {% if publication.Location %}
-                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow" alt="DOI: {{ publication.shortDOI }}">
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=plastic" alt="DOI: {{ publication.shortDOI }}">
             {% endif %}
             </div>
         
