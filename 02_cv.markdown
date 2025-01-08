@@ -53,7 +53,7 @@ order: 2
                 </div>  
             </ul>
         </div>
-        <div class="mainbar" id="current-position">
+        <div class="mainbar" id="current-position" style="color: midnightblue">
             <h3>Current Position</h3>
             <ul>
                 <div class="grid-container2">
@@ -85,7 +85,7 @@ order: 2
             <h4>Prizes, Grants and Awards</h4>
             <ul>
                 <div class="grid-container2">
-                    <div class="grid-item">2022-2025</div><div class="grid-item">strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</div>
+                    <div class="grid-item">2022-2025</div><div class="grid-item"><strong>Co-PI - Development of testbed of a prototype bridge for real-time health monitoring of Reinforced concrete bridges</strong>,  NRPU research grant by Higher Education Commission (HEC), Pakistan</div>
                     <div class="grid-item">2021</div><div class="grid-item"><strong>Recepient - PPAF assignment on revising and improving CPI manual for construction in remote areas</strong>,  Pakistan Poverty Alleviation Fund, Pakistan</div>
                 </div>
             </ul>
@@ -177,3 +177,12 @@ order: 2
             </div>
     </div>
 </div>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const sidebar = document.querySelector(".left-container");
+    const scrollPosition = window.scrollY; // Get the scroll position
+    sidebar.style.transform = `translateY(${scrollPosition * 0.01}px)`; // Adjust multiplier for effect strength
+  });
+</script>
+
