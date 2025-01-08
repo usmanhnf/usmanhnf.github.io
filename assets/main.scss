@@ -82,6 +82,7 @@ h3 {
 h4 {
   font-size: 18x;  
   margin-bottom: 14px;
+  padding-left: 10px;
 }
 
 /* h5 styles */
@@ -446,6 +447,7 @@ width: 80%; /* 80% width for the right container */
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
+  color: darken($blue, 40%);
   font-size: 13px;
   }
 
@@ -486,6 +488,33 @@ width: 80%; /* 80% width for the right container */
     grid-template-columns: 1fr; /* 1 column grid for very small screens */
   }
 }
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 6fr; /* 1 part for the left side, 3 parts for the right side */
+  grid-template-rows: auto auto;  /* Two rows with automatic height based on content */
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 4fr; /* 1 part for the left side, 3 parts for the right side */
+  grid-template-rows: auto auto;  /* Two rows with automatic height based on content */
+}
+
+.date {
+  padding: 2px;
+  font-size: 0.8em;
+}
+
+.desc {
+  padding: 2px;
+}
+
+.grid-item {
+  padding: 5px;
+  text-align: left;
+}
+
 
 .project-box {
   padding: 20px;

@@ -16,13 +16,12 @@ order: 4
             <div class="mainbar">
               <li>
                 <div class="entry-container eighty">
-                  <span class="yearbadge yearbadge-red"> {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span>  <strong>{{ publication.Title }}</strong><br>
+                <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson"><strong>{{ publication.Title }}</strong><br>
                     Authors: {{ publication.Authors }}<br>
                     Journal: {{ publication.Journal }}<br>
-
                     {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
-                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | uri_escape }}-blue" alt="DOI: {{ publication.shortDOI }}">
+                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue" alt="DOI: {{ publication.shortDOI }}">
                     </a>
                     {% endif %}
                     {{ publication.gcitation }}<br>
@@ -51,11 +50,13 @@ order: 4
       <div class="mainbar">
         <li>
           <div class="entry-container eighty">
-            <span class="yearbadge yearbadge-purple">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span><strong>{{ publication.Title }}</strong><br>
+            <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson">{{ publication.Title }}</strong><br>
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
-            <div class="conf-container"><span class="conf-text conf-badge">Location</span><span class="conf-text badge badge-primary">{{ publication.Location }}</span></div>
-          </div>
+            {% if publication.Location %}
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow" alt="DOI: {{ publication.shortDOI }}">
+            {% endif %}
+            </div>
         
         </li>
       </div>
