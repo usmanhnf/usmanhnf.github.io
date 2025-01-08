@@ -489,13 +489,9 @@ width: 80%; /* 80% width for the right container */
   }
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr 6fr; /* 1 part for the left side, 3 parts for the right side */
-  grid-template-rows: auto auto;  /* Two rows with automatic height based on content */
-}
 
-.grid-container3 {
+
+.grid-container2 {
   display: grid;
   grid-template-columns: 1fr 4fr; /* 1 part for the left side, 3 parts for the right side */
   grid-template-rows: auto auto;  /* Two rows with automatic height based on content */
@@ -505,6 +501,7 @@ width: 80%; /* 80% width for the right container */
   padding: 2px;
   font-size: 0.8em;
 }
+
 
 .desc {
   padding: 2px;

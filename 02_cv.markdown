@@ -28,19 +28,18 @@ order: 2
         <div class="mainbar" id="basic-info">
             <h3>Basic Information</h3>
             <ul>
-            <div class="grid-container3">
+            <div class="grid-container2">
                     <div class="grid-item"><strong>Email:</strong></div><div class="grid-item">muha@iti.sdu.dk</div>
-                    <div class="grid-item"><strong>Institute Website:</strong></div><div class="grid-item"><img src="/assets/icons/icon_sdu.png" alt="AcademicLink"  style="height:16px;"> <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">SDU</a></div>
+                    <div class="grid-item"><strong>Institute Website:</strong></div><div class="grid-item"><img src="/assets/icons/icon_sdu.png" alt="AcademicLink"  style="height:20px;"> <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">SDU</a></div>
                     <div class="grid-item"><strong>Personal Website:</strong></div><div class="grid-item"><a href="https://usmanhnf.github.io/">usmanhnf.github.io/</a></div>
-                    <div class="grid-item"><strong>Linkedin:</strong></div><div class="grid-item"><img src="/assets/icons/icon_linkedin.svg" alt="Linkedin"  style="width:20px;height:20px;"> <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">Usman Hanif</a></div>
-                    <div class="grid-item"><strong>Orcid:</strong></div><div class="grid-item"><img src="/assets/icons/icon_orcid.svg" alt="ORCID"  style="width:20px;height:20px;"> <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">0000-0002-1490-2350</a></div>
-                    <div class="grid-item"><strong>Google Scholar:</strong></div><div class="grid-item"><img src="/assets/icons/icon_gscholar.svg" alt="Google Scholar"  style="width:20px;height:20px;"> <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></div>
-                    <div class="grid-item"><strong>Email:</strong></div><div class="grid-item">muha@iti.sdu.dk</div>
-                    <div class="grid-item"><strong>Scopus Link:</strong></div><div class="grid-item"><img src="/assets/icons/icon_scopus.svg" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">Scopus</a></div>
-                    <div class="grid-item"><strong>Researchgate:</strong></div><div class="grid-item"><img src="/assets/icons/icon_researchgate.svg" alt="Scopus Link"  style="width:20px;height:20px;"> <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">ResearchGate</a></div>
-                    <div class="grid-item"><strong>Web of Science:</strong></div><div class="grid-item"><img src="/assets/icons/icon_wos.svg" alt="WOS Link"  style="width:20px;height:20px;"> <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">D-9996-2019 </a></div>
-                    <div class="grid-item"><strong>SciProfiles:</strong></div><div class="grid-item"><img src="/assets/icons/icon_sci.png" alt="SciProfiles Link"  style="width:20px;height:20px;"> <a href="https://sciprofiles.com/profile/444581" target="_blank">44581 </a></div>
-                    <div class="grid-item"><strong>Github:</strong></div><div class="grid-item"><img src="/assets/icons/icon_github.png" alt="Github"  style="width:20px;height:20px;"> <a href="https://github.com/usmanhnf" target="_blank">usmanhnf </a></div>
+                    <div class="grid-item"><strong>Linkedin:</strong></div><div class="grid-item"><img src="/assets/icons/icon_linkedin.svg" alt="Linkedin"  style="height:20px;"> <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">Usman Hanif</a></div>
+                    <div class="grid-item"><strong>Orcid:</strong></div><div class="grid-item"><img src="/assets/icons/icon_orcid.svg" alt="ORCID"  style="height:20px;"> <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">0000-0002-1490-2350</a></div>
+                    <div class="grid-item"><strong>Google Scholar:</strong></div><div class="grid-item"><img src="/assets/icons/icon_gscholar.svg" alt="Google Scholar"  style="height:20px;"> <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></div>
+                    <div class="grid-item"><strong>Scopus Link:</strong></div><div class="grid-item"><img src="/assets/icons/icon_scopus.svg" alt="Scopus Link"  style="height:20px;"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">Scopus</a></div>
+                    <div class="grid-item"><strong>Researchgate:</strong></div><div class="grid-item"><img src="/assets/icons/icon_researchgate.svg" alt="Scopus Link"  style="height:20px;"> <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">ResearchGate</a></div>
+                    <div class="grid-item"><strong>Web of Science:</strong></div><div class="grid-item"><img src="/assets/icons/icon_wos.svg" alt="WOS Link"  style="height:20px;"> <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">D-9996-2019 </a></div>
+                    <div class="grid-item"><strong>SciProfiles:</strong></div><div class="grid-item"><img src="/assets/icons/icon_sci.png" alt="SciProfiles Link"  style="height:20px;"> <a href="https://sciprofiles.com/profile/444581" target="_blank">44581 </a></div>
+                    <div class="grid-item"><strong>Github:</strong></div><div class="grid-item"><img src="/assets/icons/icon_github.png" alt="Github"  style="height:20px;"> <a href="https://github.com/usmanhnf" target="_blank">usmanhnf </a></div>
             </div>
   </ul>
         </div>
