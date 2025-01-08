@@ -45,15 +45,14 @@ layout: post
         </div>
         <div class="box right-box">
             <h4>Recent Publications</h4>
-    {% assign recent_publications = site.data.publs | sort: "Date" | reverse | slice: 0, 3 %}
+    {% assign recent_publications = site.data.journals | sort: "Date" | reverse | slice: 0, 3 %}
     {% for publication in recent_publications %}
         <div class="mainbar">
-            <span class="yearbadge yearbadge-red">{{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }}</span>
-                <strong>{{ publication.Title }}</strong><br>
+            <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson?style=flat-square"> &nbsp; <strong>{{ publication.Title }}</strong><br>
                 Journal:<em> {{ publication.Journal }}</em><br>
                 {% if publication.DOI %}
-                    <a href="{{ publication.DOI }}" target="_blank" class="badge-link">
-                        <div class="doi-container"><span class="doi-text doi-badge">DOI</span><span class="doi-text badge badge-primary">{{ publication.DOI | uri_escape | replace:'%2D','-' }}</span></div>
+                    <a href="{{ publication.DOI }}" target="_blank">
+                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic" alt="DOI: {{ publication.shortDOI }}">
                     </a>
                 {% endif %}
         </div>

@@ -16,7 +16,7 @@ order: 4
             <div class="mainbar">
               <li>
                 <div class="entry-container eighty">
-                <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson"><strong>{{ publication.Title }}</strong><br>
+                <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
                     Authors: {{ publication.Authors }}<br>
                     Journal: {{ publication.Journal }}<br>
                     {% if publication.shortDOI %}
@@ -50,7 +50,7 @@ order: 4
       <div class="mainbar">
         <li>
           <div class="entry-container eighty">
-            <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson">{{ publication.Title }}</strong><br>
+            <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
             Authors: {{ publication.Authors }}<br>
             Conference: {{ publication.Conference }}<br>
             {% if publication.Location %}
