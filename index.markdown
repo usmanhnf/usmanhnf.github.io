@@ -17,7 +17,7 @@ layout: post
     <div class="box only-box">    
      <h4>Currently</h4>
      <p>I am involved in teaching and research at SDU Structures</p>
-     <p>I am teaching masters course Advanded Finite element Method</p>
+     <p>I am teaching the courses related to Finite Element Procedures at Bachelors and Masters levels.</p>
      <p>I am finishing my research analysis on acoustic emission application on reinforced concrete beams.</p>
      </div>
 </div>
