@@ -1,759 +1,83 @@
----
----
+// main.scss
 
+// --------------------------
+// Import Google Font
+// --------------------------
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
-@import "minima";
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-
-html {
-  scroll-behavior: smooth;
-}
-
-// Main layout
-.wrapper {
-  max-width: 1200px; /* Default width */
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-
-
-// Custom Color Variables with descriptive names
-/*$amber: #e67e22; // Amber
-$purple: #6c3483; // Purple
-$blue: #2980b9; // Blue
-$green: #27ae60; // Green
-$red: #c0392b; // Red
-$turquoise: #16a085; // Turquoise
-$orange: #e67e22; // Orange
-$grey: #808080; // Orange
-*/
-$amber: #ffbb00; // Amber
-$purple: #6c3483; // Purple
-$blue: #00a1f1; // Blue
-$green: #7cbb00; // Green
-$red: #8b0000; // Red
-$turquoise: #16a085; // Turquoise
-$orange: #f65314; // Orange
-$grey: #737373; // Orange
-
+// --------------------------
 // Variables
-$box-shadow: 0 4px 8px lighten($grey, 30%);
-$box-shadow-hover: 0 8px 16px lighten($grey, 20%);
-$border-color: #D1D0CE;
-$background-gray: #E0DFDE;
-$hover-color: #007bff;
-$badgecolor: #002e36; // Default badge color
+// --------------------------
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333333;
+$background-color: #f9f9f9;
+$container-max-width: 1200px;
+$container-padding: 15px;
+$font-family-base: 'Inika', serif;
 
-
-// Base styles
+// --------------------------
+// Base Styles
+// --------------------------
 body {
-  line-height: 1.5;
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  font-family: 'Lora', sans-serif;
-  color: darken($blue, 20%);
-  background-color: lighten($blue, 50%);
-  font-size: 14px;
-  scroll-behavior: smooth;
-
-  }
-::selection {
-  background: lighten($green, 40%);
 }
 
-
-/* h1 styles */
-h1 {
-  font-size: 26px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  margin-bottom: 1rem;
 }
 
-/* h2 styles */
-h2 {
-  font-size: 22px;
-  text-transform: capitalize;
-  margin-bottom: 10px;
+// Paragraphs
+p {
+  margin-bottom: 1rem;
 }
 
-/* h3 styles */
-h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
- }
-
-/* h4 styles */
-h4 {
-  font-size: 18x;  
-  margin-bottom: 14px;
-  padding-left: 10px;
-}
-
-/* h5 styles */
-h5 {
-  font-size: 16px;
-  font-weight: light;
-  margin-bottom: 12px;
-  border-bottom: 1px dashed $blue; /* Dashed underline */
-  }
-
-// Site header
-.site-header {
-  border-top: 8px solid darken($blue, 20%);
-  border-bottom: 1px solid lighten($blue, 40%);
-  min-height: 55.95px;
-  position: relative;
-}
-
-.site-title {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 54px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-}
-
-.site-title, .site-title:visited, .site-title:hover {
-  color: darken($blue, 20%);
-  background-color: none;
-}
-
-.post-title {
-  //font-size: 30px;
-  /*font-weight: bold;*/
-  line-height: 1;
-  text-align: center;
-}
-
-
-// Link styles
-a {
-  color: darken($blue, 5%);
-  text-decoration: none;
-}
-
-a:visited {
-  color: darken($blue, 20%);
-}
-
-a:hover {
-  text-decoration: underline;
-  color: darken($blue, 30%);
-  background-color: lighten($blue, 30%); /* Example color: Gold */
-  border-radius: 5px; /* Adjust to make the corners rounded */
-  display: inline-block; /* Makes the background fit the text */
-  margin: 0%;
-}
-
-
-// Container styles
+// --------------------------
+// Containers
+// --------------------------
 .container {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping to the next line */
-  width: 95%;
-  max-width: 1200px;
-  gap: 2%; // Space between containers
-  justify-content: space-between;
-  padding-top: 1em;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
 }
 
-// Box styles
-.box {
-  flex: 1; // Equal flex size to start with
-  padding: 20px;
-  
-  border-radius: 5px;
-  margin-bottom: 5px;
-  box-shadow: $box-shadow;
-  border: 1px solid lighten($blue, 40%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1);
-    box-shadow: $box-shadow-hover;
-  }
-}
-
-// Specific box styles
-.only-box,
-.left-box,
-.right-box {
-  background-color: lighten($blue, 48%);
-  width: 95%;
-}
-
-@media (max-width: 720px) {
-  .container {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align the boxes if needed */
-    gap: 1em; /* Adjust gap for vertical layout */
-  }
-
-  .box {
-    width: 95%; /* Ensure each box takes full width in the vertical stack */
-  }
-}
-
-/* Style for right containers */
-.mainbar {
-  
-  flex: 1; // Equal flex size to start with
-  padding: 10px;
-  border-radius: 2px;
-  /*box-shadow: $box-shadow;*/
-  margin-bottom: 5px;
-  /* background-color: #fff;*/
-  border: 2px solid lighten($blue, 45%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding-left: 30px; /* Add space for the numbers */
-  position: relative; /* Ensure the numbers do not overlap with content */
-  
-  &:hover {
-    transform: scale(1);
-    box-shadow: $box-shadow-hover;
-    border: 2px solid lighten($blue, 40%);
-  }
-}
-
-
-// Mixin for Year Badge
-@mixin yearbadge($bg-color) {
-  background-color: $bg-color;
-  color: #E5E6FA;
-  font-size: 12px;
-  display: inline-block;
-  padding: 0 5px;
-  box-shadow: 0 2px 4px darken($bg-color, 10%);
-  text-shadow: 2px 2px 4px darken($bg-color, 5%);
-  border-radius: 4px;
-  border-right: 2px solid darken($bg-color, 10%);
-}
-
-// Year badge styles using custom colors
-.yearbadge-amber {
-  @include yearbadge($amber); // Amber
-}
-
-.yearbadge-purple {
-  @include yearbadge($purple); // Purple
-}
-
-.yearbadge-blue {
-  @include yearbadge($blue); // Blue
-}
-
-.yearbadge-green {
-  @include yearbadge($green); // Green
-}
-
-.yearbadge-red {
-  @include yearbadge($red); // Red
-}
-
-.yearbadge-turquoise {
-  @include yearbadge($turquoise); // Turquoise
-}
-
-.yearbadge-orange {
-  @include yearbadge($orange); // Orange
-}
-
-.yearbadge-grey {
-  @include yearbadge($grey); // grey
-}
-
-// Post preview styles
-.post-preview {
-  background: lighten($blue, 45%);
-  padding: 8px 12px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  border: 2px solid lighten($blue, 40%);
-
-  .post-thumbnail {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 10px;
-    flex-shrink: 0;
-    border-radius: 3px;
-    object-fit: cover;
-    background-color:lighten($blue, 20%);
-  }
-
-  .post-titles {
-    text-align: center;
-    font-size: 1rem;
-    margin: 0;
-    color: darken($blue,30%);
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: $hover-color;
-    }
-  }
-
-  .post-meta {
-    font-size: 0.8rem;
-    color: $grey;
-    margin-top: 1px;
-    font-style: italic;
-    text-align: right;
-  }
-}
-
-//* DOI Container */
-.doi-container {
-  display: inline-block;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 13px;
-  font-weight: normal;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
-  text-rendering: "geometricPrecision";
-  margin-bottom: 0px;
-}
-
-.doi-text {
-  display: inline-block;
-  background-color: #0f81c1;
-  color: #fffbee;
-  padding: 1px 5px;
-  margin-right: 0; /* Remove margin between elements */
-}
-
-.doi-text:hover {
-  text-decoration: none;
-  display: inline-block; /* Makes the background fit the text */
-  background-color: none;
-  margin-right: 0; /* Remove margin between elements */
-}
-
-.doi-badge {
-  background-color: #4f4f4f;
-  text-rendering: "geometricPrecision";
-  color: #fff;
-  background-color: none;
-  font-family: "Verdana, Geneva, DejaVu Sans, sans-serif";
-}
-
-
-//* DOI Container */
-.conf-container {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: normal;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add shadow effect to the text */
-  text-rendering: "geometricPrecision";
-  margin-bottom: 0px;
-}
-
-.conf-text {
-  display: inline-block;
-  background-color: $green;
-  color: #fffbee;
-  padding: 1px 5px;
-  margin-right: 0; /* Remove margin between elements */
-}
-
-.conf-badge {
-  background-color: #4f4f4f;
-  text-rendering: "geometricPrecision";
-  color: #fff;
-  background-color: none;
- 
-}
-
-
-// Publications container
-
-.publications-container {
-  font-size: 13px;
-}
-
-.entry-container {
-  width: 100%;
-  font-family: 'Lora', sans-serif;
-  display: inline-table;
-  vertical-align: top;
-  border: black;
-
-  .eighty {
-    width: 80%;
-    border: black;
-  }
-
-  .ten {
-    width: 9%;
-    border: black;
-  }
-
-  .five {
-    width: 4%;
-    border: black;
-  }
-}
-
-/* for cv sidebar
-
-/* Style for the container */
-.maincontainer {
-  flex: 1; // Equal flex size to start with
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  box-shadow: $box-shadow;
-  background-color: lighten($blue, 48%);
-  border: 1px solid lighten($blue, 30%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-
-  &:hover {
-    transform: scale(1);
-    box-shadow: $box-shadow-hover;
-  }
-
-}
-
-
-/* Style for the CV */
-.column {
-padding: 5px; /* Add some padding for spacing */
-
-}
-
-/* Style for the left container */
-.left-container {
-width: 20%; /* 20% width for the left container */
-position: sticky;
-top: 20px; /* Adjust top offset as needed */
-overflow-y: auto;
-height: calc(100% - 40px);
-transform: translateZ(0); /* Enable hardware acceleration */
-will-change: transform;
-
-}
-
-/* Style for the right container */
-.right-container {
-width: 80%; /* 80% width for the right container */
-border-top: #8b0000;
-
-}
-/* Style for the sidebar */
-.sidebar {
-  margin-top: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  color: darken($blue, 20%);
-  scroll-behavior: smooth;
-  }
-
-.sidebar a {
-  text-decoration: none;
-  color: darken($blue, 20%);
-  display: block;
-  border: 1px solid  lighten($blue, 50%)  ;
-}
-
-.sidebar a:hover {
-  display: block;
-  background-color: lighten($blue, 45%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  }
-
-/* Responsive Design: Hide sidebar on small screens */
-@media (max-width: 720px) {
-  .left-container {
-    display: none; /* Hide the sidebar */
-  }
-  
-  .right-container {
-    width: 100%; /* Take full width */
-  }
-}
-/* Style for the Research */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns grid */
-  gap: 10px;
-}
-
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 column grid for very small screens */
-  }
-}
-
-
-
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr 4fr; /* 1 part for the left side, 3 parts for the right side */
-  grid-template-rows: auto auto;  /* Two rows with automatic height based on content */
-}
-
-.date {
-  padding: 2px;
-  font-size: 0.8em;
-}
-
-
-.desc {
-  padding: 2px;
-}
-
-.grid-item {
-  padding: 5px;
-  text-align: left;
-}
-
-
-.project-box {
-  padding: 20px;
-  border: 2px solid lighten($blue, 45%);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  max-height: 175px; /* Allow room for the image and some padding */
-  overflow: hidden;
-  background-color: none;
-  text-align: center;
-  position: relative;
-  grid-column: span 1; /* Default span 1 column */
-}
-
-.project-box:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 4px 10px lighten($blue, 40%);
-  border: 2px solid lighten($blue, 40%);
-}
-
-.project-box.expanded {
-  max-height: none; /* Remove max-height when expanded */
-  grid-column: span 2; /* Expand to full width */
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  max-height: 100px; /* Controlled height in collapsed state */
-  object-fit: cover; /* Maintain aspect ratio */
-  filter: grayscale(100%); /* Apply black-and-white effect */
-  transition: all 0.3s ease;
-}
-
-.project-box:hover .project-image {
-  filter: grayscale(0%); /* Remove black-and-white effect on hover */
-}
-
-.project-box.expanded .project-image {
-  max-height: 500px; /* Maximum height when expanded */
-  width: 60%; /* Center image */
-  margin: 0 auto; /* Center the image */
-}
-
-.project-title {
-  margin: 10px 0; /* Add space around the title */
-  font-size: 1.2em; /* Adjust font size as needed */
-}
-
-.project-details {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  margin-top: 10px;
-  display: none;
-  text-align: left; /* Align text to left */
-}
-
-.project-box.expanded .project-details {
-  opacity: 1;
-  transform: translateY(0);
-  display: block;
-}
-
-.progress-container {
-  width: 80%;
-  max-width: 400px;
-  margin-bottom: 20px;
-  background-color: lighten($blue, 30%);
-}
-progress {
-  width: 200px;
-  height: 15px;
-  color: $green;
-  border-radius: 5px;
-  border: 2px solid #100d09;
-  overflow: hidden;
-  box-shadow: 10px 10px 10px lighten($blue, 45%);
-  appearance: none;
-}
-
-
-
-progress::-webkit-progress-value { color: #000;  background: $green; }
-
-
-
-
-/* Styles Dissertations */
-
-.accordian-outline {
-  flex: 1; // Equal flex size to start with
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  box-shadow: $box-shadow;
-  border: 1px solid lighten($blue, 30%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: lighten($blue, 45%);
-
-  &:hover {
-    transform: scale(1);
-    box-shadow: $box-shadow-hover;
-  }
-}
-
-.collapsible-list {
-margin: 20px 0;
-padding: 0px;
-border: none;
-list-style-type: none; /* Remove default list styles */
-}
-
-/* Style for each collapsible item container */
-.collapsible-item {
-margin: 0px; /* Space between each item */
-overflow: hidden; /* Prevent content overflow */
-}
-
-.collapsible-title {
-
-cursor: pointer;
-border: none;
-padding: 1px;
-width: 100%;
-text-align: left;
-outline: none;
-margin-bottom: 0px;
-font-weight: bold;
-font-family: 'Lora', sans-serif;
-background-color: lighten($blue, 45%);
-font-size: 0.9m;
-}
-
-
-.collapsible-title:after {
-content: '\002B'; /* Unicode character for "plus" sign */
-font-weight: bold;
-float: right;
-}
-
-.collapsible-title.active:after {
-content: "\2212"; /* Unicode character for "minus" sign */
-}
-
-.collapsible-content {
-padding-left: 20px;
-padding-right: 20px;
-margin-top: 10px;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.5s ease-out;
-border-radius:  5px;
-background-color: lighten($amber, 30%);
-}
-
-.collapsible-content p {
-font-size: 0.9em;
-margin: 0 0 10px;
-}
-
-.collapsible-content img {
-margin-top: 15px;
-margin-bottom: 15px;
-border-radius: 5px;
-}
-
+// --------------------------
+// Buttons
+// --------------------------
 .button {
-  border: none;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-family: 'Lora', sans-serif;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 
-
-.social-thumbnails {
-    display: flex;
-    gap: 20px; /* Space between thumbnails */
-    justify-content: center;
-    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+// --------------------------
+// Utility Classes
+// --------------------------
+.text-center {
+  text-align: center;
 }
 
-.social-thumbnail {
-    position: relative;
-    display: inline-block;
-    height: 30px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.mt-1 {
+  margin-top: 1rem;
 }
 
-.social-thumbnail a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.social-thumbnail img {
-    height: 30px;
-    aspect-ratio: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.social-thumbnail .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    font-size: 14px;
-    padding: 10px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.social-thumbnail:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.social-thumbnail:hover img {
-    transform: scale(1.1);
-}
-
-.social-thumbnail:hover .caption {
-    opacity: 1;
-    transform: translateY(0);
+.mb-1 {
+  margin-bottom: 1rem;
 }
