@@ -2,7 +2,7 @@
 layout: page
 title: Blogs
 permalink: /blogs/
-order: 2
+order: 6
 ---
 
 
