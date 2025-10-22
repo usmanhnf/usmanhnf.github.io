@@ -81,20 +81,20 @@ p {
   padding-right: $container-padding;
 }
 
-a:hover {
-  transform: scale(1.00);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  background-color: #eef2f5;
-  background-color: #f8f9fa; border-radius: 6px; 
-  padding: 6px 10px; text-decoration: none; 
-  transition: all 0.25s ease; 
-  border: 1px solid $primary-color;
 
-}
 
 table, tr, td {
-  border: 0px solid $background-color;
-  background-color: $background-color;
+  border: 1px solid $background-color;
   border-collapse: collapse;
+  vertical-align: top;
+  background-color: $background-color;
+  a:hover {
+    transform: scale(1.00);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-color: #f8f9fa; border-radius: 3px; 
+    padding: 2px 2px; text-decoration: none; 
+    transition: all 0.25s ease; 
+    border: 1px solid $primary-color;
+  }
 }
 
