@@ -5,112 +5,118 @@
 layout: post
 ---
 
-<div class="container">
-    <div class="box only-box">    
-     <h4>M. Usman Hanif</h4>
-     <p>Assistant Professor, SDU Structures, University of Southern Denmark, Odense, Denmark</p>
-     <p>Research Interests: <em> Reinforced Concrete | Non Destructive Testing | SHM | FE Modeling</em></p>
-     </div>
-</div>
+### Usman Hanif
 
-<div class="container">
-    <div class="box only-box">    
-     <h4>Currently</h4>
-     <p>I am involved in teaching and research at SDU Structures</p>
-     <p>I am teaching the courses related to Finite Element Procedures at Bachelors and Masters levels.</p>
-     <p>I am finishing my research analysis on acoustic emission application on reinforced concrete beams.</p>
-     </div>
-</div>
+Assistant Professor, SDU Structures, University of Southern Denmark, Odense, Denmark
 
+Research Interests: **Reinforced Concrete, Non Destructive Testing, SHM, FE Modeling**
 
+<br>
 
+### Currently...
+I am involved in teaching and research at SDU Structures
 
+I am teaching the courses related to Finite Element Procedures at Bachelors and Masters levels
 
- <div class="container">
-        <div class="box left-box">
-            <div class="col-md-6">
-            <h4>Latest Blogs</h4>
-            {% for post in site.posts limit:5 %}
-            <div class="post-preview" data-title="{{ post.title }}">
-                {% if post.image %}
-                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-thumbnail">
-                {% else %}
-                <div class="post-thumbnail"></div> <!-- Placeholder for consistency -->
-                {% endif %}
-                <a href="{{ post.url | relative_url }}" class="post-titles">{{ post.title }}</a> &nbsp; &nbsp;
-                <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-            </div>
-            {% endfor %}
+I am finishing my research analysis on acoustic emission application on reinforced concrete beams
+
+<br>
+
+### Recent blog posts
+
+<ul style="list-style:none; padding:0; margin:0;">
+    {% for post in site.posts limit:3 %}
+      <li style="display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; border-bottom:1px solid #eee; padding-bottom:1rem;">
+        {% if post.image %}
+          <a href="{{ post.url | relative_url }}" style="flex-shrink:0;">
+            <img 
+              src="{{ post.image | relative_url }}" 
+              alt="{{ post.title }}" 
+              style="width:80px; height:80px; object-fit:cover; border-radius:8px;"
+            >
+          </a>
+        {% endif %}
+        <div>
+          <h3 style="margin:0 0 0.25rem 0; font-size:1.1rem;">
+            <a href="{{ post.url | relative_url }}" style="text-decoration:none; color:#222;">{{ post.title }}</a>
+          </h3>
+          <p style="color:#888; font-size:0.9rem; margin:0 0 0.5rem 0;">
+            {{ post.date | date: "%B %d, %Y" }}
+          </p>
+          <p style="margin:0; color:#333; font-size:0.95rem;">
+            {{ post.excerpt | strip_html | truncate: 120 }}
+          </p>
         </div>
-        </div>
-        <div class="box right-box">
-            <h4>Recent Publications</h4>
-    {% assign recent_publications = site.data.journals | sort: "Date" | reverse | slice: 0, 3 %}
-    {% for publication in recent_publications %}
-        <div class="mainbar">
-            <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -crimson?style=flat-square"> &nbsp; <strong>{{ publication.Title }}</strong><br>
-                Journal:<em> {{ publication.Journal }}</em><br>
-                {% if publication.DOI %}
-                    <a href="{{ publication.DOI }}" target="_blank">
-                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic" alt="DOI: {{ publication.shortDOI }}">
-                    </a>
-                {% endif %}
-        </div>
+      </li>
     {% endfor %}
+  </ul>
+  <a href="{{ '/blog/' | relative_url }}" style="display:inline-block; margin-top:1rem; color:#007acc; text-decoration:none; font-weight:500;">
+    View all posts →
+  </a>
 
-        </div>
-    </div>
+<br>
+
+### Recent Publications
+
+   {% assign publications_sorted = site.data.journals | sort: "Date" | reverse %}
+
+<table style="width:80%;">
+  {% for publication in publications_sorted limit:3 %}
+  <tr>
+    <td style="width:90%;">
+      <img alt="Year Badge"
+           src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-crimson?style=flat-square">
+      <strong>{{ publication.Title }}</strong>
+      <br />
+      Authors: {{ publication.Authors }}
+      <br />
+      Journal: {{ publication.Journal }}
+      <br />
+      <div style="display:flex; flex-direction:row; align-items:center;">
+        {% if publication.shortDOI %}
+        <a href="{{ publication.DOI }}" target="_blank">
+          <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic"
+               alt="DOI: {{ publication.shortDOI }}">
+        </a>
+        {% endif %}
+        &nbsp;
+        <span class="__dimensions_badge_embed__"
+              data-doi="{{ publication.shortDOI }}"
+              data-hide-zero-citations="true"
+              data-style="small_rectangle"></span>
+        &nbsp;
+        <div class="altmetric-embed"
+             data-badge-type="4"
+             data-hide-less-than="1"
+             data-badge-popover="right"
+             data-doi="{{ publication.shortDOI }}"></div>
+      </div>
+    </td>
+      </tr>
+  {% endfor %}
+</table>
 
 
+### Recent Conferences
 
-<div class="container">
-    <div class="box only-box">  
-        <div class="social-thumbnails">
-            <div class="social-thumbnail">
-                <a href="https://portal.findresearcher.sdu.dk/da/persons/muha" target="_blank">
-                    <img src="/assets/icons/icon_sdu.png" alt="SDU" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://www.linkedin.com/in/usmanhnf" target="_blank">
-                    <img src="/assets/icons/icon_linkedin.svg" alt="linkedin" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://orcid.org/0000-0002-1490-2350" target="_blank">
-                    <img src="/assets/icons/icon_orcid.svg" alt="orcid" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://scholar.google.com.pk/citations?user=v-OxcFMAAAAJ&hl=en&oi=ao" target="_blank">
-                    <img src="/assets/icons/icon_gscholar.svg" alt="gcsholar" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=55737908100" target="_blank">
-                    <img src="/assets/icons/icon_scopus.svg" alt="scopus" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://www.researchgate.net/profile/Usman_Hanif3" target="_blank">
-                    <img src="/assets/icons/icon_researchgate.svg" alt="researchgate" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://www.webofscience.com/wos/author/record/D-9996-2019" target="_blank">
-                    <img src="/assets/icons/icon_wos.svg" alt="wos" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://sciprofiles.com/profile/444581" target="_blank">
-                    <img src="/assets/icons/icon_sci.png" alt="sci" />
-                </a>
-            </div>
-            <div class="social-thumbnail">
-                <a href="https://github.com/usmanhnf" target="_blank">
-                    <img src="/assets/icons/icon_github.png" alt="github" />
-                </a>
-            </div>
-        </div> 
-    </div>
-</div>
+{% assign conferences_sorted = site.data.conferences | sort: "Date" | reverse %}
+
+  <table  style="width: 80%;">
+      {% for publication in conferences_sorted limit:3 %}
+      <tr>
+        <td style="width:98%">
+          <img alt="Year Badge"
+               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-crimson?style=flat-square">
+               <strong>{{ publication.Title }}</strong>
+               <br />
+               Authors: {{ publication.Authors }}
+               <br />
+               Journal: {{ publication.Conference }}
+               <br />
+              {% if publication.Location %}
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
+              {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+  </table>
