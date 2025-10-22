@@ -5,7 +5,7 @@
 layout: post
 ---
 
-### Usman Hanif
+### M Usman Hanif
 
 Assistant Professor, SDU Structures, University of Southern Denmark, Odense, Denmark
 
