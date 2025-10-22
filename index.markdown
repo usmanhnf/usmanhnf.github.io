@@ -5,6 +5,7 @@
 layout: post
 ---
 
+### Usman Hanif
 Assistant Professor, SDU Structures, University of Southern Denmark, Odense, Denmark
 
 Research Interests: **Reinforced Concrete, Non Destructive Testing, SHM, FE Modeling**
