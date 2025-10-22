@@ -18,7 +18,7 @@ order: 4
       {% for publication in publications_sorted %}
       <tr>
         <td style="width:2%">{{ forloop.index }}</td>
-        <td style="width:85%;">
+        <td style="width:90%;">
           <img alt="Year Badge"
                src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-red?style=plastic">
                <strong>{{ publication.Title }}</strong>
@@ -27,18 +27,20 @@ order: 4
                <br />
                Journal: {{ publication.Journal }}
                <br />
-              {% if publication.shortDOI %}
-              <a href="{{ publication.DOI }}" target="_blank">
-                <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic"
-                   alt="DOI: {{ publication.shortDOI }}">
-              </a>
-              {% endif %} 
-              <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span>
-              <div class='altmetric-embed' data-badge-type='medium-bar' data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div>
+               <div style="display: flex ;flex-direction: row; ">
+                  {% if publication.shortDOI %}
+                  <a href="{{ publication.DOI }}" target="_blank">
+                    <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic"
+                      alt="DOI: {{ publication.shortDOI }}">
+                  </a>
+                  {% endif %} 
+                  &nbsp;
+                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span> &nbsp;
+                  <div class='altmetric-embed' data-badge-type='4' data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div>
+              </div>
         </td>
-        <td style="width:7%">{{ publication.plumx }}</td>
-        <td style="width:7%">{{ publication.altmeric }}</td>
-      </tr>
+        <td style="width:8%">{{ publication.plumx }}</td>
+        </tr>
       {% endfor %}
   </table>
 
