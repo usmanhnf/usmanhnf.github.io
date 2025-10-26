@@ -109,9 +109,7 @@ I am finishing my research analysis on acoustic emission application on reinforc
                src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-crimson?style=flat-square">
                <strong>{{ publication.Title }}</strong>
                <br />
-               Authors: {{ publication.Authors }}
-               <br />
-               Journal: {{ publication.Conference }}
+               <b>Conference</b>: {{ publication.Conference }}
                <br />
               {% if publication.Location %}
                     <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=flat-square" alt="DOI: {{ publication.shortDOI }}">

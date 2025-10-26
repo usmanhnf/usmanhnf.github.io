@@ -60,7 +60,7 @@ order: 4
                <br />
                Authors: {{ publication.Authors }}
                <br />
-               Journal: {{ publication.Conference }}
+               Conference: {{ publication.Conference }}
                <br />
               {% if publication.Location %}
                     <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
