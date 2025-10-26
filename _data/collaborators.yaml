@@ -3,8 +3,13 @@
   organization: KNUT, South Korea
   expertise: Reinforced concrete, composites
 
+- name: Dr. Muhammad Fawad
+  designation: PostDoc Fellow
+  organization: University of British Columbia, Okanagan Campus, Canada
+  expertise: Digital Twins, SHM, Mixed-reality
+
 - name: Dr. Khaled Ghaedi
-  designation: CEO
+  designation: CEO , Researcher
   organization: Pasofal Malaysia
   expertise: FE Modeling
 
@@ -23,12 +28,3 @@
   organization: NUST, Pakistan
   expertise: Digital Twins
 
-- name: Dr. Ahmad Zaki
-  designation: Assistant Professor
-  organization: UMY Indonesia
-  expertise: SHM, RC Structures
-
-- name: Dr. Athar Ali
-  designation: Lecturer
-  organization: NUST, Pakistan
-  expertise: FE Modeling

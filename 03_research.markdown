@@ -110,7 +110,7 @@ Currently, I am involved in existing projects which include numerically modeling
       Expertise: 
       {% assign expertise_list = collaborator.expertise | split: ", " %}
       {% for item in expertise_list %}
-        <span style="display:inline-block; background-color:#e0e0e0; color:#333; padding:2px 6px; border-radius:12px; margin:2px; font-size:0.85em;">{{ item }}</span>
+        <span style="display:inline-block; background-color:#e0e0e0; color:#333; padding:2px 6px; border-radius:2px; margin:2px; font-size:0.85em;">{{ item }}</span>
       {% endfor %}
     </li>
   {% endfor %}
