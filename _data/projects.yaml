@@ -11,7 +11,7 @@
   team: "Athar Ali (PI), Usman Hanif (Co-PI), Muhammad Usman Hassan (Co-PI),  Hamza Ahsan Abdullah (RA MSc student), Janita Mahnoor Shahid (RA MSc student) "
   date: 2022
   duration: "3 Years"
-  progress: 70
+  progress: 100
   introduction: "Considering the lack of automation and technology in bridge health monitoring systems in pakistan to evaluate the performance of inventory bridges, challenges exist in familiarizing civil engineering industry locally with the SHM techniques. One of these challenges is the lack of monitoring equipment which costs a significant amount thus making the application of these procedures expensive. We have proposed a prototype bridge which acts as a testbed to monitor damage characteristics and the environmental influence on them. This testbed will also be helpful in developing and calibrating sensor and data acquisition technologies for application on the bridges."
   objectives: "Construction of the prototype bridge, acquiring the baseline data for undamaged stage (vibration characteristics), evaluate the influence of environmental effects in the long term on sensors/structural health, and lastly, developing an automated monitoring system which helps in monitoring the strutcure in real-time"
   image: "2022_nrpu.png"
