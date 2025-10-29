@@ -122,17 +122,17 @@ Currently, I am involved in existing projects which include numerically modeling
 ### Masters
 
 <div class="accordion">
-  {% assign bsc_dissertations = site.data.dissertations 
+  {% assign msc_dissertations = site.data.dissertations 
       | where_exp: "item", "item.degree contains 'MSc'" 
       | sort: "year" 
       | reverse %}
   
-  {% for dissertation in bsc_dissertations %}
+  {% for dissertation in msc_dissertations %}
   <div class="accordion-item">
-    {% assign unique_id = 'dissertation-' | append: forloop.index | append: '-' | append: forloop.index0 %}
+    {% assign unique_id = 'msc-' | append: forloop.index0 %}
     <input type="checkbox" id="{{ unique_id }}">
     <label for="{{ unique_id }}">
-     {{ dissertation.year }} {{ dissertation.title }} 
+      {{ dissertation.year }} {{ dissertation.title }}
     </label>
     <div class="accordion-content">
       <p><strong>Authors:</strong> {{ dissertation.authors }} </p>
@@ -158,10 +158,10 @@ Currently, I am involved in existing projects which include numerically modeling
   
   {% for dissertation in bsc_dissertations %}
   <div class="accordion-item">
-    {% assign unique_id = 'dissertation-' | append: forloop.index | append: '-' | append: forloop.index0 %}
+    {% assign unique_id = 'bsc-' | append: forloop.index0 %}
     <input type="checkbox" id="{{ unique_id }}">
     <label for="{{ unique_id }}">
-     {{ dissertation.year }} {{ dissertation.title }} 
+      {{ dissertation.year }} {{ dissertation.title }}
     </label>
     <div class="accordion-content">
       <p><strong>Authors:</strong> {{ dissertation.authors }} </p>
