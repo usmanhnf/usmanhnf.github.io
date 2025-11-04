@@ -96,6 +96,10 @@ I am finishing my research analysis on acoustic emission application on reinforc
   {% endfor %}
 </table>
 
+<a href="{{ '/publications/' | relative_url }}" 
+   style="display:inline-block; margin-top:1rem; color:#007acc; text-decoration:none; font-weight:500;">
+  View all publications →
+</a>
 
 ### Recent Conferences
 
@@ -118,3 +122,8 @@ I am finishing my research analysis on acoustic emission application on reinforc
       </tr>
       {% endfor %}
   </table>
+
+  <a href="{{ '/publications/' | relative_url }}" 
+   style="display:inline-block; margin-top:1rem; color:#007acc; text-decoration:none; font-weight:500;">
+  View all Conferences →
+</a>
