@@ -26,7 +26,7 @@ I am finishing my research analysis on acoustic emission application on reinforc
 
 <ul style="list-style:none; padding:0; margin:0;">
     {% for post in site.posts limit:3 %}
-      <li style="display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; border-bottom:1px solid #eee; padding-bottom:1rem;">
+      <li style="display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; border-bottom:1px solid #FEF9EF; padding-bottom:1rem;">
         {% if post.image %}
           <a href="{{ post.url | relative_url }}" style="flex-shrink:0;">
             <img 
