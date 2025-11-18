@@ -20,7 +20,7 @@ order: 4
         <td style="width:2%">{{ forloop.index }}</td>
         <td style="width:90%;">
           <img alt="Year Badge"
-               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-red?style=plastic">
+               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
                <strong>{{ publication.Title }}</strong>
                <br />
                Authors: {{ publication.Authors }}
@@ -30,7 +30,7 @@ order: 4
                <div style="display: flex ;flex-direction: row; ">
                   {% if publication.shortDOI %}
                   <a href="{{ publication.DOI }}" target="_blank">
-                    <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic"
+                    <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
                       alt="DOI: {{ publication.shortDOI }}">
                   </a>
                   {% endif %} 
@@ -55,7 +55,7 @@ order: 4
         <td style="width:2%">{{ forloop.index }}</td>
         <td style="width:98%">
           <img alt="Year Badge"
-               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-red?style=plastic">
+               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
                <strong>{{ publication.Title }}</strong>
                <br />
                Authors: {{ publication.Authors }}
@@ -63,7 +63,7 @@ order: 4
                Conference: {{ publication.Conference }}
                <br />
               {% if publication.Location %}
-                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-darkorange?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
               {% endif %}
         </td>
       </tr>

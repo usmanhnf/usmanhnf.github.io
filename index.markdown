@@ -65,7 +65,7 @@ I am finishing my research analysis on acoustic emission application on reinforc
   <tr>
     <td style="width:90%;">
       <img alt="Year Badge"
-           src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-crimson?style=flat-square">
+           src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
       <strong>{{ publication.Title }}</strong>
       <br />
       Authors: {{ publication.Authors }}
@@ -75,7 +75,7 @@ I am finishing my research analysis on acoustic emission application on reinforc
       <div style="display:flex; flex-direction:row; align-items:center;">
         {% if publication.shortDOI %}
         <a href="{{ publication.DOI }}" target="_blank">
-          <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=plastic"
+          <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
                alt="DOI: {{ publication.shortDOI }}">
         </a>
         {% endif %}
@@ -110,13 +110,13 @@ I am finishing my research analysis on acoustic emission application on reinforc
       <tr>
         <td style="width:98%">
           <img alt="Year Badge"
-               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-crimson?style=flat-square">
+               src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
                <strong>{{ publication.Title }}</strong>
                <br />
                <b>Conference</b>: {{ publication.Conference }}
                <br />
               {% if publication.Location %}
-                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-darkorange?style=flat" alt="DOI: {{ publication.shortDOI }}">
               {% endif %}
         </td>
       </tr>

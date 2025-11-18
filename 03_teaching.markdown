@@ -2,7 +2,7 @@
 layout: page
 title: Teaching
 permalink: /teaching/
-order: 5
+order: 3
 ---
 <div class="container">
     <div class="box only-box">    
