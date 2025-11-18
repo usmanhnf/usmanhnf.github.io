@@ -9,16 +9,15 @@ order: 4
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="https://embed.altmetric.com/assets/embed.js"></script>
 
-
 ## Journals
 
 {% assign publications_sorted = site.data.journals | sort: "Date" | reverse %}
 
-  <table  style="width: 100%;">
+  <table  style="width: 100%; border: 1px solid #FEF9EF; border-collapse: collapse;">
       {% for publication in publications_sorted %}
       <tr>
-        <td style="width:2%">{{ forloop.index }}</td>
-        <td style="width:90%;">
+        <td style="width:2%; border: 1px solid #FEF9EF;">{{ forloop.index }}</td>
+        <td style="width:90%; ; border: 1px solid #FEF9EF;">
           <img alt="Year Badge"
                src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
                <strong>{{ publication.Title }}</strong>
@@ -39,7 +38,7 @@ order: 4
                   <div class='altmetric-embed' data-badge-type='4' data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div>
               </div>
         </td>
-        <td style="width:8%">{{ publication.plumx }}</td>
+        <td style="width:8%; border: 1px solid #FEF9EF;">{{ publication.plumx }}</td>
         </tr>
       {% endfor %}
   </table>
@@ -52,8 +51,8 @@ order: 4
   <table  style="width: 100%;">
       {% for publication in conferences_sorted %}
       <tr>
-        <td style="width:2%">{{ forloop.index }}</td>
-        <td style="width:98%">
+        <td style="width:2%; border: 1px solid #FEF9EF">{{ forloop.index }}</td>
+        <td style="width:98%; border: 1px solid #FEF9EF">
           <img alt="Year Badge"
                src="https://img.shields.io/badge/{{ publication.Date | date: '%Y' | uri_escape | replace:'.','%2E' }}-firebrick?style=flat-square">
                <strong>{{ publication.Title }}</strong>
