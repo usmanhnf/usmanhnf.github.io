@@ -215,7 +215,7 @@ order: 2
   {% assign publications_sorted = site.data.journals | sort: "Date" | reverse %}
   {% for publication in publications_sorted %}
   <li>
-    <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -red?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
+    <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -firebrick?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
     Authors: {{ publication.Authors }}<br>
     Journal: {{ publication.Journal }}
     <br>
@@ -235,11 +235,11 @@ order: 2
 {% assign conferences_sorted = site.data.conferences | sort: "Date" | reverse %}
 {% for publication in conferences_sorted %}
 <li>
-    <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -red?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
+    <img alt="Static Badge" src="https://img.shields.io/badge/ {{ publication.Date | date: "%Y" | uri_escape | replace:'.','%2E' }} -firebrick?style=flat-square">&nbsp;<strong>{{ publication.Title }}</strong><br>
     Authors: {{ publication.Authors }}<br>
     Conference: {{ publication.Conference }}<br>
     {% if publication.Location %}
-        <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-yellow" alt="DOI: {{ publication.shortDOI }}">
+        <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-khaki" alt="DOI: {{ publication.shortDOI }}">
     {% endif %}
 </li>
 <br>

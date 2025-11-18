@@ -82,11 +82,17 @@ p {
 
 
 
-table, tr, td {
-  border: 1px solid $background-color;
+table {
+  border: 1px solid #FEF9EF;
   border-collapse: collapse;
   vertical-align: top;
   background-color: $background-color;
+
+  td {
+  border: 1px solid #FEF9EF;
+  border-collapse: collapse;
+  background-color: $background-color;
+  }
   
   
   a:hover {
