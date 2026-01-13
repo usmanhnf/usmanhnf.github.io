@@ -33,7 +33,6 @@ order: 4
                   {{ publication.plumx }}
                   </div>
                </div>
-              <br />
               <div style="display: flex ;flex-direction: row; ">
                   {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
