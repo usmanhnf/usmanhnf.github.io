@@ -27,8 +27,8 @@ order: 4
                Journal: {{ publication.Journal }}
                <br />
                <div style="display: flex ;flex-direction: row; ">
-                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_circle"></span> &nbsp; &nbsp;
-                  <div class='altmetric-embed' data-badge-type="donut" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> &nbsp; &nbsp;
+                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_circle"></span> &nbsp;
+                  <div class='altmetric-embed' data-badge-type="donut" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
                   <div>
                   {{ publication.plumx }}
                   </div>
