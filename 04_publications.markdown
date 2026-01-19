@@ -40,14 +40,14 @@ order: 4
                   <div>
                   {{ publication.plumx }}
                   </div>
-                  <a href="https://plu.mx/plum/a/?{{ publication.shortDOI }}"
-                     data-popup="right"
-                     data-size="medium"
-                     class="plumx-plum-print-popup"
-                     data-site="plum"
-                     data-hide-when-empty="true">
-                    {{ publication.Title }}
-                  </a>
+                <a href="https://plu.mx/plum/a/?doi={{ publication.shortDOI | url_encode }}"
+                   class="plumx-plum-print-popup"
+                   data-popup="right"
+                   data-size="medium"
+                   data-site="plum"
+                   data-hide-when-empty="true">
+                  {{ publication.Title }}
+                </a>
                </div>
               
               
