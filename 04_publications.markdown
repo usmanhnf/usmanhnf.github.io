@@ -34,12 +34,13 @@ order: 4
                       alt="DOI: {{ publication.shortDOI }}">
                   </a>
                   {% endif %} 
-            
+                  &nbsp;
                   <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span> &nbsp;
                   <div class='altmetric-embed' data-badge-type="2" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
                   <div>
                   {{ publication.plumx }}
                   </div>
+                  <a href="https://plu.mx/plum/a/? "{{ publication.shortDOI }}" data-popup="right" data-size="medium" class="plumx-plum-print-popup" data-site="plum" data-hide-when-empty="true"> "{{ publication.Title }}" </a>
                </div>
               
               
