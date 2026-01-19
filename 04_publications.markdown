@@ -8,7 +8,6 @@ order: 4
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="https://embed.altmetric.com/assets/embed.js"></script>
-<script async defer src="https://api.semanticscholar.org/badge"></script>
 
 ## Journals
 
@@ -37,13 +36,13 @@ order: 4
                     </a>
                   {% endif %}
 
-
-                    {% if publication.Corpus %}
-    <a href="https://www.semanticscholar.org/paper/{{ publication.Corpus }}" target="_blank">
-      <img src="https://img.shields.io/badge/Semantic%20Scholar-View-blue?logo=semantic-scholar&style=flat"
-           alt="Semantic Scholar">
-    </a>
-  {% endif %}
+                
+                  {% if publication.shortDOI %}
+                    <a href="https://www.semanticscholar.org/doi/{{ publication.shortDOI | url_encode }}" target="_blank">
+                      <img src="https://img.shields.io/badge/Semantic%20Scholar-View-blue?logo=semantic-scholar&style=flat"
+                           alt="Semantic Scholar">
+                    </a>
+                  {% endif %}
 
                 
                 
