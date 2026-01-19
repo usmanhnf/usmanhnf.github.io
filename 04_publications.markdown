@@ -36,16 +36,7 @@ order: 4
                     </a>
                   {% endif %}
 
-                
-                  {% if publication.shortDOI %}
-                    <a href="https://www.semanticscholar.org/doi/{{ publication.shortDOI | url_encode }}" target="_blank">
-                      <img src="https://img.shields.io/badge/Semantic%20Scholar-View-blue?logo=semantic-scholar&style=flat"
-                           alt="Semantic Scholar">
-                    </a>
-                  {% endif %}
-
-                
-                
+        
                   <span class="__dimensions_badge_embed__"
                         data-doi="{{ publication.shortDOI }}"
                         data-hide-zero-citations="true"
