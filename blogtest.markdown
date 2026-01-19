@@ -2,305 +2,56 @@
 layout: default-post
 permalink: /blogtest/
 ---
-<head>
-  <!-- Thank you for checking the source of my resume! :)
-  I wrote a blog post about the details of how I created it with raw HTML and CSS: https://blog.markvincze.com/how-i-created-my-cv-with-modern-html-and-css -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="black.css">
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72523215-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-72523215-1');
-  </script>
 
-  <title>Mark Vincze CV</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+</style>
 
-  <link rel="stylesheet" href="styles/cv.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+# Your Name
 
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+**Email:** your.email@example.com  
+**Phone:** +12 345 678 910  
+**LinkedIn:** linkedin.com/in/yourname  
+**GitHub:** github.com/yourusername  
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
 
-  <meta property="og:url" content="https://blog.markvincze.com/cv.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Mark Vincze CV" />
-  <meta property="og:description" content="Mark Vincze is a software developer with 15 years of hands-on experience." />
-  <meta property="og:site_name" content="Mark Vincze" />
-  <meta property="og:image" content="https://blog.markvincze.com/images/mvincze-photo-2025-square.jpg" />
-  <meta property="og:image:alt" content="Profile picture of Mark Vincze" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@mrkvincze" />
-  <meta name="twitter:title" content="Mark Vincze CV" />
-  <meta name="twitter:description" content="Mark Vincze is a software developer with 15 years of hands-on experience." />
-  <meta name="twitter:image" content="https://blog.markvincze.com/images/mvincze-photo-2025-square.jpg" />
+## Profile
+A concise description of your professional background, skills, and what you’re looking for.
 
-</head>
+---
 
-<body>
+## Experience
 
-  <div id="cv">
-    <section id="header">
-      <span id="name">
-        Mark<br />Vincze
-      </span>
-      <div id="intro">
-        <p>Software developer with 15 years of hands-on experience, designing architecture, guiding teams and leading
-          technical projects.<br />
-        <p>Expert in C# and ASP.NET, distributed system development, Google Cloud and Kubernetes, with a knack for
-          analyzing complex problems and requirements, and fostering interdepartmental collaboration.</p>
-      </div>
-    </section>
+**Job Title** – Company Name  
+*Month Year – Month Year*  
+- Achievement or responsibility 1  
+- Achievement or responsibility 2  
 
-    <section id="contact">
-      <a href="https://blog.markvincze.com">
-        <span class="fa fa-lg fa-laptop icon"></span><span>blog.markvincze.com</span>
-      </a>
-      <a href="mailto:hello@markvincze.com">
-        <span class="fa fa-lg fa-envelope icon"></span><span>hello@markvincze.com</span>
-      </a>
-      <a href="https://linkedin.com/in/markvincze">
-        <span class="fab fa-lg fa-linkedin icon"></span><span>linkedin.com/in/markvincze</span>
-      </a>
-      <a class="phoneNumber" href="tel:+36204053564">
-        <span class="fa fa-lg fa-phone icon"></span><span>+36 20 405 3564</span>
-      </a>
-    </section>
+**Job Title** – Company Name  
+*Month Year – Month Year*  
+- Achievement or responsibility 1  
+- Achievement or responsibility 2  
 
-    <h1>Experience</h1>
-    <section id="experience" class="section-large">
-      <div class="experience-year">2018–2025</div>
-      <div>
-        <span class="experience-position">Principal Developer</span><br />
-        <span class="experience-company">Travix International</span><br />
-        Principal Developer supporting and coordinating multiple dev teams.
-        <ul>
-          <li>
-            Designed the architecture of a greenfield e-commerce shopping system.
-          </li>
-          <li>
-            Delivery lead for a large-scale integration project between two companies.
-          </li>
-          <li>
-            Led the modernization of an internal business rule engine to improve performance and
-            decrease cloud costs.
-          </li>
-        </ul>
-      </div>
-      <div class="experience-year">2015–2017</div>
-      <div>
-        <span class="experience-position">Senior Software Developer</span><br />
-        <span class="experience-company">Travix International</span><br />
-        Backend developer in e-commerce, payments, and airline industry domains.<br />
-      </div>
-      <div class="experience-year">2014–2015</div>
-      <div>
-        <span class="experience-position">Lead Developer</span><br />
-        <span class="experience-company">BME-AutSoft Ltd.</span><br />
-        Technical Lead, coordinating end to end development projects for external clients.
-      </div>
-      <div class="experience-year">2012–2013</div>
-      <div>
-        <span class="experience-position">Senior Software Developer</span><br />
-        <span class="experience-company">BME-AutSoft Ltd.</span><br />
-        Developer on several projects for different partners.
-      </div>
-      <div class="experience-year">2008–2012</div>
-      <div>
-        <span class="experience-position">Software Developer, Junior Software Developer</span><br />
-        <span class="experience-company">Budapest University of Technology and Economics</span><br />
-        Contract work on various software development and research projects.
-      </div>
-    </section>
+---
 
-    <h1>Technology</h1>
-    <div class="section-large" id="technology-list">
-      <span class="technology-name">C# and ASP.NET</span>
-      <span class="technology-description">15 years of experience with application and service development in various
-        domains.</span>
-      <span class="technology-name">Kubernetes and Google Cloud</span>
-      <span class="technology-description">10 years of experience building scalable distributed systems, optimizing
-        reliability, costs and performance.</span>
-      <span class="technology-name">Python and Golang</span>
-      <span class="technology-description">Developing CI/CD scripts, tooling and Kubernetes controllers.</span>
-      <span class="technology-name">C++</span>
-      <span class="technology-description">3 years of developing modern, cross-platform code.</span>
-    </div>
-    <div id="technology-other">
-      Other: gRPC, F#, TypeScript, MS SQL, Postgre SQL, Entity Framework, Couchbase, Prometheus, Grafana, Azure, XAML,
-      WPF, WinRT, WCF, JNI, MS Mediaroom
-    </div>
+## Education
 
-    <section class="two-sections">
-      <div>
-        <h1>Presenting</h1>
-        <section class="section-small" id="presenting-list">
-          <span class="presenting-type">Meetups and trainings</span>
-          <span>
-            Presented at various meetups and internal workshops about a wide range of topics:
-            Modern C++ and mobile development, ASP.NET, C#, functional programming, gRPC, Kubernetes.
-          </span>
-          <span class="presenting-type">Teaching</span>
-          <span>
-            Led seminars at the Budapest University of Technology and Economics between 2010–2015 in courses about
-            software development and .NET.
-          </span>
-        </section>
-      </div>
-      <div>
-        <h1>Open source projects</h1>
-        <section class="section-small" id="projects">
-          <span><a class="project-name" href="https://markvincze.github.io/sabledocs/">Sabledocs</a></span>
-          <span>Static documentation generator for Protobuf and gRPC contracts.</span>
-          <span><a class="project-name" href="https://markvincze.github.io/Stubbery">Stubbery</a></span>
-          <span>API stubbing library for .NET.</span>
-          <span><a class="project-name" href="https://blog.markvincze.com/projects#advent-of-code-solutions">AoC
-              solutions</a></span>
-          <span>My solutions for the Advent of Code puzzles.</span>
-        </section>
-      </div>
-    </section>
+**Degree** – University Name  
+*Year – Year*  
 
-    <section id="education" class="two-sections">
-      <div>
-        <h1>Education</h1>
-        <section class="section-small">
-          <div class="education-year">2012</div>
-          <div>
-            <span class="education-detail">
-              MSc degree in Applied Computer Science
-            </span><br />
-            <span class="education-org">Budapest University of Technology and Economics</span><br />
-          </div>
-          <div class="education-year">2010</div>
-          <div>
-            <span class="education-detail">
-              BSc degree in Computer Engineering
-            </span><br />
-            <span class="education-org">Budapest University of Technology and Economics</span><br />
-          </div>
-          <div class="education-year">2011</div>
-          <div>
-            <span class="education-detail">72-515: Web Applications Development with MS .NET 4
-            </span><br />
-            <span class="education-org">MCP exam</span><br />
-          </div>
-        </section>
-      </div>
-      <div>
-        <h1>Language</h1>
-        <section class="section-small">
-          <span class="language-name">English</span>
-          <span>Full professional proficiency</span>
-          <span class="language-name">Hungarian</span>
-          <span>Native proficiency</span>
-        </section>
-      </div>
-    </section>
+---
 
-    <section id="pageHeader">
-      <span id="pageHeaderName">
-        Mark Vincze
-      </span>
-      <div>
-        <!-- NOTE: These are kept on one line, otherwise the trailing whitespace causes the underlines to be a bit longer than needed. -->
-        <a href="https://blog.markvincze.com"><span class="fa fa-lg fa-laptop icon"></span><span>blog.markvincze.com</span></a>
-        <a href="mailto:hello@markvincze.com"><span class="fa fa-lg fa-envelope icon"></span><span>hello@markvincze.com</span></a>
-        <a href="https://linkedin.com/in/markvincze"><span class="fab fa-lg fa-linkedin icon"></span><span>linkedin.com/in/markvincze</span></a>
-        <a class="phoneNumber" href="tel:+36204053564"><span class="fa fa-lg fa-phone icon"></span><span>+36 20 405 3564</span></a>
-      </div>
-    </section>
+## Skills
+- Skill 1  
+- Skill 2  
+- Skill 3  
 
-    <h1 id="workprojects">Project highlights</h1>
-    <h2 class=workproject-heading>2024–2025 Travix–Trip platform integration</h2>
-    <div class="workproject-intro">
-      Integrating the technical systems of Travix with the shareholder company Trip.com.
-    </div>
-    <div class="workproject-details">
-      <strong>Position</strong>
-      <div>Principal Developer @ Travix</div>
-      <strong>Technology</strong>
-      <div>ASP.NET, C#, Java, Kubernetes, OpenApi</div>
-      <strong>Role</strong>
-      <div>I was the delivery lead for a large-scale integration project connecting the technical systems of Travix with the shareholder company, Trip.com.<br />
-        This involved planning and designing the development work for the API integration of several systems, and creating a rollout strategy for a smooth transition to the new integrations.
-      </div>
-    </div>
+---
 
-    <h2 class=workproject-heading>2022–2023 Post-Sale Shopping System</h2>
-    <div class="workproject-intro">
-      Creating a new greenfield e-commerce system, integrating with the existing systems of Travix.
-    </div>
-    <div class="workproject-details">
-      <strong>Position</strong>
-      <div>Principal Developer @ Travix</div>
-      <strong>Technology</strong>
-      <div>ASP.NET, C#, Kubernetes, gRPC</div>
-      <strong>Role</strong>
-      <div>
-        I designed the architecture of a greenfield e-commerce shopping system, consisting of multiple distributed ASP.NET services, and established the patterns and tooling for using gRPC in Kubernetes with ASP.NET, Java and Node.JS.
-      </div>
-    </div>
-
-    <h2 class=workproject-heading>2018–2020 Rule Engine modernization</h2>
-    <div class="workproject-intro">
-      Improve the technical implementation of an internal business rule engine system.
-    </div>
-    <div class="workproject-details">
-      <strong>Position</strong>
-      <div>Principal Developer @ Travix</div>
-      <strong>Technology</strong>
-      <div>ASP.NET, C#, Kubernetes, Envoy, Golang, Python</div>
-      <strong>Role</strong>
-      <div>
-         I was the technical lead for the modernization of an internal business rule engine. This involved taking a classic ASP.NET application running on hundreds of Windows VMs, porting it to ASP.NET Core and deploying it to Kubernetes using Linux and Docker, achieving significant cost savings.<br />
-         This involved creating a <a href="https://blog.markvincze.com/how-to-use-envoy-as-a-load-balancer-in-kubernetes/">routing proxy with Envoy</a> and creating a <a href="https://github.com/estafette/estafette-k8s-node-compactor">custom Kubernetes controller</a> to improve node utilization.
-      </div>
-    </div>
-
-    <h2 class=workproject-heading>2016–2018 Platform modernization</h2>
-    <div class="workproject-intro">
-      Evolving a monolithic classic ASP.NET application into a distributed system using ASP.NET Core and Kubernetes.
-    </div>
-    <div class="workproject-details">
-      <strong>Position</strong>
-      <div>Senior Developer @ Travix</div>
-      <strong>Technology</strong>
-      <div>ASP.NET, C#, Kubernetes, Google Cloud</div>
-      <strong>Role</strong>
-      <div>
-        Worked in the team evolving a monolithic ASP.NET application into a distributed system, thereby improving its performance and maintainability.<br />
-        I spearheaded in the organization the adoption of ASP.NET Core with Docker on Kubernetes, by carrying out investigations and creating proof of concepts, establishing tooling and practices, and organizing internal workshops.
-      </div>
-    </div>
-
-    <h2 class=workproject-heading>2011–2015 Lexa book reader engine and client development</h2>
-    <div class="workproject-intro">
-      Implementing the rendering engine and client applications for the e-reader application of Hungary's largest book store company.
-    </div>
-    <div class="workproject-details">
-      <strong>Position</strong>
-      <div>Senior Developer @ BME-AutSoft Ltd.</div>
-      <strong>Technology</strong>
-      <div>C++, Java, JNI, WPF, XAML, Windows Phone</div>
-      <strong>Role</strong>
-      <div>
-        I was the lead developer of the proprietary rendering engine calculating the text layout for all the e-book reader clients, implemented in modern, cross-platform C++ compiled for multiple technical stacks (Android, iOS, Windows Phone, Windows Desktop).<br />
-        I also led the development of the Windows Phone 7, Windows 8 and Windows desktop WPF e-reader clients.
-      </div>
-    </div>
-
-  </div>
-
-  </div>
-</body>
-
-</html>
+## Projects
+**Project Name** – Short description or link to project.
