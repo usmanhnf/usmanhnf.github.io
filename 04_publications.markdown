@@ -26,27 +26,38 @@ order: 4
                <br />
                Journal: {{ publication.Journal }}
                <br />
-               <div style="display: flex ;flex-direction: row; ">
-                 
+               <div class="metrics-row">
+
                   {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
-                    <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
-                      alt="DOI: {{ publication.shortDOI }}">
+                      <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
+                           alt="DOI: {{ publication.shortDOI }}">
+                    </a>
+                  {% endif %}
+                
+                  <span class="__dimensions_badge_embed__"
+                        data-doi="{{ publication.shortDOI }}"
+                        data-hide-zero-citations="true"
+                        data-style="small_rectangle">
+                  </span>
+                
+                  <div class="altmetric-embed"
+                       data-badge-type="2"
+                       data-hide-less-than="1"
+                       data-badge-popover="right"
+                       data-doi="{{ publication.shortDOI }}">
+                  </div>
+                
+                  <a href="https://plu.mx/plum/a/?doi={{ publication.shortDOI | url_encode }}"
+                     class="plumx-plum-print-popup"
+                     data-popup="right"
+                     data-size="small"
+                     data-site="plum"
+                     data-hide-when-empty="true">
                   </a>
-                  {% endif %} 
-                  &nbsp;
-                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span> &nbsp;
-                  <div class='altmetric-embed' data-badge-type="2" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
 
-                <a href="https://plu.mx/plum/a/?doi={{ publication.shortDOI | url_encode }}"
-                   class="plumx-plum-print-popup"
-                   data-popup="right"
-                   data-size="small"
-                   data-site="plum"
-                   data-hide-when-empty="true">
-                  {{ publication.Title }}
-                </a>
-               </div>
+              </div>
+
               
               
         </td>
