@@ -34,12 +34,13 @@ order: 4
                            alt="DOI: {{ publication.shortDOI }}">
                     </a>
 
-                        <img
-                        src="https://img.shields.io/badge/dynamic/json
-                        ?label=Semantic%20Scholar
-                        &query=$.citationCount
-                        &url=https://api.semanticscholar.org/graph/v1/paper/DOI:{{ publication.shortDOI | url_encode }}?fields=citationCount
-                        &color=brightgreen">
+                        <<img
+    src="https://img.shields.io/badge/dynamic/json
+      ?label=Semantic%20Scholar
+      &query=$.citationCount
+      &url=https://api.semanticscholar.org/graph/v1/paper/DOI:{{ publication.shortDOI | url_encode }}
+      &color=brightgreen"
+    alt="Semantic Scholar citations">
         
                   {% endif %}
                 
