@@ -1,15 +1,7 @@
 ---
 layout: default
-permalink: /blogtest/
+title: "My CV"
 ---
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: white;
-  color: black;
-}
-</style>
 
 # Your Name
 
