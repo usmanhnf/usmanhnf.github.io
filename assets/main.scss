@@ -104,3 +104,19 @@ table {
 
 
 // Accordian code
+
+.metrics-row {
+  display: flex;
+  align-items: center;   /* 🔑 vertical alignment */
+  gap: 8px;              /* spacing between badges */
+  flex-wrap: wrap;
+}
+
+/* Normalize badge elements */
+.metrics-row img,
+.metrics-row span,
+.metrics-row div,
+.metrics-row a {
+  display: inline-flex;
+  align-items: center;
+}
