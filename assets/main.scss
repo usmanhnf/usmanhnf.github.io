@@ -107,16 +107,20 @@ table {
 
 .metrics-row {
   display: flex;
-  align-items: center;   /* 🔑 vertical alignment */
-  gap: 8px;              /* spacing between badges */
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;      /* 🔑 vertical alignment */
+  gap: 10px;                /* spacing between badges */
+  white-space: nowrap;      /* keeps everything on one line */
 }
 
-/* Normalize badge elements */
-.metrics-row img,
-.metrics-row span,
-.metrics-row div,
-.metrics-row a {
-  display: inline-flex;
+/* Normalize all badge containers */
+.metrics-row > * {
+  display: flex;
   align-items: center;
 }
+
+.altmetric-embed {
+  position: relative;
+  top: -1px;
+}
+
