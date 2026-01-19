@@ -27,7 +27,8 @@ order: 4
                <br />
                Journal: {{ publication.Journal }}
                <br />
-               <div class="metrics-row">
+               
+          <div class="metrics-row">
 
                   {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
@@ -36,17 +37,16 @@ order: 4
                     </a>
                   {% endif %}
 
+
+                    {% if publication.Corpus %}
+    <a href="https://www.semanticscholar.org/paper/{{ publication.Corpus }}" target="_blank">
+      <img src="https://img.shields.io/badge/Semantic%20Scholar-View-blue?logo=semantic-scholar&style=flat"
+           alt="Semantic Scholar">
+    </a>
+  {% endif %}
+
                 
-                  
-
-<div class="semanticscholar-badge"
-       data-paper-id="CorpusID:{{ publication.corpusID }}">
-  </div>
-
-
-                   <div class="semanticscholar-badge" data-doi="{{ publication.shortDOI }}"></div>
-
-                  
+                
                   <span class="__dimensions_badge_embed__"
                         data-doi="{{ publication.shortDOI }}"
                         data-hide-zero-citations="true"
