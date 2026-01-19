@@ -34,14 +34,7 @@ order: 4
                            alt="DOI: {{ publication.shortDOI }}">
                     </a>
 
-                        <<img
-    src="https://img.shields.io/badge/dynamic/json
-      ?label=Semantic%20Scholar
-      &query=$.citationCount
-      &url=https://api.semanticscholar.org/graph/v1/paper/DOI:{{ publication.shortDOI | url_encode }}
-      &color=brightgreen"
-    alt="Semantic Scholar citations">
-        
+       
                   {% endif %}
                 
                   <span class="__dimensions_badge_embed__"
@@ -94,7 +87,7 @@ order: 4
                Conference: {{ publication.Conference }}
                <br />
               {% if publication.Location %}
-                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-darkorange?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
+                    <img src="https://img.shields.io/badge/Location-{{ publication.Location }}-green?style=flat-square" alt="DOI: {{ publication.shortDOI }}">
               {% endif %}
         </td>
       </tr>
