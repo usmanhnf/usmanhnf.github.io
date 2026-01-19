@@ -36,14 +36,13 @@ order: 4
                     </a>
                   {% endif %}
 
-                  
-  {% if publication.corpusID %}
-    <div class="semanticscholar-badge"
-         data-corpus-id="{{ publication.corpusID }}">
-    </div>
-  {% endif %}
-
                 
+                  
+                  div class="semanticscholar-badge"
+                           data-corpus-id="{{ publication.corpusID }}">
+                   </div>
+
+                  
                   <span class="__dimensions_badge_embed__"
                         data-doi="{{ publication.shortDOI }}"
                         data-hide-zero-citations="true"
