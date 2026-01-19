@@ -38,9 +38,11 @@ order: 4
 
                 
                   
-                  <div class="semanticscholar-badge"
-                           data-corpus-id="{{ publication.corpusID }}">
-                   </div>
+
+<div class="semanticscholar-badge"
+       data-paper-id="CorpusID:{{ publication.corpusID }}">
+  </div>
+
 
                    <div class="semanticscholar-badge" data-doi="{{ publication.shortDOI }}"></div>
 
