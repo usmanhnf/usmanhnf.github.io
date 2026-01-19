@@ -33,6 +33,14 @@ order: 4
                       <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
                            alt="DOI: {{ publication.shortDOI }}">
                     </a>
+
+                        <img
+                        src="https://img.shields.io/badge/dynamic/json
+                        ?label=Semantic%20Scholar
+                        &query=$.citationCount
+                        &url=https://api.semanticscholar.org/graph/v1/paper/DOI:{{ publication.shortDOI | url_encode }}?fields=citationCount
+                        &color=brightgreen">
+        
                   {% endif %}
                 
                   <span class="__dimensions_badge_embed__"
