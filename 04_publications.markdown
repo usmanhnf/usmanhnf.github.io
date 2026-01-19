@@ -27,21 +27,21 @@ order: 4
                Journal: {{ publication.Journal }}
                <br />
                <div style="display: flex ;flex-direction: row; ">
-                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="large_rectangle"></span> &nbsp;
-                  <div class='altmetric-embed' data-badge-type="donut" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
-                  <div>
-                  {{ publication.plumx }}
-                  </div>
-               </div>
-              <div style="display: flex ;flex-direction: row; ">
+                 
                   {% if publication.shortDOI %}
                     <a href="{{ publication.DOI }}" target="_blank">
                     <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
                       alt="DOI: {{ publication.shortDOI }}">
                   </a>
                   {% endif %} 
-             
-              </div>
+            
+                  <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span> &nbsp;
+                  <div class='altmetric-embed' data-badge-type="2" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
+                  <div>
+                  {{ publication.plumx }}
+                  </div>
+               </div>
+              
               
         </td>
         </tr>
