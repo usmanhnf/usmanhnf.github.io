@@ -37,9 +37,7 @@ order: 4
                   &nbsp;
                   <span class="__dimensions_badge_embed__" data-doi="{{ publication.shortDOI }}" data-hide-zero-citations="true" data-style="small_rectangle"></span> &nbsp;
                   <div class='altmetric-embed' data-badge-type="2" data-hide-less-than='1' data-badge-popover='right' data-doi="{{ publication.shortDOI }}"></div> 
-                  <div>
-                  {{ publication.plumx }}
-                  </div>
+
                 <a href="https://plu.mx/plum/a/?doi={{ publication.shortDOI | url_encode }}"
                    class="plumx-plum-print-popup"
                    data-popup="right"
