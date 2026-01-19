@@ -8,6 +8,7 @@ order: 4
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="https://embed.altmetric.com/assets/embed.js"></script>
+<script async defer src="https://api.semanticscholar.org/badge"></script>
 
 ## Journals
 
@@ -33,9 +34,15 @@ order: 4
                       <img src="https://img.shields.io/badge/DOI-{{ publication.shortDOI | replace: '-', '--' }}-blue?style=flat"
                            alt="DOI: {{ publication.shortDOI }}">
                     </a>
-
-       
                   {% endif %}
+
+                  
+  {% if publication.corpusID %}
+    <div class="semanticscholar-badge"
+         data-corpus-id="{{ publication.corpusID }}">
+    </div>
+  {% endif %}
+
                 
                   <span class="__dimensions_badge_embed__"
                         data-doi="{{ publication.shortDOI }}"
