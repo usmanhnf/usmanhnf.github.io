@@ -43,7 +43,7 @@ order: 4
                 <a href="https://plu.mx/plum/a/?doi={{ publication.shortDOI | url_encode }}"
                    class="plumx-plum-print-popup"
                    data-popup="right"
-                   data-size="medium"
+                   data-size="tiny"
                    data-site="plum"
                    data-hide-when-empty="true">
                   {{ publication.Title }}
