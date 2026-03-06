@@ -46,35 +46,43 @@
 
 
 <div class="accordion">
-{{ $masters := sort (where $data "degree" "MSc") "year" "desc" }}
+  {{ $masters := sort (where $data "degree" "MSc") "year" "desc" }}
 
+  {{ range $index, $d := $masters }}
+    {{ $id := printf "msc-%d" $index }}
+    
+    <!-- Wrapper with consistent style -->
+    <div class="accordion-wrapper" style="
+         border-top:1px solid #979797;
+         border-bottom:1px solid #979797;
+         padding-left:5px;
+         overflow:hidden;
+         margin-bottom:5px;
+         background: rgba(148, 140, 137, 0.08);
+">
+      
+      <div class="accordion-item">
+        <input type="checkbox" id="{{ $id }}">
+        <label for="{{ $id }}">
+          <h4 style="margin-top:1px">[{{ $d.year }}] {{ $d.title }}</h4>
+        </label>
 
-{{ range $index, $d := $masters }}
-  {{ $id := printf "msc-%d" $index }}
-  <div class="accordion-item">
+        <div class="accordion-content">
+          <p><strong>Authors:</strong> {{ $d.authors }}</p>
+          <p><strong>Supervision:</strong> {{ $d.supervision }}</p>
+          <p><strong>Institute:</strong> {{ $d.institute }}</p>
 
-    <input type="checkbox" id="{{ $id }}">
-    <label for="{{ $id }}">
-      {{ $d.year }} — {{ $d.title }}
-    </label>
+          {{ if $d.image }}
+          <img 
+            src="{{ printf "/images/dissertations/%s" $d.image }}"
+            alt="{{ $d.title }}"
+            style="display:block;margin:0 auto;height:150px;width:auto;"
+          >
+          {{ end }}
 
-    <div class="accordion-content">
-      <p><strong>Authors:</strong> {{ $d.authors }}</p>
-      <p><strong>Supervision:</strong> {{ $d.supervision }}</p>
-      <p><strong>Institute:</strong> {{ $d.institute }}</p>
-
-      {{ if $d.image }}
-      <img 
-        src="{{ printf "/images/dissertations/%s" $d.image }}"
-        alt="{{ $d.title }}"
-        style="display:block;margin:0 auto;height:150px;width:auto;"
-      >
-      {{ end }}
-
-      <p><strong>Abstract:</strong> {{ $d.abstract }}</p>
+          <p><strong>Abstract:</strong> {{ $d.abstract }}</p>
+        </div>
+      </div>
     </div>
-
-  </div>
-{{ end }}
+  {{ end }}
 </div>
-

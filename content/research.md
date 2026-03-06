@@ -10,6 +10,7 @@ title = 'Research'
 
 {{< projects-accordion >}}
 
+---
 
 ## Thesis / Dissertations
 
@@ -22,6 +23,7 @@ title = 'Research'
 
 {{< dissertations_bachelors >}}
 
+---
 
 ## 🚀 Featured Projects
 
@@ -51,3 +53,4 @@ Brief explanation of what this project does and your contributions.
 
 ### Project Three
 Short description here.
+

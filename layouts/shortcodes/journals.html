@@ -27,7 +27,7 @@
   </span>
           <strong>{{ .Title }}</strong><br>
           Authors: <span style="font-size: 0.85em;">{{ .Authors }}</span><br>
-          Journal: {{ .Journal }}<br>
+          Journal:<em> {{ .Journal }}</em><br>
 
           {{ $badgeText := replace .shortDOI "-" "--" }}
 

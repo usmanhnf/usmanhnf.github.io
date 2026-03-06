@@ -1,13 +1,15 @@
 {{ define "main" }}
 
-<h1 style="margin-bottom:16px;">Blogs</h1>
+<h1 style="margin-bottom:20px;">Blogs</h1>
 
 <div class="blog-list">
+
+  <br>
 
   {{ range .Paginator.Pages }}
     {{ $page := . }} <!-- save post context -->
 
-    <article class="post-entry" style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+    <article class="post-entry" style="display:flex; align-items:center; gap:12px; margin-top:20px; margin-bottom:20px; border-bottom: 0px solid rgb(189, 189, 189); padding-bottom: 20px;">
 
       <!-- Thumbnail -->
       {{ with .Resources.GetMatch "cover.*" }}
@@ -15,7 +17,7 @@
         <a href="{{ $page.RelPermalink }}">
           <img src="{{ $thumb.RelPermalink }}" 
      alt="{{ .Name }}" 
-     style="width:60px; height:40px; object-fit:cover; border-radius:4px; display:block; margin:0; padding:0;">
+     style="width:90px; height:60px; object-fit:cover; border-radius:4px; display:block; margin:0; padding:0;">
         </a>
       {{ end }}
 
@@ -32,6 +34,7 @@
       </div>
 
     </article>
+
   {{ end }}
 
 </div>

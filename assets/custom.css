@@ -3,13 +3,13 @@
 body {
   font-family: 'Anaheim', sans-serif;
   font-size: 0.9rem;   /* slightly smaller text */
-  line-height: 0px     /* tighter line spacing (default is often 1.6–1.8) */
+  line-height: 1.5;     /* tighter line spacing (default is often 1.6–1.8) */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 12px !important;
+  line-height: 1 !important;
   margin-top: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .platform-icons {

@@ -1,12 +1,14 @@
 <style>
+
+
 .accordion {
-  max-width: 99%;
+  max-width: 100%;
   margin: 1rem auto;
 }
 
 .accordion-item {
-  border-top: 1px solid #C07858;
-  border-bottom: 1px solid #C07858;
+
+  padding-bottom: 20px;
   border-left: none;
   border-right: none;
   margin-bottom: 0;
@@ -22,6 +24,7 @@
   font-weight: 400;      /* NOT bold */
   background: transparent;
   color: inherit;
+  
 }
 
 .accordion-item label:hover {
@@ -30,7 +33,7 @@
 
 .accordion-item label::after {
   content: "+";
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .accordion-item input:checked + label::after {
@@ -46,6 +49,8 @@
   overflow: hidden;
   transition: 0.3s ease;
   padding: 0 1rem;
+
+  
 }
 
 .accordion-item input:checked ~ .accordion-content {
@@ -57,35 +62,30 @@
 
 <div class="accordion">
   {{ range $index, $project := sort site.Data.projects "date" "desc" }}
-  <div class="accordion-item">
-
-    <input type="checkbox" id="project-{{ $index }}">
-    
-    <label for="project-{{ $index }}">
-      {{ $project.title }}
-    </label>
-
-    <div class="accordion-content">
-      <p>
-        <strong>Date:</strong> {{ $project.date }} |
-        <strong>Progress:</strong>
-        <progress value="{{ $project.progress }}" max="100"></progress>
-      </p>
-
-      <p><strong>Team:</strong> {{ $project.team }}</p>
-
-      {{ if $project.image }}
-      <img 
-        src="{{ "images/Projects/" | relURL }}{{ $project.image }}"
-        alt="{{ $project.title }}"
-        style="display:block;margin:0 auto;height:250px;width:auto;"
-      >
-      {{ end }}
-
-      <p><strong>Introduction:</strong> {{ $project.introduction }}</p>
-      <p><strong>Objectives:</strong> {{ $project.objectives }}</p>
+  <div class="accordion-wrapper" style="border-top:1px solid #979797; padding-left: 10px; border-bottom:1px solid #979797; overflow:hidden;margin-bottom: 5px; background: rgba(148, 140, 137, 0.08);margin-bottom: 5px;">
+    <div class="accordion-item">
+      <input type="checkbox" id="project-{{ $index }}">
+      <label for="project-{{ $index }}">
+        <h4 style="margin-top:1px"> [{{ $project.date }}] {{ $project.title }}</h4>
+      </label>
+      <div class="accordion-content">
+        <p>
+          <strong>Date:</strong> {{ $project.date }} |
+          <strong>Progress:</strong>
+          <progress value="{{ $project.progress }}" max="100"></progress>
+        </p>
+        <p><strong>Team:</strong> {{ $project.team }}</p>
+        {{ if $project.image }}
+        <img 
+          src="{{ "images/Projects/" | relURL }}{{ $project.image }}"
+          alt="{{ $project.title }}"
+          style="display:block;margin:0 auto;height:250px;width:auto;"
+        >
+        {{ end }}
+        <p><strong>Introduction:</strong> {{ $project.introduction }}</p>
+        <p><strong>Objectives:</strong> {{ $project.objectives }}</p>
+      </div>
     </div>
-
   </div>
   {{ end }}
 </div>
