@@ -1,0 +1,21 @@
+baseURL = 'https://usmanhnf.github.io/'
+languageCode = 'en-us'
+title = 'Usman Hanif'
+theme = "paper"
+
+[params]
+  name = "Usman Hanif"
+  bio = "Assiatant professor | University of Southern Denmark"
+  avatar = "muha@iti.sdu.dk"
+  github = "usmanhnf"
+  linkedin = "usman-hanif"
+
+  # color style
+  color = 'linen'                           # linen, wheat, gray, light
+
+[menu]
+
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 1
