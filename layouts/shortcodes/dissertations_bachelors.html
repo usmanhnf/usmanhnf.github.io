@@ -1,0 +1,77 @@
+<style>
+.accordion-item {
+  border-top: 1px solid rgba(192,120,88,0.8);
+  border-bottom: 1px solid rgba(192,120,88,0.8);
+  margin-bottom: 6px;
+}
+
+.accordion-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.4rem;
+  cursor: pointer;
+  font-weight: 400;
+  background: transparent;
+}
+
+.accordion-item label::after {
+  content: "+";
+}
+
+.accordion-item input:checked + label::after {
+  content: "−";
+}
+
+.accordion-item input {
+  display: none;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 1rem;
+}
+
+.accordion-item input:checked ~ .accordion-content {
+  max-height: 800px;
+  padding: 1rem;
+}
+</style>
+
+{{ $data := site.Data.dissertations }}
+
+<!-- ================= Masters ================= -->
+
+<div class="accordion">
+{{ $bachelors := sort (where $data "degree" "BSc") "year" "desc" }}
+
+{{ range $index, $d := $bachelors }}
+  {{ $id := printf "bsc-%d" $index }}
+  <div class="accordion-item">
+
+    <input type="checkbox" id="{{ $id }}">
+    <label for="{{ $id }}">
+      {{ $d.year }} — {{ $d.title }}
+    </label>
+
+    <div class="accordion-content">
+      <p><strong>Authors:</strong> {{ $d.authors }}</p>
+      <p><strong>Supervision:</strong> {{ $d.supervision }}</p>
+      <p><strong>Institute:</strong> {{ $d.institute }}</p>
+
+      {{ if $d.image }}
+      <img 
+        src="{{ printf "/images/dissertations/%s" $d.image }}"
+        alt="{{ $d.title }}"
+        style="display:block;margin:0 auto;height:150px;width:auto;"
+      >
+      {{ end }}
+
+      <p><strong>Abstract:</strong> {{ $d.abstract }}</p>
+    </div>
+
+  </div>
+{{ end }}
+</div>

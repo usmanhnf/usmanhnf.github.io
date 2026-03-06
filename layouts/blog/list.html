@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<h1 style="margin-bottom:16px;">Blogs</h1>
+
+<div class="blog-list">
+
+  {{ range .Paginator.Pages }}
+    {{ $page := . }} <!-- save post context -->
+
+    <article class="post-entry" style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+
+      <!-- Thumbnail -->
+      {{ with .Resources.GetMatch "cover.*" }}
+        {{ $thumb := .Resize "300x" }} <!-- resized proportionally, you can adjust if needed -->
+        <a href="{{ $page.RelPermalink }}">
+          <img src="{{ $thumb.RelPermalink }}" 
+     alt="{{ .Name }}" 
+     style="width:60px; height:40px; object-fit:cover; border-radius:4px; display:block; margin:0; padding:0;">
+        </a>
+      {{ end }}
+
+      <!-- Title + Date -->
+      <div class="post-info">
+        <h3 class="post-title" style="margin:0;">
+          <a href="{{ $page.RelPermalink }}" style="text-decoration:none; color:inherit;">
+            {{ $page.Title }}
+          </a>
+        </h3>
+        <p class="post-date" style="margin:2px 0 0 0; color:#666; font-size:0.85rem;">
+          {{ $page.Date.Format "Jan 2, 2006" }}
+        </p>
+      </div>
+
+    </article>
+  {{ end }}
+
+</div>
+{{ end }}

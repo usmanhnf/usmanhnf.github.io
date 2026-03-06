@@ -1,0 +1,31 @@
+<strong><h3>Journal Articles</h3></strong>
+
+<ol class="publicationscv">
+  {{ range $index, $pub := sort site.Data.journals "Date" "desc" }}
+    <li>
+      <strong>{{ $pub.Title }}</strong><br>
+      <span style="font-size: 0.9rem;">
+      {{ $pub.Authors }}
+    </span><br>
+      <em>{{ $pub.Journal }}</em> ({{ time.Format "2006" $pub.Date }})<br>
+      DOI: 
+      <a href="{{ $pub.DOI }}">{{ $pub.shortDOI }}</a>
+    </li>
+  {{ end }}
+</ol>
+
+<strong><h3>Conferences</h3></strong>
+
+<ol class="publicationscv">
+  {{ range $index, $pub := sort site.Data.conferences "Date" "desc" }}
+    <li>
+      <strong>{{ $pub.Title }}</strong><br>
+      <span style="font-size: 0.9rem;">
+      {{ $pub.Authors }}
+    </span><br>
+      <em>{{ $pub.Conference }}</em> ({{ time.Format "2006" $pub.Date }})<br>
+      Location: 
+      <a href="{{ $pub.DOI }}">{{ $pub.Location }}</a>
+    </li>
+  {{ end }}
+</ol>

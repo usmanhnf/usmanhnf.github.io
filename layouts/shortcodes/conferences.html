@@ -1,0 +1,53 @@
+<ol>
+  {{ range sort .Site.Data.conferences "Date" "desc" }}
+    <li>
+      <div style="display:flex; align-items:flex-start; gap:12px;">
+
+        <!-- Thumbnail -->
+        {{ if .Thumbnail }}
+          <img src="{{ .Thumbnail }}" 
+               alt="thumbnail"
+               style=" width:50px; height:auto; object-fit:cover; margin-top:5px;">
+        {{ else }}
+          <img src="/images/placeholder.png" 
+               alt="thumbnail"
+               style="width:50px; height:auto; object-fit:cover; margin-top:2px; opacity:0.3;">
+        {{ end }}
+
+        <div>
+          <!-- Year badge -->
+          <span style="display:inline-block; 
+                       background-color: maroon; 
+                       color:white; 
+                       font-size:0.75em; 
+                       padding:2px 6px; 
+                       border-radius:4px; 
+                       margin-right:6px;
+                       line-height:1;">
+            {{ .Date | time | dateFormat "2006" }}
+          </span>
+
+          <!-- Title and Authors -->
+          <strong>{{ .Title }}</strong><br>
+          Authors: <span style="font-size: 0.85em;">{{ .Authors }}</span><br>
+          
+          <!-- Conference Name -->
+          Conference: {{ .Conference }}<br>
+
+          <!-- Location Badge -->
+          <span style="display:inline-flex; font-size:0.9em; border-radius:4px; overflow:hidden; margin-top:4px; line-height:1;">
+  <!-- "Location" part -->
+  <span style="background-color:#555; color:white; padding:2px 6px; display:inline-block;">
+    Location
+  </span>
+  <!-- City & Country part -->
+  <span style="background-color:#0078D4; color:white; padding:2px 6px; display:inline-block;">
+    {{ .Location }}
+  </span>
+</span>
+        </div>
+
+      </div>
+    </li>
+  {{ end }}
+</ol>

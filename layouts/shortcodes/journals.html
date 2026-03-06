@@ -1,0 +1,60 @@
+<ol>
+  {{ range sort .Site.Data.journals "Date" "desc" }}
+    <li>
+      <div style="display:flex; align-items:flex-start; gap:12px;">
+
+{{ if .Thumbnail }}
+  <img src="{{ .Thumbnail }}" 
+       alt="thumbnail"
+       style=" width:50px; height:auto; object-fit:cover; margin-top:5px;">
+{{ else }}
+  <img src="/images/placeholder.png" 
+       alt="thumbnail"
+       style="width:50px; height:auto; object-fit:cover; margin-top:2px; opacity:0.3;">
+{{ end }}
+        <div>
+          <!-- Year badge -->
+  <span style="display:inline-block; 
+               background-color: maroon; 
+               color:white; 
+               font-size:0.75em; 
+               padding:2px 6px; 
+               border-radius:4px; 
+               margin-right:6px;
+               line-height:1;           /* ensures the badge is compact */
+             margin-right:6px;">
+    {{ .Date | time | dateFormat "2006" }}
+  </span>
+          <strong>{{ .Title }}</strong><br>
+          Authors: <span style="font-size: 0.85em;">{{ .Authors }}</span><br>
+          Journal: {{ .Journal }}<br>
+
+          {{ $badgeText := replace .shortDOI "-" "--" }}
+
+          <span style="display:inline-block; vertical-align:top; height:22px; overflow:hidden; ">
+            <a href="https://doi.org/{{ .shortDOI }}" target="_blank" style="display:inline-block;">
+              <img 
+                src="https://img.shields.io/badge/DOI-{{ $badgeText | urlquery }}-blue?style=flat"
+                alt="DOI: {{ .shortDOI }}"
+                style="display:block; transform:translateY(-35px);">
+            </a>
+          </span>
+
+          <span class="__dimensions_badge_embed__"
+                data-doi="{{ .shortDOI }}"
+                data-hide-zero-citations="true"
+                data-style="small_rectangle"
+                style="display:inline-block; vertical-align:top;">
+          </span>
+        </div>
+
+      </div>
+    </li>
+  {{ end }}
+</ol>
+
+
+<script src="//cdn.plu.mx/widget-popup.js"></script>
+<script src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async src="https://badge.dimensions.ai/badge.js"></script>
+<script src="https://embed.altmetric.com/assets/embed.js"></script>

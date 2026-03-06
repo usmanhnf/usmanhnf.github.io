@@ -2,11 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-02-23T23:37:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/my-post2/</loc>
+    <lastmod>2026-02-23T23:37:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-23T23:37:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/my-post/</loc>
+    <lastmod>2026-02-23T23:05:51+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/</loc>
+    <lastmod>2026-02-17T19:42:58+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/</loc>
+    <lastmod>2026-02-17T19:41:45+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2026-02-17T19:39:30+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
+    <lastmod>2026-02-17T01:04:28+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/teaching/</loc>
+    <lastmod>2026-02-17T01:04:28+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-02-17T00:44:40+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-17T00:44:40+01:00</lastmod>
+    <loc>http://localhost:1313/posts/blog1/</loc>
+    <lastmod>1970-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
