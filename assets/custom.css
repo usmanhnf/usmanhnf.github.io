@@ -3,14 +3,10 @@
 body {
   font-family: 'Anaheim', sans-serif;
   font-size: 0.9rem;   /* slightly smaller text */
-  line-height: 1.5;     /* tighter line spacing (default is often 1.6–1.8) */
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 1.25 !important;
-  margin-top: 14px;
   
 }
+
+
 
 .platform-icons {
   display: flex;
