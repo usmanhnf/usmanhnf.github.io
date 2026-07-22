@@ -1,0 +1,35 @@
+baseURL = 'https://usmanhnf.github.io/'
+locale = 'en-us'
+title = 'Usman Hanif'
+theme = "chicago7"
+
+
+[menu]
+  [[menu.header]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.header]]
+    name = "CV"
+    url = "cv"
+    weight = 20
+  [[menu.header]]
+    name = "Research"
+    url = "research"
+    weight = 30
+  [[menu.header]]
+    name = "Teaching"
+    url = "teaching"
+    weight = 40
+  [[menu.header]]
+    name = "Projects"
+    url = "projects"
+    weight = 50
+  [[menu.header]]
+    name = "Blog"
+    url = "posts"
+    weight = 60
+  [[menu.header]]
+    name = "Contact"
+    url = "contact"
+    weight = 70Test-Path .gitmodules
