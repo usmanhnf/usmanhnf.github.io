@@ -32,4 +32,4 @@ theme = "chicago7"
   [[menu.header]]
     name = "Contact"
     url = "contact"
-    weight = 70Test-Path .gitmodules
+    weight = 70
