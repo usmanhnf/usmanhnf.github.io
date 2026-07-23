@@ -44,5 +44,5 @@ theme = "chicago7"
 
 # Web site author for copyrighting
 author = "Usman Hanif"
-
+favicon = "favicon.png"
 
