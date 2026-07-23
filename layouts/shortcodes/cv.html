@@ -1,0 +1,17 @@
+{{ $page := .Page }}
+<div class="cv-list">
+{{ range split (trim .Inner "\n ") "\n" }}
+  {{ $line := trim . " \t" }}
+  {{ if $line }}
+  {{ $p := split $line "|" }}
+  <div class="cv-item">
+    <div class="cv-date">{{ $page.RenderString (dict "display" "inline") (trim (index $p 0) " ") }}</div>
+    <div class="cv-body">
+      {{ range after 1 $p }}
+      <p>{{ $page.RenderString (dict "display" "inline") (trim . " ") }}</p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+</div>

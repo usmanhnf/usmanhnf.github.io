@@ -44,28 +44,126 @@
 
 // ---- publications ----
 $pub-gap: .3rem;
-
+.pub-year { margin: 2rem 0 1rem; }
+.pub-year .chip {
+  border: .1rem solid;
+  box-shadow: 2px 2px 0 black;
+  padding: 0 .65rem;
+  border-radius: var(--pico-border-radius);
+  font-family: var(--pico-font-family-header);
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-block;
+}
 .pub { margin-bottom: 2rem; line-height: 1.45; }
 .pub h3, .pub-authors, .pub-meta { margin: 0 0 $pub-gap 0; }
 .pub h3 { font-size: 1rem; }
 .pub-authors { font-size: .9rem; }
 .pub-meta { font-size: .85rem; color: var(--pico-muted-color); }
+.pub-links { margin: 0; font-size: .9rem; }
+.pub-links .sep { color: var(--pico-muted-color); margin: 0 .25rem; }
 
-.pub-badges {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  flex-wrap: wrap;
-  margin: 0;
-  min-height: 34px;
+// ---- dissertations ----
+.diss-group { margin: 1.6rem 0 .8rem; font-size: 1rem; }
+
+.diss {
+  margin-bottom: .5rem !important;
+  border: .1rem solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+  transition: box-shadow .12s ease, border-color .12s ease;
 }
-.pub-badges > * { flex: 0 0 auto; margin: 0 !important; }
-.pub-badges img { height: 20px; width: auto; margin: 0; display: block; }
-.pub-badges .__dimensions_badge_embed__,
-.pub-badges .altmetric-embed,
-.pub-badges .plumx-plum-print-popup {
-  display: inline-flex !important;
-  align-items: center;
-  float: none !important;
+.diss:hover { border-color: var(--pico-color); box-shadow: 2px 2px 0 black; }
+.diss[open] { border-color: var(--pico-color); }
+
+.diss summary {
+  line-height: 1.4;
+  font-size: .95rem;
+  padding: .45rem 1.8rem .45rem .6rem;
+  border-radius: var(--pico-border-radius);
+  transition: background-color .12s ease;
 }
-.pub-badges .altmetric-embed img { height: 32px; }
+.diss summary:hover { background-color: var(--pico-muted-border-color); }
+.diss[open] > summary {
+  font-weight: 700;
+  border-bottom: .1rem solid var(--pico-muted-border-color);
+  border-radius: 0;
+}
+
+.diss-year {
+  display: inline-block;
+  width: 3rem;
+  color: var(--pico-muted-color);
+  font-size: .85rem;
+  margin-right: .5rem;
+  white-space: nowrap;
+  transition: color .12s ease;
+}
+.diss summary:hover .diss-year { color: var(--pico-color); }
+
+.diss-body { padding: .6rem .6rem .5rem; }
+.diss-meta { font-size: .9rem; margin: 0 0 .6rem 0; }
+.diss-abstract-label {
+  font-size: .8rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--pico-muted-color); margin: 0 0 .2rem 0;
+}
+.diss-abstract { font-size: .85rem; color: var(--pico-muted-color); margin: 0; }
+
+// ---- CV ----
+.cv-item {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0 1rem;
+  margin-bottom: .55rem;
+  line-height: 1.4;
+}
+.cv-date {
+  font-size: .85rem;
+  color: var(--pico-muted-color);
+  white-space: nowrap;
+  padding-top: .1rem;
+}
+.cv-body { font-size: .9rem; }
+.cv-body p { margin: 0; }
+.cv-body p + p { margin-top: .1rem; }
+@media (max-width: 560px) {
+  .cv-item { grid-template-columns: 1fr; gap: 0; }
+  .cv-date { padding-top: 0; }
+}
+
+// ---- recents ----
+.recents { margin: .5rem 0 1.5rem; }
+.recent {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0 1rem;
+  margin-bottom: .8rem;
+  line-height: 1.4;
+}
+.recent-label {
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--pico-muted-color);
+  padding-top: .15rem;
+}
+.recent-body { font-size: .9rem; }
+.recent-meta {
+  display: block;
+  font-size: .82rem;
+  color: var(--pico-muted-color);
+}
+.recent-code {
+  font-size: .75rem;
+  border: .08rem solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+  padding: 0 .3rem;
+  white-space: nowrap;
+}
+.recent-list { margin: 0; padding: 0; list-style: none; }
+.recent-list li { margin: 0 0 .45rem 0; list-style: none; }
+.recent-list li:last-child { margin-bottom: 0; }
+@media (max-width: 560px) {
+  .recent { grid-template-columns: 1fr; gap: 0; }
+  .recent-label { padding-top: 0; margin-bottom: .15rem; }
+}

@@ -3,4 +3,4 @@ title = "Teaching"
 layout = "simple"
 +++
 
-Write your Teaching content here.
+I will add more on teaching activities and teaching material here.

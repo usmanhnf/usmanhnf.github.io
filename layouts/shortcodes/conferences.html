@@ -1,0 +1,20 @@
+{{ $me := "Muhammad Usman Hanif" }}
+{{ $confs := sort hugo.Data.conferences "Date" "desc" }}
+{{ $years := slice }}
+{{ range $confs }}{{ $years = $years | append (substr (printf "%v" .Date) 0 4) }}{{ end }}
+
+{{ range $year := ($years | uniq) }}
+<p class="pub-year"><span class="chip">{{ $year }}</span></p>
+{{ range $confs }}
+{{ if eq (substr (printf "%v" .Date) 0 4) $year }}
+{{ $authors := .Authors | default "" | strings.TrimRight "; " }}
+{{ $conf := replace (.Conference | default "" | strings.TrimRight "; ") ";" "," }}
+{{ $loc := replace (.Location | default "" | strings.TrimRight "; ") ";" "," }}
+<article class="pub">
+  <h3>{{ .Title }}</h3>
+  <p class="pub-authors">{{ replace $authors $me (printf "<strong>%s</strong>" $me) | safeHTML }}</p>
+  <p class="pub-meta"><em>{{ $conf }}</em>{{ with $loc }} &middot; {{ . }}{{ end }}</p>
+</article>
+{{ end }}
+{{ end }}
+{{ end }}

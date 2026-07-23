@@ -1,0 +1,72 @@
+{{ $j := sort (hugo.Data.journals | default slice) "Date" "desc" }}
+{{ $c := sort (hugo.Data.conferences | default slice) "Date" "desc" }}
+{{ $r := hugo.Data.recents | default dict }}
+
+<div class="recents">
+
+{{ if gt (len $j) 0 }}
+{{ $a := index $j 0 }}
+{{ $doi := replaceRE `^https?://(dx\.)?doi\.org/` "" ($a.DOI | default "") }}
+<div class="recent">
+  <div class="recent-label">Latest article</div>
+  <div class="recent-body">
+    {{ $a.Title }}
+    <span class="recent-meta"><em>{{ $a.Journal }}</em>, {{ time.Format "January 2006" $a.Date }}{{ with $doi }} &middot; <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}</span>
+  </div>
+</div>
+{{ end }}
+
+{{ if gt (len $c) 0 }}
+{{ $p := index $c 0 }}
+<div class="recent">
+  <div class="recent-label">Latest conference</div>
+  <div class="recent-body">
+    {{ $p.Title }}
+    <span class="recent-meta"><em>{{ replace ($p.Conference | default "" | strings.TrimRight "; ") ";" "," }}</em>{{ with $p.Location }} &middot; {{ replace (. | strings.TrimRight "; ") ";" "," }}{{ end }}</span>
+  </div>
+</div>
+{{ end }}
+
+{{ with $r.teaching }}
+<div class="recent">
+  <div class="recent-label">Teaching</div>
+  <div class="recent-body">
+    <ul class="recent-list">
+      {{ range . }}
+      <li>{{ .subject }}{{ with .code }} <span class="recent-code">{{ . }}</span>{{ end }}
+        <span class="recent-meta">{{ .term }}{{ with .institute }} &middot; {{ . }}{{ end }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
+{{ with (or $r.researching $r.Researching) }}
+<div class="recent">
+  <div class="recent-label">Researching</div>
+  <div class="recent-body">
+    <ul class="recent-list">
+      {{ range . }}
+      <li>{{ .topic }}
+        <span class="recent-meta">{{ .activity }}{{ with .institute }} &middot; {{ . }}{{ end }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
+{{ with $r.supervising }}
+<div class="recent">
+  <div class="recent-label">Supervising</div>
+  <div class="recent-body">
+    <ul class="recent-list">
+      {{ range . }}
+      <li>{{ .name }}{{ with .degree }} <span class="recent-code">{{ . }}</span>{{ end }}
+        <span class="recent-meta">{{ .topic }}{{ with .institute }} &middot; {{ . }}{{ end }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
+</div>

@@ -1,40 +1,40 @@
 {{ $me := "Muhammad Usman Hanif" }}
+{{ $mailto := "you@university.edu" }}
 {{ $pubs := sort hugo.Data.journals "Date" "desc" }}
 {{ $years := slice }}
 {{ range $pubs }}{{ $years = $years | append (substr (printf "%v" .Date) 0 4) }}{{ end }}
 
 {{ range $year := ($years | uniq) }}
-<h2>{{ $year }}</h2>
+<p class="pub-year"><span class="chip">{{ $year }}</span></p>
 {{ range $pubs }}
 {{ if eq (substr (printf "%v" .Date) 0 4) $year }}
 {{ $item := . }}
 {{ $bare := replaceRE `^https?://(dx\.)?doi\.org/` "" ($item.DOI | default "") }}
+
+{{ $cites := -1 }}
+{{ with $bare }}
+  {{ $url := printf "https://api.openalex.org/works/doi:%s?mailto=%s" . $mailto }}
+  {{ with try (resources.GetRemote $url) }}
+    {{ with .Err }}
+      {{ warnf "citation lookup failed for %s: %s" $bare . }}
+    {{ else with .Value }}
+      {{ $cites = (. | transform.Unmarshal).cited_by_count }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 <article class="pub">
   <h3>{{ .Title }}</h3>
   <p class="pub-authors">{{ replace .Authors $me (printf "<strong>%s</strong>" $me) | safeHTML }}</p>
   <p class="pub-meta"><em>{{ .Journal }}</em>, {{ time.Format "January 2006" .Date }}</p>
   {{ with $bare }}
-  <div class="pub-badges">
-    <a href="https://doi.org/{{ . }}"><img
-      src="https://img.shields.io/badge/DOI-{{ . | replaceRE "-" "--" | replaceRE "_" "__" | urlquery }}-blue"
-      alt="DOI {{ . }}" loading="lazy"></a>
-
-    <span class="__dimensions_badge_embed__" data-doi="{{ . }}"
-          data-style="small_rectangle" data-legend="hover-right"></span>
-
-    <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
-         data-doi="{{ . }}" data-hide-no-mentions="true"></div>
-
-    <a class="plumx-plum-print-popup" data-popup="right" data-size="small"
-       data-site="plum" data-hide-when-empty="true"
-       href="{{ printf "https://plu.mx/plum/a/?doi=%s" . | safeURL }}"></a>
-  </div>
+  <p class="pub-links">
+    <a href="https://doi.org/{{ . }}">DOI</a>
+    {{ if ge $cites 0 }}<span class="sep">|</span>
+    <a href="https://badge.dimensions.ai/details/doi/{{ . }}">{{ $cites }} citation{{ if ne $cites 1 }}s{{ end }}</a>{{ end }}
+  </p>
   {{ end }}
 </article>
 {{ end }}
 {{ end }}
 {{ end }}
-
-<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<script async src="https://d39af2mgp1pqhg.cloudfront.net/widget-popup.js"></script>

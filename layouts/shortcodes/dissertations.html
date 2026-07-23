@@ -1,0 +1,27 @@
+{{ $all := hugo.Data.dissertations }}
+{{ $bachelors := slice }}
+{{ $masters := slice }}
+{{ range $all }}
+  {{ $d := upper (.degree | default "") }}
+  {{ if hasPrefix $d "B" }}{{ $bachelors = $bachelors | append . }}
+  {{ else if hasPrefix $d "M" }}{{ $masters = $masters | append . }}{{ end }}
+{{ end }}
+
+{{ range $g := (slice (dict "name" "Master's" "items" $masters) (dict "name" "Bachelor's" "items" $bachelors)) }}
+{{ with $g.items }}
+<h4 class="diss-group">{{ $g.name }}</h4>
+{{ range sort . "year" "desc" }}
+<details class="diss">
+ <summary><span class="diss-year">{{ .year }}</span><span class="diss-title">{{ .title }}</span></summary>
+  <div class="diss-body">
+    <p class="diss-meta">
+      <strong>{{ .authors }}</strong><br>
+      {{ with .supervision }}Supervision: {{ . }}<br>{{ end }}
+      {{ with .institute }}{{ . }}{{ end }}
+    </p>
+    {{ with .abstract }}<p class="diss-abstract"><strong>Abstract:</strong> {{ . }}</p>{{ end }}
+  </div>
+</details>
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,14 @@
+teaching:
+  - subject: "Advanced Finite Element Analysis"
+    term: "Spring 2026"
+    institute: "University of Southern Denmark"
+
+supervising:
+  - name: "-"
+    degree: "-"
+    topic: "-"
+
+researching: 
+  - activity: "numerical modeling"
+    topic: "3D printed concrete"
+    institute: "SDU Structures"
