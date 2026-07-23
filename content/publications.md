@@ -3,4 +3,5 @@ title = "Publications"
 layout = "simple"
 +++
 
-Write your Publications content here.
+## Peer-reviewed journal articles
+{{< journals >}}

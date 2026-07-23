@@ -26,10 +26,28 @@ theme = "chicago7"
     url = "projects"
     weight = 50
   [[menu.header]]
+    name = "Publications"
+    url = "publications"
+    weight = 60  
+  [[menu.header]]
     name = "Blog"
     url = "posts"
-    weight = 60
+    weight = 70
   [[menu.header]]
     name = "Contact"
     url = "contact"
-    weight = 70
+    weight = 80
+
+    [params]
+# Optional. The relative path to the site logo file within the `assets/` folder
+logo = "logo.svg"
+
+# Web site author for copyrighting
+author = "Blog Author"
+
+[params.social]
+twitter = "https://x.com/example"
+behance = "https://behance.net/yourprofile"
+facebook = "https://facebook.com/yourprofile"
+feed = "/index.xml"
+

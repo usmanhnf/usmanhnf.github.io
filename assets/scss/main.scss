@@ -40,3 +40,32 @@
   --pico-font-family-monospace: "Anaheim", system-ui, sans-serif;
   --pico-font-family-header: "Anaheim", system-ui, sans-serif;
 }
+
+
+// ---- publications ----
+$pub-gap: .3rem;
+
+.pub { margin-bottom: 2rem; line-height: 1.45; }
+.pub h3, .pub-authors, .pub-meta { margin: 0 0 $pub-gap 0; }
+.pub h3 { font-size: 1rem; }
+.pub-authors { font-size: .9rem; }
+.pub-meta { font-size: .85rem; color: var(--pico-muted-color); }
+
+.pub-badges {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  min-height: 34px;
+}
+.pub-badges > * { flex: 0 0 auto; margin: 0 !important; }
+.pub-badges img { height: 20px; width: auto; margin: 0; display: block; }
+.pub-badges .__dimensions_badge_embed__,
+.pub-badges .altmetric-embed,
+.pub-badges .plumx-plum-print-popup {
+  display: inline-flex !important;
+  align-items: center;
+  float: none !important;
+}
+.pub-badges .altmetric-embed img { height: 32px; }
