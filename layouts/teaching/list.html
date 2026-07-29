@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="teaching-page">
+
+  <header>
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Content }}
+      <div class="teaching-introduction">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+
+  <ul class="course-list">
+    {{ range .RegularPages.ByWeight }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+
+</section>
+{{ end }}

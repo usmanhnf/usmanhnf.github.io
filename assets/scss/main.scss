@@ -167,3 +167,294 @@ $pub-gap: .3rem;
   .recent { grid-template-columns: 1fr; gap: 0; }
   .recent-label { padding-top: 0; margin-bottom: .15rem; }
 }
+
+
+/* =========================================================
+   Course page variables
+   ========================================================= */
+
+.course-page {
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+
+  /*
+    Set this to the height of your fixed website navigation.
+
+    No fixed navigation:
+    --site-header-height: 0px;
+
+    Example fixed navigation:
+    --site-header-height: 70px;
+  */
+  --site-header-height: 0px;
+
+  /*
+    Approximate height of the sticky course title area.
+    Increase this if the Contents sidebar overlaps the title.
+  */
+  --course-header-height: 125px;
+}
+
+
+/* =========================================================
+   Back to Teaching link
+   ========================================================= */
+
+.course-back {
+  margin: 0 0 2rem;
+}
+
+.course-back a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   Sticky course title
+   ========================================================= */
+
+.course-header {
+  position: sticky;
+  top: var(--site-header-height);
+  z-index: 20;
+
+  margin: 0 0 2rem;
+  padding: 1rem 0;
+
+  background: var(--pico-background-color, #fff);
+  border-bottom: 1px solid #ddd;
+}
+
+.course-header h1 {
+  margin: 0;
+}
+
+.course-semester {
+  margin: 0.35rem 0 0;
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   Two-column course layout
+   ========================================================= */
+
+.course-layout {
+  display: grid;
+  grid-template-columns: 175px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+
+  width: 100%;
+  overflow: visible;
+}
+
+
+/* =========================================================
+   Compact sticky Contents sidebar
+   ========================================================= */
+
+.course-sidebar {
+  position: sticky;
+
+  top: calc(
+    var(--site-header-height) + var(--course-header-height)
+  );
+
+  align-self: start;
+
+  max-height: calc(
+    100vh -
+    var(--site-header-height) -
+    var(--course-header-height) -
+    1rem
+  );
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-right: 1rem;
+  border-right: 1px solid #ddd;
+
+  font-size: 0.82rem;
+  line-height: 1.3;
+
+  scrollbar-width: thin;
+}
+
+
+/* Contents heading */
+
+.contents-title {
+  margin: 0 0 0.8rem;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   Hugo-generated Table of Contents
+   ========================================================= */
+
+.course-sidebar nav {
+  margin: 0;
+  padding: 0;
+}
+
+.course-sidebar nav ul {
+  margin: 0;
+  padding-left: 0.8rem;
+}
+
+.course-sidebar nav > ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.course-sidebar nav li {
+  margin: 0 0 0.45rem;
+}
+
+.course-sidebar nav li ul {
+  margin-top: 0.35rem;
+}
+
+.course-sidebar nav li li {
+  margin-bottom: 0.3rem;
+}
+
+.course-sidebar nav a {
+  display: block;
+
+  padding: 0.08rem 0;
+
+  color: inherit;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.course-sidebar nav a:hover,
+.course-sidebar nav a:focus {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   Right-side course content
+   ========================================================= */
+
+.course-content {
+  min-width: 0;
+  padding-bottom: 4rem;
+}
+
+.course-content > :first-child {
+  margin-top: 0;
+}
+
+.course-content h2 {
+  margin-top: 2.2rem;
+}
+
+.course-content h2:first-child {
+  margin-top: 0;
+}
+
+.course-content h3 {
+  margin-top: 1.7rem;
+}
+
+.course-content h4 {
+  margin-top: 1.4rem;
+}
+
+
+/*
+  Stops linked headings from being hidden underneath
+  the sticky course title.
+*/
+
+.course-content h2,
+.course-content h3,
+.course-content h4 {
+  scroll-margin-top: calc(
+    var(--site-header-height) +
+    var(--course-header-height) +
+    1rem
+  );
+}
+
+
+/* =========================================================
+   Sticky positioning support
+   ========================================================= */
+
+/*
+  Sticky positioning may fail when a parent element has
+  overflow: hidden, auto, or scroll.
+*/
+
+main,
+.course-page,
+.course-layout {
+  overflow: visible;
+}
+
+
+/* =========================================================
+   Tablet and mobile
+   ========================================================= */
+
+@media (max-width: 750px) {
+  .course-page {
+    --site-header-height: 0px;
+    --course-header-height: 0px;
+  }
+
+  .course-header {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .course-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .course-sidebar {
+    position: static;
+
+    max-height: none;
+    overflow: visible;
+
+    padding-right: 0;
+    padding-bottom: 1.25rem;
+
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+
+    font-size: 0.9rem;
+  }
+
+  .contents-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .course-sidebar nav ul {
+    padding-left: 1rem;
+  }
+
+  .course-sidebar nav > ul {
+    padding-left: 0;
+  }
+
+  .course-content h2,
+  .course-content h3,
+  .course-content h4 {
+    scroll-margin-top: 1rem;
+  }
+}
