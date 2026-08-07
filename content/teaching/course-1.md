@@ -4,7 +4,7 @@ description: "Introduction to Course 1"
 semester: "Autumn 2026"
 weight: 10
 toc: true
-draft: true
+draft: false
 ---
 
 ## Overview
