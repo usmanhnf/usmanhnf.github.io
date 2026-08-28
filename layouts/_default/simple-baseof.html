@@ -1,14 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ .Site.Language.Locale }}" data-theme="light">
 <head>
+    {{ partial "theme-init.html" . }}
     <title>{{ .Title }}</title>
     {{ partial "head.html" . }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+    <script src="{{ "js/theme-toggle.js" | relURL }}" defer></script>
 </head>
 
 <body>
+
+    {{ partial "theme-toggle.html" . }}
 {{ partial "header.html" . }}
 <main>
   {{ block "main" . }}

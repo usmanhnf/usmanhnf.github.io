@@ -458,3 +458,101 @@ main,
     scroll-margin-top: 1rem;
   }
 }
+/* =========================================================
+   Stable page width + light/dark theme toggle
+   ========================================================= */
+
+/*
+  Reserve space for the vertical scrollbar on every page.
+  This prevents the centered layout from shifting sideways when
+  navigating between short and long pages.
+*/
+html {
+  scrollbar-gutter: stable;
+}
+
+/*
+  Keep the circular theme control separate from Pico's normal button palette.
+  This avoids the black-on-black normal state that Pico's button variables can
+  otherwise cause in dark mode.
+*/
+:root,
+[data-theme="light"] {
+  --theme-toggle-background: rgba(255, 255, 255, 0.9);
+  --theme-toggle-hover-background: rgba(0, 0, 0, 0.08);
+  --theme-toggle-foreground: #1a1a1a;
+  --theme-toggle-border: rgba(0, 0, 0, 0.28);
+}
+
+[data-theme="dark"] {
+  --theme-toggle-background: rgba(255, 255, 255, 0.08);
+  --theme-toggle-hover-background: rgba(255, 255, 255, 0.16);
+  --theme-toggle-foreground: #f5f5f5;
+  --theme-toggle-border: rgba(255, 255, 255, 0.45);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+
+  display: inline-grid;
+  place-items: center;
+
+  width: 2.35rem;
+  height: 2.35rem;
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid var(--theme-toggle-border);
+  border-radius: 50%;
+  background-color: var(--theme-toggle-background);
+  color: var(--theme-toggle-foreground);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: var(--theme-toggle-hover-background);
+  border-color: var(--theme-toggle-foreground);
+  color: var(--theme-toggle-foreground);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--pico-primary);
+  outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+  grid-area: 1 / 1;
+  display: block;
+}
+
+/* Light mode shows the moon: clicking switches to dark mode. */
+[data-theme="light"] .theme-toggle__sun {
+  display: none;
+}
+
+/* Dark mode shows the sun: clicking switches to light mode. */
+[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .theme-toggle {
+    top: 0.65rem;
+    right: 0.65rem;
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+}
+
+/* Make the custom course borders follow the active color scheme. */
+.course-header,
+.course-sidebar {
+  border-color: var(--pico-muted-border-color);
+}
+
