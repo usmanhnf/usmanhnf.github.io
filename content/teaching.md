@@ -3,4 +3,8 @@ title = "Teaching"
 layout = "simple"
 +++
 
-I will add more on teaching activities and teaching material here.
+The course material for teaching is still under construction and will be updated when I find time.
+
+## Courses
+- [Advanced Finite Element Method](https://usmanhnf.github.io/Courses/afea/)
+- [Finite Element Method](https://usmanhnf.github.io/Courses/fem/)

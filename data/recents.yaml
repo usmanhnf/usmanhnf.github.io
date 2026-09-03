@@ -1,12 +1,15 @@
 teaching:
-  - subject: "Advanced Finite Element Analysis"
+  - subject: "The Finite Element Method (Undergraduate)"
+    term: "Fall 2026"
+    institute: "University of Southern Denmark"
+  - subject: "Advanced Finite Element Analysis (Graduate)"
     term: "Fall 2026"
     institute: "University of Southern Denmark"
 
 supervising:
-  - name: "-"
-    degree: "-"
-    topic: "-"
+  - name: "1"
+    degree: "Bachelors"
+    topic: "Digital Image Correlation"
 
 researching: 
   - activity: "numerical modeling"
