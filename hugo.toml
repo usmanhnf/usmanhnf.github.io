@@ -9,10 +9,10 @@ theme = "chicago7"
     name = "Home"
     url = "/"
     weight = 10
-  [[menu.header]]
-    name = "CV"
-    url = "cv"
-    weight = 20
+  # [[menu.header]]
+  #  name = "CV"
+  #  url = "cv"
+  #  weight = 20
   [[menu.header]]
     name = "Research"
     url = "research"
